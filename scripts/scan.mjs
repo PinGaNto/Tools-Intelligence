@@ -104,8 +104,9 @@ async function callModel(system, user) {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${GITHUB_TOKEN}`,
+      Accept: 'application/vnd.github+json',
       'Content-Type': 'application/json',
-      'X-GitHub-Api-Version': '2022-11-28',
+      'X-GitHub-Api-Version': '2026-03-10',
     },
     body: JSON.stringify({
       model: MODEL,
@@ -116,11 +117,16 @@ async function callModel(system, user) {
       ],
     }),
   });
+  const rawText = await res.text();
   if (!res.ok) {
-    const body = await res.text().catch(() => '');
-    throw new Error(`GitHub Models request failed: HTTP ${res.status} ${body.slice(0, 300)}`);
+    throw new Error(`GitHub Models request failed: HTTP ${res.status}\n${rawText.slice(0, 1000)}`);
   }
-  const json = await res.json();
+  let json;
+  try {
+    json = JSON.parse(rawText);
+  } catch {
+    throw new Error(`GitHub Models returned a non-JSON response (HTTP ${res.status}):\n${rawText.slice(0, 1000)}`);
+  }
   return json.choices?.[0]?.message?.content ?? '';
 }
 
