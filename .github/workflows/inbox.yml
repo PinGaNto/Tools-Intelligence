@@ -1,0 +1,36 @@
+name: Process inbox submissions
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # every 6 hours
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  inbox:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Process inbox
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: node scripts/inbox.mjs
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "tool-intelligence-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git diff --quiet -- data.js; then
+            echo "No new submissions — nothing to commit."
+          else
+            git add data.js
+            git commit -m "Inbox: process new submissions $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi
