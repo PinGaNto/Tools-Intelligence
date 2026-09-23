@@ -2,12 +2,12 @@ name: Tool intelligence scan
 
 on:
   schedule:
-    - cron: "0 0 * * 0"
-  workflow_dispatch:
+    # Every Sunday at 00:00 UTC, matching the site's "next automatic scan" copy.
+    - cron: '0 0 * * 0'
+  workflow_dispatch: {}   # <-- this is the "manual run" button, on the Actions tab
 
 permissions:
-  contents: write
-  models: read
+  contents: write   # to commit updated data.js
 
 jobs:
   scan:
@@ -21,7 +21,7 @@ jobs:
 
       - name: Run sourcing scan
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           SCAN_RUN_TYPE: ${{ github.event_name == 'workflow_dispatch' && 'Manual' || 'Automatic (weekly)' }}
         run: node scripts/scan.mjs
 
