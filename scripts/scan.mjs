@@ -36,7 +36,7 @@ const DATA_PATH = path.join(ROOT, 'data.js');
 const SOURCES_PATH = path.join(ROOT, 'data', 'sources.json');
 
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
-const MODEL = process.env.SCAN_MODEL || 'llama-3.3-70b-versatile';
+const MODEL = process.env.SCAN_MODEL || 'openai/gpt-oss-120b';
 const MODELS_ENDPOINT = 'https://api.groq.com/openai/v1/chat/completions';
 
 if (!GROQ_API_KEY) {
