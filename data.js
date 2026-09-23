@@ -378,7 +378,7 @@ const UPDATES = [
   }
 ];
 
-const TRENDING_REFRESHED_AT = "2026-09-23"; // updated by scripts/scan.mjs
+const TRENDING_REFRESHED_AT = "2026-09-23";
 const TRENDING = [
   {
     "name": "AI at Work Webinar: Copilot, Apps, & Agents",
@@ -532,7 +532,7 @@ const TRENDING = [
   }
 ];
 
-const ISSUES_REFRESHED_AT = "2026-09-22"; // manually curated — see README
+const ISSUES_REFRESHED_AT = "2026-09-22";
 const ISSUES = [
   {
     "rank": 1,
@@ -589,4 +589,9 @@ const ISSUES = [
 const SCAN_META = {
   "lastRun": "2026-09-23T20:36:10.295Z",
   "runType": "Manual"
+}; // written by scripts/scan.mjs — untouched here
+
+const INBOX_PROCESSED = ["9/23/2026 18:01:25"]; // written by scripts/inbox.mjs — do not edit by hand
+const INBOX_META = {
+  "lastRun": "2026-09-23T22:03:40.374Z"
 };
