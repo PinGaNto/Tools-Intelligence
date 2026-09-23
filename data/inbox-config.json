@@ -1,0 +1,4 @@
+{
+  "_comment": "csvUrl comes from Google Sheets: File -> Share -> Publish to web -> the response tab -> CSV format. See INBOX_SETUP.md for exact steps.",
+  "csvUrl": "https://docs.google.com/spreadsheets/d/1cBy6g8ucLX2tNUD-HPsgDd8-ST_xYsxci1d479yUN7E/export?format=csv&gid=522179093"
+}
