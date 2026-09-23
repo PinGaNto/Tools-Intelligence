@@ -1,15 +1,20 @@
 // Real sourcing script for THE·TEAM Tool Intelligence.
 //
-// Runs inside GitHub Actions. Uses the workflow's built-in GITHUB_TOKEN to call
-// GitHub Models (https://docs.github.com/rest/models) — a free, OpenAI-compatible
-// inference API included with every GitHub repo. No external API key required.
+// Runs inside GitHub Actions. Uses Groq's free API (https://console.groq.com) to
+// summarize sourced content — no credit card required, ~30 req/min & 1,000 req/day
+// on the free tier, way more than this weekly scan needs. Requires a GROQ_API_KEY
+// repo secret (see SCANNING_SETUP.md for how to get one and add it).
+//
+// (Earlier versions of this script used GitHub Models for a fully keyless setup,
+// but that service was retired by GitHub on July 30, 2026, so a provider key is
+// now unavoidable — Groq's free tier is the closest thing to it.)
 //
 // What it actually does:
 //  1. Reads the current data.js (TOOLS/UPDATES/TRENDING/ISSUES) so it knows what's
 //     already recorded, and can avoid re-adding the same item.
 //  2. Fetches each real source URL in data/sources.json — the tools' own official
 //     changelog/blog/newsroom pages, plus a handful of general AI/tech news sources.
-//  3. Sends the fetched page text to a GitHub Models chat completion, asking it to
+//  3. Sends the fetched page text to a Groq chat completion, asking it to
 //     pull out genuinely NEW items (since it can see what's already known) and
 //     return them as strict JSON matching the site's existing schema.
 //  4. Merges anything new into the data arrays and rewrites data.js.
@@ -30,12 +35,12 @@ const ROOT = path.resolve(__dirname, '..');
 const DATA_PATH = path.join(ROOT, 'data.js');
 const SOURCES_PATH = path.join(ROOT, 'data', 'sources.json');
 
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-const MODEL = process.env.SCAN_MODEL || 'openai/gpt-4.1-mini';
-const MODELS_ENDPOINT = 'https://models.github.ai/inference/chat/completions';
+const GROQ_API_KEY = process.env.GROQ_API_KEY;
+const MODEL = process.env.SCAN_MODEL || 'llama-3.3-70b-versatile';
+const MODELS_ENDPOINT = 'https://api.groq.com/openai/v1/chat/completions';
 
-if (!GITHUB_TOKEN) {
-  console.error('GITHUB_TOKEN is not set. This script must run inside a GitHub Actions job with a `models: read` permission.');
+if (!GROQ_API_KEY) {
+  console.error('GROQ_API_KEY is not set. Add it as a repo secret (see SCANNING_SETUP.md) — get a free key at https://console.groq.com/keys');
   process.exit(1);
 }
 
@@ -98,15 +103,13 @@ async function fetchPageText(url) {
   }
 }
 
-// ---------- call GitHub Models ----------
+// ---------- call Groq (OpenAI-compatible) ----------
 async function callModel(system, user) {
   const res = await fetch(MODELS_ENDPOINT, {
     method: 'POST',
     headers: {
-      Authorization: `Bearer ${GITHUB_TOKEN}`,
-      Accept: 'application/vnd.github+json',
+      Authorization: `Bearer ${GROQ_API_KEY}`,
       'Content-Type': 'application/json',
-      'X-GitHub-Api-Version': '2026-03-10',
     },
     body: JSON.stringify({
       model: MODEL,
@@ -117,18 +120,18 @@ async function callModel(system, user) {
       ],
     }),
   });
-  console.log(`  [debug] requested ${MODELS_ENDPOINT} (model=${MODEL}) -> resolved URL: ${res.url}, status: ${res.status}`);
+  console.log(`  [debug] requested ${MODELS_ENDPOINT} (model=${MODEL}) -> status: ${res.status}`);
   const rawText = await res.text();
   if (!res.ok) {
     const headerDump = [...res.headers.entries()].map(([k, v]) => `${k}: ${v}`).join('\n');
-    throw new Error(`GitHub Models request failed: HTTP ${res.status}\nHeaders:\n${headerDump}\nBody:\n${rawText.slice(0, 1000)}`);
+    throw new Error(`Groq request failed: HTTP ${res.status}\nHeaders:\n${headerDump}\nBody:\n${rawText.slice(0, 1000)}`);
   }
   let json;
   try {
     json = JSON.parse(rawText);
   } catch {
     const headerDump = [...res.headers.entries()].map(([k, v]) => `${k}: ${v}`).join('\n');
-    throw new Error(`GitHub Models returned a non-JSON response (HTTP ${res.status}):\nHeaders:\n${headerDump}\nBody:\n${rawText.slice(0, 1000)}`);
+    throw new Error(`Groq returned a non-JSON response (HTTP ${res.status}):\nHeaders:\n${headerDump}\nBody:\n${rawText.slice(0, 1000)}`);
   }
   return json.choices?.[0]?.message?.content ?? '';
 }
