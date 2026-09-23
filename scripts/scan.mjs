@@ -96,15 +96,19 @@ async function fetchPageText(url) {
       console.warn(`  ! ${url} -> extracted text too short (${text.length} chars), likely JS-rendered. Skipping.`);
       return null;
     }
-    return text.slice(0, 12000); // keep prompts small
+    return text.slice(0, 4000); // keep prompts small — free tier TPM budget is tight
   } catch (err) {
     console.warn(`  ! ${url} -> fetch failed: ${err.message}`);
     return null;
   }
 }
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 // ---------- call Groq (OpenAI-compatible) ----------
-async function callModel(system, user) {
+async function callModel(system, user, attempt = 1) {
   const res = await fetch(MODELS_ENDPOINT, {
     method: 'POST',
     headers: {
@@ -122,6 +126,14 @@ async function callModel(system, user) {
   });
   console.log(`  [debug] requested ${MODELS_ENDPOINT} (model=${MODEL}) -> status: ${res.status}`);
   const rawText = await res.text();
+
+  if (res.status === 429 && attempt <= 4) {
+    const retryAfter = Number(res.headers.get('retry-after')) || 5;
+    console.warn(`  ! rate limited, waiting ${retryAfter}s before retry (attempt ${attempt}/4)`);
+    await sleep((retryAfter + 1) * 1000);
+    return callModel(system, user, attempt + 1);
+  }
+
   if (!res.ok) {
     const headerDump = [...res.headers.entries()].map(([k, v]) => `${k}: ${v}`).join('\n');
     throw new Error(`Groq request failed: HTTP ${res.status}\nHeaders:\n${headerDump}\nBody:\n${rawText.slice(0, 1000)}`);
@@ -243,6 +255,7 @@ async function main() {
     for (const item of items) {
       newUpdates.push({ id: nextId++, tool: tool.name, category: tool.category, ...item });
     }
+    await sleep(1500);
   }
 
   console.log(`Found ${newUpdates.length} new update(s).`);
@@ -255,6 +268,7 @@ async function main() {
     console.log(` - ${s.name} (${s.url})`);
     const items = await scanTrendingSource(s, existingNames);
     newTrending.push(...items);
+    await sleep(1500);
   }
   console.log(`Found ${newTrending.length} new trending item(s).`);
 
