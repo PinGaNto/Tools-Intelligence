@@ -17,13 +17,19 @@
 //  3. Sends the fetched page text to a Groq chat completion, asking it to
 //     pull out genuinely NEW items (since it can see what's already known) and
 //     return them as strict JSON matching the site's existing schema.
-//  4. Merges anything new into the data arrays and rewrites data.js.
-//  5. The workflow (scan.yml) commits the result if anything changed.
+//  4. Merges anything new into the data arrays. TRENDING and ISSUES are then
+//     pruned to only what falls within the last 28 days — so those two pages
+//     always reflect the real last-4-weeks picture, not an ever-growing pile
+//     that just happens to get hidden by the site's own display filter.
+//     UPDATES is purely additive (a running history, never pruned).
+//  5. Rewrites data.js. The workflow (scan.yml) commits the result if changed.
 //
-// Known limitation: ISSUES (complaints/problems) are NOT sourced here. Reliable
-// complaint sources (G2, BBB, Reddit, etc.) are JS-heavy/bot-resistant and a plain
-// fetch() usually won't get real content back. Wiring that up properly needs a
-// real search/scraping API. Issues stays manually curated until then — see README.
+// Note on ISSUES specifically: it's sourced from the same general news outlets
+// as TRENDING (framed to look for problems/complaints instead of launches),
+// not from review-aggregator sites like G2/BBB — those are JS-heavy and
+// bot-resistant, so a plain fetch() won't reliably get real content from them.
+// That means genuine automation here, but narrower coverage than a dedicated
+// review-scraping setup would give you.
 
 import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -51,7 +57,7 @@ function loadData() {
   // data.js just declares `const TOOLS = [...]` etc with no exports, so eval it
   // in a sandbox and pull the bindings back out.
   vm.createContext(sandbox);
-  vm.runInContext(src + '\nthis.__out = { TOOLS, UPDATES, TRENDING, ISSUES, TRENDING_REFRESHED_AT, ISSUES_REFRESHED_AT };', sandbox);
+  vm.runInContext(src + '\nthis.__out = { TOOLS, UPDATES, TRENDING, ISSUES, TRENDING_REFRESHED_AT, ISSUES_REFRESHED_AT, INBOX_PROCESSED: (typeof INBOX_PROCESSED!=="undefined"?INBOX_PROCESSED:[]), INBOX_META: (typeof INBOX_META!=="undefined"?INBOX_META:{lastRun:null}) };', sandbox);
   return sandbox.__out;
 }
 
@@ -72,14 +78,22 @@ function serializeData(d) {
       lastRun: new Date().toISOString(),
       runType: process.env.SCAN_RUN_TYPE || 'Automatic (weekly)',
     }, null, 2)};`,
+    '',
+    `const INBOX_PROCESSED = ${JSON.stringify(d.INBOX_PROCESSED)}; // written by scripts/inbox.mjs — do not edit by hand`,
+    `const INBOX_META = ${JSON.stringify(d.INBOX_META, null, 2)}; // written by scripts/inbox.mjs`,
     ''
   ].join('\n');
 }
 
 // ---------- fetch + strip a source page down to plain text ----------
+// Uses a normal browser User-Agent rather than a self-identifying bot string —
+// some sources (notably OpenAI's Zendesk-hosted help center) return a fake 404
+// to requests that look like scripts, even though the page is real and live.
+// This won't get past sources with real Cloudflare JS-challenge protection
+// (openai.com/news is one) — that needs a headless browser, not a plain fetch.
 async function fetchPageText(url) {
   try {
-    const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (compatible; TeamToolIntelligenceBot/1.0)' } });
+    const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36' } });
     if (!res.ok) {
       console.warn(`  ! ${url} -> HTTP ${res.status}`);
       return null;
@@ -235,7 +249,62 @@ If nothing relevant, return [].`;
   return extractJson(content);
 }
 
-// ---------- main ----------
+// ---------- general issues/complaints extraction ----------
+// Reuses the same general news sources as trending, but asks the model to look
+// for the opposite signal: outages, bugs, privacy/security problems, pricing
+// complaints, criticism — anything that would belong on the Issues page.
+async function scanIssueSource(source, existingKeys) {
+  const pageText = await fetchPageText(source.url);
+  if (!pageText) return [];
+
+  const system = `You are a research analyst tracking reported problems, complaints, outages, criticism, or controversies involving AI/social/productivity tools for THE·TEAM. Extract only real, dated items visible in the page text — do not extract ordinary positive product-launch news, only actual problems/complaints/criticism. Never invent facts. Output ONLY a JSON array, no prose.`;
+  const user = `Source: ${source.name} (${source.url})
+
+Already known issue items (do NOT repeat these by tool+title):
+${existingKeys.join(', ') || '(none)'}
+
+Raw page text:
+"""
+${pageText}
+"""
+
+Return a JSON array of newsworthy PROBLEM/COMPLAINT items from the last ~30 days found in this text, each shaped like:
+{
+  "tool": "name of the tool/product this is about",
+  "category": "AI" | "Social Listening" | "Productivity" | "SEO / Search" | etc,
+  "date": "YYYY-MM-DD",
+  "title": "short headline describing the problem",
+  "summary": "1-2 sentence factual summary of the reported issue",
+  "source": "${source.url}",
+  "sourceType": "${source.name}",
+  "reliability": "Reliable"
+}
+If nothing relevant, return [].`;
+
+  const content = await callModel(system, user);
+  return extractJson(content);
+}
+
+// ---------- keep only items from the last N days, deduped, newest first, ranked ----------
+function pruneToRecentTop(items, keyFn, windowDays, capacity) {
+  const cutoff = new Date();
+  cutoff.setHours(0, 0, 0, 0);
+  cutoff.setDate(cutoff.getDate() - windowDays);
+  const cutoffStr = cutoff.toISOString().slice(0, 10);
+
+  const seen = new Set();
+  const deduped = [];
+  for (const item of items.sort((a, b) => b.date.localeCompare(a.date))) {
+    if (item.date < cutoffStr) continue; // drop anything older than the window — no stale data lingering
+    const key = keyFn(item);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    deduped.push(item);
+  }
+  const top = deduped.slice(0, capacity);
+  top.forEach((item, i) => { item.rank = i + 1; });
+  return top;
+}
 async function main() {
   const data = loadData();
   const sources = JSON.parse(readFileSync(SOURCES_PATH, 'utf8'));
@@ -268,24 +337,39 @@ async function main() {
     console.log(` - ${s.name} (${s.url})`);
     const items = await scanTrendingSource(s, existingNames);
     newTrending.push(...items);
-    await sleep(1500);
+    await sleep(2000);
   }
   console.log(`Found ${newTrending.length} new trending item(s).`);
 
-  // Merge, re-rank by date (newest first), keep top 15 to feed the site's own 4-week/top-10 filtering.
-  const merged = [...newTrending.map(t => ({ ...t })), ...data.TRENDING.map(t => ({ name: t.name, category: t.category, date: t.date, summary: t.summary, source: t.source, sourceType: t.sourceType, reliability: t.reliability }))];
-  const deduped = [];
-  const seen = new Set();
-  for (const t of merged.sort((a, b) => b.date.localeCompare(a.date))) {
-    if (seen.has(t.name)) continue;
-    seen.add(t.name);
-    deduped.push(t);
-  }
-  deduped.slice(0, 15).forEach((t, i) => { t.rank = i + 1; });
-  data.TRENDING = deduped.slice(0, 15);
+  const mergedTrending = [
+    ...newTrending,
+    ...data.TRENDING.map(t => ({ name: t.name, category: t.category, date: t.date, summary: t.summary, source: t.source, sourceType: t.sourceType, reliability: t.reliability })),
+  ];
+  data.TRENDING = pruneToRecentTop(mergedTrending, t => t.name, 28, 15);
   data.TRENDING_REFRESHED_AT = new Date().toISOString().slice(0, 10);
+  console.log(`Trending now has ${data.TRENDING.length} item(s) within the last 4 weeks.`);
 
-  // ISSUES intentionally untouched — see file header comment and README.
+  console.log('Scanning general sources for issues/complaints...');
+  const existingIssueKeys = data.ISSUES.map(i => `${i.tool}|${i.title}`);
+  const newIssues = [];
+  for (const s of sources.trendingSources) {
+    console.log(` - ${s.name} (${s.url})`);
+    const items = await scanIssueSource(s, existingIssueKeys);
+    for (const item of items) {
+      const monitored = data.TOOLS.some(t => t.name.toLowerCase() === String(item.tool).toLowerCase());
+      newIssues.push({ ...item, monitored });
+    }
+    await sleep(2000);
+  }
+  console.log(`Found ${newIssues.length} new issue item(s).`);
+
+  const mergedIssues = [
+    ...newIssues,
+    ...data.ISSUES.map(i => ({ tool: i.tool, monitored: i.monitored, category: i.category, date: i.date, title: i.title, summary: i.summary, source: i.source, sourceType: i.sourceType, reliability: i.reliability, reliabilityNote: i.reliabilityNote })),
+  ];
+  data.ISSUES = pruneToRecentTop(mergedIssues, i => `${i.tool}|${i.title}`, 28, 15);
+  data.ISSUES_REFRESHED_AT = new Date().toISOString().slice(0, 10);
+  console.log(`Issues now has ${data.ISSUES.length} item(s) within the last 4 weeks.`);
 
   writeFileSync(DATA_PATH, serializeData(data));
   console.log('data.js rewritten.');
