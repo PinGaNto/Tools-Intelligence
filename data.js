@@ -375,6 +375,30 @@ const UPDATES = [
     "source": "https://www.semrush.com/news/",
     "sourceType": "Official source",
     "reliability": "Reliable"
+  },
+  {
+    "id": 16,
+    "tool": "Instacart",
+    "category": "E-commerce",
+    "date": "2026-09-22",
+    "title": "Instacart announces upcoming integration with Muse",
+    "summary": "Instacart posted that it will soon be available on Muse, letting users connect Instacart, say a phrase like “Taco Tuesday,” and automatically generate a grocery cart for checkout and delivery.",
+    "impact": "The Muse integration creates a new voice‑assistant channel for Instacart, expanding its reach and giving marketers a fresh point of engagement for grocery promotions.",
+    "overlap": [
+      "E-commerce",
+      "Voice Assistant",
+      "Integration"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://x.com/Instacart/status/2102516620602363979",
+    "sourceType": "Team inbox submission",
+    "reliability": "Flagged",
+    "reliabilityNote": "Submitted via the tools inbox by Fitz (team). Verify against the source link before treating as confirmed.",
+    "submitted": {
+      "isTeam": true,
+      "firstName": "Fitz"
+    }
   }
 ];
 
@@ -591,7 +615,7 @@ const SCAN_META = {
   "runType": "Manual"
 }; // written by scripts/scan.mjs — untouched here
 
-const INBOX_PROCESSED = ["9/23/2026 18:01:25"]; // written by scripts/inbox.mjs — do not edit by hand
+const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
-  "lastRun": "2026-09-23T22:03:40.374Z"
+  "lastRun": "2026-09-23T22:12:38.762Z"
 };
