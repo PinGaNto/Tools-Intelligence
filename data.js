@@ -51,3 +51,8 @@ const ISSUES = [
 {rank:3,tool:'Semrush',monitored:true,category:'SEO / Search',date:'2026-09-10',title:'Recurring complaints over Semrush auto-renewal billing',summary:"A large, ongoing volume of user complaints tracked on the Better Business Bureau's public complaint profile centers on unexpected auto-renewal charges and difficulty obtaining refunds or cancellations.",source:'https://www.bbb.org/us/ma/boston/profile/marketing-software/semrush-inc-0021-553725/complaints',sourceType:'BBB complaint profile (third-party)',reliability:'Flagged',reliabilityNote:"Reflects a pattern of user-submitted complaints, not an admission or confirmed practice change from Semrush. Verify current billing/cancellation terms directly on semrush.com before treating this as an active practice."},
 {rank:4,tool:'Meltwater',monitored:true,category:'Social Listening',date:'2026-09-05',title:'Users cite pricing rigidity and data-consistency gaps',summary:"Aggregated G2 reviews describe rising, inflexible pricing tiers, inconsistent numbers between Meltwater's own reporting modules, occasional slowness on large data pulls, and coverage gaps including lost TikTok access.",source:'https://www.g2.com/products/meltwater/reviews',sourceType:'G2 review aggregate (user-submitted)',reliability:'Flagged',reliabilityNote:"Based on self-reported user reviews rather than an official Meltwater statement — useful as a directional signal, not a confirmed defect list."}
 ];
+
+const SCAN_META = {
+  lastRun: null,
+  runType: null
+}; // written by scripts/scan.mjs after each GitHub Actions run

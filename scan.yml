@@ -1,0 +1,39 @@
+name: Tool intelligence scan
+
+on:
+  schedule:
+    # Every Sunday at 00:00 UTC, matching the site's "next automatic scan" copy.
+    - cron: '0 0 * * 0'
+  workflow_dispatch: {}   # <-- this is the "manual run" button, on the Actions tab
+
+permissions:
+  contents: write   # to commit updated data.js
+  models: read       # to call GitHub Models with GITHUB_TOKEN, no extra secret needed
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run sourcing scan
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SCAN_RUN_TYPE: ${{ github.event_name == 'workflow_dispatch' && 'Manual' || 'Automatic (weekly)' }}
+        run: node scripts/scan.mjs
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "tool-intelligence-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git diff --quiet -- data.js; then
+            echo "No new items found — nothing to commit."
+          else
+            git add data.js
+            git commit -m "Automated scan: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi
