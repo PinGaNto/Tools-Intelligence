@@ -117,15 +117,18 @@ async function callModel(system, user) {
       ],
     }),
   });
+  console.log(`  [debug] requested ${MODELS_ENDPOINT} (model=${MODEL}) -> resolved URL: ${res.url}, status: ${res.status}`);
   const rawText = await res.text();
   if (!res.ok) {
-    throw new Error(`GitHub Models request failed: HTTP ${res.status}\n${rawText.slice(0, 1000)}`);
+    const headerDump = [...res.headers.entries()].map(([k, v]) => `${k}: ${v}`).join('\n');
+    throw new Error(`GitHub Models request failed: HTTP ${res.status}\nHeaders:\n${headerDump}\nBody:\n${rawText.slice(0, 1000)}`);
   }
   let json;
   try {
     json = JSON.parse(rawText);
   } catch {
-    throw new Error(`GitHub Models returned a non-JSON response (HTTP ${res.status}):\n${rawText.slice(0, 1000)}`);
+    const headerDump = [...res.headers.entries()].map(([k, v]) => `${k}: ${v}`).join('\n');
+    throw new Error(`GitHub Models returned a non-JSON response (HTTP ${res.status}):\nHeaders:\n${headerDump}\nBody:\n${rawText.slice(0, 1000)}`);
   }
   return json.choices?.[0]?.message?.content ?? '';
 }
