@@ -255,7 +255,10 @@ async function main() {
   console.log(`Found ${dataRows.length} total submission(s), ${processedSet.size} already processed.`);
 
   // Expected column order from the Google Form (see INBOX_SETUP.md):
-  // 0 Timestamp | 1 Your name | 2 Tool | 3 Source link | 4 Notes (optional)
+  // 0 Timestamp | 1 Who are you? | 2 What update/News would you like to submit?
+  // Column 2 is one free-text field — people paste a link, sometimes with extra
+  // context around it — so we pull the first URL out of it with a regex rather
+  // than expecting a dedicated "source link" column.
   let nextId = Math.max(0, ...data.UPDATES.map(u => u.id)) + 1;
   let accepted = 0, rejected = 0, skipped = 0;
 
@@ -264,9 +267,11 @@ async function main() {
     if (!timestamp || processedSet.has(timestamp)) { skipped++; continue; }
 
     const name = (row[1] || '').trim();
-    const tool = (row[2] || '').trim();
-    const sourceLink = (row[3] || '').trim();
-    const notes = (row[4] || '').trim();
+    const rawSubmission = (row[2] || '').trim();
+    const urlMatch = rawSubmission.match(/https?:\/\/[^\s]+/i);
+    const sourceLink = urlMatch ? urlMatch[0].replace(/[)\]"'.,]+$/, '') : ''; // trim trailing punctuation a sentence might leave attached
+    const notes = rawSubmission;
+    const tool = ''; // no dedicated tool field on this form — the model infers it from the link/notes
 
     processedSet.add(timestamp); // mark handled regardless of outcome, so we never retry it
 
