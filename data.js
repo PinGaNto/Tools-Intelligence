@@ -615,7 +615,9 @@ const SCAN_META = {
   "runType": "Manual"
 }; // written by scripts/scan.mjs — untouched here
 
-const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50"]; // written by scripts/inbox.mjs — do not edit by hand
+const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
-  "lastRun": "2026-09-24T11:34:30.807Z"
+  "lastRun": "2026-09-24T17:01:20.312Z"
 };
+
+const NOTIFICATIONS = []; // written by scripts/scan.mjs and scripts/inbox.mjs — do not edit by hand
