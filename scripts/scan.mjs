@@ -57,7 +57,7 @@ function loadData() {
   // data.js just declares `const TOOLS = [...]` etc with no exports, so eval it
   // in a sandbox and pull the bindings back out.
   vm.createContext(sandbox);
-  vm.runInContext(src + '\nthis.__out = { TOOLS, UPDATES, TRENDING, ISSUES, TRENDING_REFRESHED_AT, ISSUES_REFRESHED_AT, INBOX_PROCESSED: (typeof INBOX_PROCESSED!=="undefined"?INBOX_PROCESSED:[]), INBOX_META: (typeof INBOX_META!=="undefined"?INBOX_META:{lastRun:null}) };', sandbox);
+  vm.runInContext(src + '\nthis.__out = { TOOLS, UPDATES, TRENDING, ISSUES, TRENDING_REFRESHED_AT, ISSUES_REFRESHED_AT, INBOX_PROCESSED: (typeof INBOX_PROCESSED!=="undefined"?INBOX_PROCESSED:[]), INBOX_META: (typeof INBOX_META!=="undefined"?INBOX_META:{lastRun:null}), NOTIFICATIONS: (typeof NOTIFICATIONS!=="undefined"?NOTIFICATIONS:[]) };', sandbox);
   return sandbox.__out;
 }
 
@@ -81,6 +81,8 @@ function serializeData(d) {
     '',
     `const INBOX_PROCESSED = ${JSON.stringify(d.INBOX_PROCESSED)}; // written by scripts/inbox.mjs — do not edit by hand`,
     `const INBOX_META = ${JSON.stringify(d.INBOX_META, null, 2)}; // written by scripts/inbox.mjs`,
+    '',
+    `const NOTIFICATIONS = ${JSON.stringify(d.NOTIFICATIONS, null, 2)}; // written by scripts/scan.mjs and scripts/inbox.mjs — do not edit by hand`,
     ''
   ].join('\n');
 }
@@ -305,6 +307,16 @@ function pruneToRecentTop(items, keyFn, windowDays, capacity) {
   top.forEach((item, i) => { item.rank = i + 1; });
   return top;
 }
+
+// ---------- notifications: last 14 days, most recent 50, newest first ----------
+function pruneNotifications(notifs) {
+  const cutoff = new Date();
+  cutoff.setDate(cutoff.getDate() - 14);
+  return notifs
+    .filter(n => new Date(n.date) >= cutoff)
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 50);
+}
 async function main() {
   const data = loadData();
   const sources = JSON.parse(readFileSync(SOURCES_PATH, 'utf8'));
@@ -329,6 +341,17 @@ async function main() {
 
   console.log(`Found ${newUpdates.length} new update(s).`);
   data.UPDATES.push(...newUpdates);
+  const runTime = new Date().toISOString();
+  const runType = process.env.SCAN_RUN_TYPE || 'Automatic (weekly)';
+  const newNotifications = newUpdates.map(u => ({
+    id: `upd-${u.id}`,
+    date: runTime,
+    type: 'update',
+    text: `${u.tool}: ${u.title}`,
+    target: { page: 'updates', id: u.id },
+    source: 'scan',
+    runType,
+  }));
 
   console.log('Scanning general sources for trending items...');
   const existingNames = data.TRENDING.map(t => t.name);
@@ -348,6 +371,16 @@ async function main() {
   data.TRENDING = pruneToRecentTop(mergedTrending, t => t.name, 28, 15);
   data.TRENDING_REFRESHED_AT = new Date().toISOString().slice(0, 10);
   console.log(`Trending now has ${data.TRENDING.length} item(s) within the last 4 weeks.`);
+  const keptTrendingNames = new Set(data.TRENDING.map(t => t.name));
+  newNotifications.push(...newTrending.filter(t => keptTrendingNames.has(t.name)).map(t => ({
+    id: `trend-${t.name}-${runTime}`,
+    date: runTime,
+    type: 'trending',
+    text: t.name,
+    target: { page: 'trending', name: t.name },
+    source: 'scan',
+    runType,
+  })));
 
   console.log('Scanning general sources for issues/complaints...');
   const existingIssueKeys = data.ISSUES.map(i => `${i.tool}|${i.title}`);
@@ -370,6 +403,19 @@ async function main() {
   data.ISSUES = pruneToRecentTop(mergedIssues, i => `${i.tool}|${i.title}`, 28, 15);
   data.ISSUES_REFRESHED_AT = new Date().toISOString().slice(0, 10);
   console.log(`Issues now has ${data.ISSUES.length} item(s) within the last 4 weeks.`);
+  const keptIssueKeys = new Set(data.ISSUES.map(i => `${i.tool}|${i.title}`));
+  newNotifications.push(...newIssues.filter(i => keptIssueKeys.has(`${i.tool}|${i.title}`)).map(i => ({
+    id: `issue-${i.tool}-${i.title}-${runTime}`,
+    date: runTime,
+    type: 'issue',
+    text: `${i.tool}: ${i.title}`,
+    target: { page: 'issues', key: `${i.tool}|${i.title}` },
+    source: 'scan',
+    runType,
+  })));
+
+  data.NOTIFICATIONS = pruneNotifications([...(data.NOTIFICATIONS || []), ...newNotifications]);
+  console.log(`Recorded ${newNotifications.length} new notification(s). ${data.NOTIFICATIONS.length} total within the last 2 weeks.`);
 
   writeFileSync(DATA_PATH, serializeData(data));
   console.log('data.js rewritten.');
