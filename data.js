@@ -615,7 +615,7 @@ const SCAN_META = {
   "runType": "Manual"
 }; // written by scripts/scan.mjs — untouched here
 
-const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44"]; // written by scripts/inbox.mjs — do not edit by hand
+const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
-  "lastRun": "2026-09-23T22:12:38.762Z"
+  "lastRun": "2026-09-24T04:31:42.786Z"
 };
