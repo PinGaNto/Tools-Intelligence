@@ -58,3 +58,23 @@
 .modal .submitted-badge{margin:8px 0 0;display:inline-block}
 .nav.submit-link{display:block;text-align:left;color:#fff;background:#2e6b45;text-decoration:none;margin-top:10px}
 .nav.submit-link:hover{background:#357145}
+.notif-wrap{position:fixed;top:18px;right:24px;z-index:30}
+.bell-btn{position:relative;border:1px solid #e3e5e8;background:#fff;border-radius:999px;width:42px;height:42px;font-size:18px;box-shadow:0 2px 8px #0000000f;display:flex;align-items:center;justify-content:center}
+.bell-btn:hover{border-color:#cfd2d6}
+.bell-badge{position:absolute;top:-4px;right:-4px;background:#c0392b;color:#fff;font-size:10px;font-weight:700;border-radius:999px;min-width:17px;height:17px;padding:0 4px;display:flex;align-items:center;justify-content:center;line-height:1}
+.notif-panel{position:absolute;top:50px;right:0;width:340px;max-height:420px;overflow:auto;background:#fff;border:1px solid #e3e5e8;border-radius:12px;box-shadow:0 14px 34px #00000018}
+.notif-panel-head{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:1px solid #eee;position:sticky;top:0;background:#fff}
+.notif-panel-head b{font-size:14px}
+.notif-panel-head span{font-size:11px;color:#8a8e95}
+.notif-list{display:flex;flex-direction:column}
+.notif-item{display:flex;gap:10px;align-items:flex-start;text-align:left;border:0;background:none;padding:12px 16px;border-bottom:1px solid #f2f3f4;width:100%;cursor:pointer}
+.notif-item:hover{background:#fafafa}
+.notif-item:last-child{border-bottom:0}
+.notif-icon{font-size:15px;flex:none;margin-top:1px}
+.notif-body{display:flex;flex-direction:column;gap:3px;min-width:0}
+.notif-text{font-size:12.5px;color:#222;line-height:1.4;word-break:break-word}
+.notif-meta{font-size:10px;color:#92969c}
+.notif-empty{padding:24px 16px;text-align:center;font-size:12px;color:#8a8e95}
+@keyframes flashHighlight{0%{box-shadow:0 0 0 3px #f0b42999}100%{box-shadow:0 0 0 3px #f0b42900}}
+.flash-highlight{animation:flashHighlight 2.2s ease-out}
+@media(max-width:650px){.notif-wrap{top:12px;right:12px}.notif-panel{width:calc(100vw - 24px);right:-8px}}
