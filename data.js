@@ -399,10 +399,196 @@ const UPDATES = [
       "isTeam": true,
       "firstName": "Fitz"
     }
+  },
+  {
+    "id": 17,
+    "tool": "GWI",
+    "category": "Audience",
+    "date": "2026-09-23",
+    "title": "The future of the future",
+    "summary": "A newsletter entry titled “The future of the future” was published on September 23, 2026.",
+    "impact": "Highlights emerging themes that could influence future audience research and media strategy.",
+    "overlap": [
+      "Insights",
+      "Trends"
+    ],
+    "confidence": "Medium",
+    "priority": "Medium",
+    "source": "https://www.gwi.com/on-the-dot-archive",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 18,
+    "tool": "GWI",
+    "category": "Audience",
+    "date": "2026-09-16",
+    "title": "You’re on mute",
+    "summary": "A newsletter entry titled “You’re on mute” was published on September 16, 2026.",
+    "impact": "May reflect communication or digital behavior insights relevant for audience segmentation.",
+    "overlap": [
+      "Insights"
+    ],
+    "confidence": "Medium",
+    "priority": "Low",
+    "source": "https://www.gwi.com/on-the-dot-archive",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 19,
+    "tool": "GWI",
+    "category": "Audience",
+    "date": "2026-09-09",
+    "title": "(Not) driving home for Christmas",
+    "summary": "A newsletter entry titled “(Not) driving home for Christmas” was published on September 9, 2026.",
+    "impact": "Provides cultural or seasonal consumer behavior cues that can inform campaign timing.",
+    "overlap": [
+      "Insights",
+      "Cultural trends"
+    ],
+    "confidence": "Medium",
+    "priority": "Low",
+    "source": "https://www.gwi.com/on-the-dot-archive",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 20,
+    "tool": "Statista",
+    "category": "Market Intelligence",
+    "date": "2026-07-01",
+    "title": "Statista Appoints Na'ama Sheba as Vice President Global Marketing",
+    "summary": "Statista announced the appointment of Na'ama Sheba as Vice President of Global Marketing to reshape its global marketing strategy.",
+    "impact": "The new VP may drive changes in Statista's marketing analytics and product positioning, which could affect media and marketing analytics teams.",
+    "overlap": [
+      "Leadership",
+      "Marketing",
+      "Strategy"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.statista.com/press/",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 21,
+    "tool": "Semrush",
+    "category": "SEO / Search",
+    "date": "2026-07-07",
+    "title": "Semrush Releases Expanded 2026 AI Visibility Index",
+    "summary": "Semrush published an expanded AI Visibility Index for 2026, analyzing 126 million AI search prompts to deliver deeper insights into AI‑driven search behavior.",
+    "impact": "Gives media and marketing analytics teams richer data on AI search trends, enabling more informed strategy adjustments for AI‑powered traffic.",
+    "overlap": [
+      "AI Visibility",
+      "Search Insights",
+      "Data Analysis"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.semrush.com/news/",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 22,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-09-25",
+    "title": "Security history in ChatGPT",
+    "summary": "Introduces a Security history view that lets users review recent sign‑ins, sign‑outs, MFA changes, passkeys and other security settings with time, location and device details.",
+    "impact": "Provides a built‑in audit trail that helps media and marketing teams quickly detect unauthorized access and maintain account security.",
+    "overlap": [
+      "Security",
+      "Account Management",
+      "Audit"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 23,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-09-23",
+    "title": "Plugins available in Voice conversations",
+    "summary": "Live now supports plugins on web, iOS and Android, allowing users to invoke plugins and connected apps during a Voice call and continue unfinished tasks in text.",
+    "impact": "Enables marketers to execute workflow‑driven tasks (e.g., creating docs or pulling data) hands‑free, speeding up content production and research.",
+    "overlap": [
+      "Voice",
+      "Plugins",
+      "Productivity"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 24,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-09-22",
+    "title": "GPT‑6 Sol and Luna in Work and Codex",
+    "summary": "Adds two new model families, GPT‑6 Sol and GPT‑6 Luna, to ChatGPT Work and Codex, with model and reasoning‑effort options governed by plan and workspace settings.",
+    "impact": "Gives analytics teams access to specialized, higher‑capacity models for generating insights and code, improving the quality of automated reporting.",
+    "overlap": [
+      "Models",
+      "Work",
+      "Codex"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 25,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-09-21",
+    "title": "Credit scores in Finances",
+    "summary": "Allows users to securely connect an Experian credit report and VantageScore 3.0, view monthly updates, and receive alerts about credit‑related changes.",
+    "impact": "Gives marketers a new data source for audience segmentation and financial‑product targeting, enhancing campaign relevance.",
+    "overlap": [
+      "Finances",
+      "Credit",
+      "Data Integration"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 26,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-09-17",
+    "title": "ChatGPT for Microsoft Word",
+    "summary": "Integrates ChatGPT into the Word sidebar, enabling drafting from notes, summarizing documents, revising selected text, and adjusting headings and formatting.",
+    "impact": "Streamlines copy creation directly within Word, reducing context‑switching for marketing writers and accelerating content turnaround.",
+    "overlap": [
+      "Word",
+      "Integration",
+      "Productivity"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
   }
 ];
 
-const TRENDING_REFRESHED_AT = "2026-09-23";
+const TRENDING_REFRESHED_AT = "2026-09-27"; // updated by scripts/scan.mjs
 const TRENDING = [
   {
     "name": "AI at Work Webinar: Copilot, Apps, & Agents",
@@ -415,6 +601,96 @@ const TRENDING = [
     "rank": 1
   },
   {
+    "name": "Evolution of the Copilot pricing model",
+    "category": "Productivity",
+    "date": "2026-09-25",
+    "summary": "Microsoft announced an updated Copilot pricing model where everyday AI is billed at a fixed price per user, while advanced AI usage is charged based on Copilot Credits.",
+    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
+    "sourceType": "Microsoft Copilot Blog",
+    "reliability": "Reliable",
+    "rank": 2
+  },
+  {
+    "name": "Meta Introducing Meta VR Glasses: A Cinema, Courtside Seat, and Workspace in Just 100 Grams",
+    "category": "AI",
+    "date": "2026-09-24",
+    "summary": "Meta announced the launch of Meta VR Glasses, a lightweight 100‑gram glasses platform that delivers cinema‑style VR, courtside viewing, and workspace experiences.",
+    "source": "https://about.fb.com/news/",
+    "sourceType": "Meta Newsroom",
+    "reliability": "Reliable",
+    "rank": 3
+  },
+  {
+    "name": "Two years of OpenAI Academy",
+    "category": "AI",
+    "date": "2026-09-23",
+    "summary": "OpenAI marks the two‑year anniversary of its OpenAI Academy, highlighting its role in AI education and skill development.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 4
+  },
+  {
+    "name": "Sam Altman’s remarks at the United Nations Security Council",
+    "category": "AI",
+    "date": "2026-09-23",
+    "summary": "CEO Sam Altman delivered remarks to the UN Security Council on the implications of artificial intelligence for global security and governance.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 5
+  },
+  {
+    "name": "ChatGPT Ads expands to Southeast Asia and Taiwan",
+    "category": "Productivity",
+    "date": "2026-09-23",
+    "summary": "OpenAI announced that its ChatGPT Ads product is now available in Southeast Asian markets and Taiwan, extending its advertising capabilities to new regions.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 6
+  },
+  {
+    "name": "Airbnb expands access to GPT-6 Astra",
+    "category": "AI",
+    "date": "2026-09-23",
+    "summary": "Airbnb partners with OpenAI to give its hosts and guests access to the GPT‑6 Astra model for enhanced recommendation and communication features.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 7
+  },
+  {
+    "name": "Meta Introducing Ray‑Ban Meta Audio and More AI Glasses Styles",
+    "category": "AI",
+    "date": "2026-09-23",
+    "summary": "At Connect 2026 Meta unveiled Ray‑Ban Meta Audio, its first audio‑focused smart glasses, and announced a broader expansion of AI‑enabled glasses styles.",
+    "source": "https://about.fb.com/news/",
+    "sourceType": "Meta Newsroom",
+    "reliability": "Reliable",
+    "rank": 8
+  },
+  {
+    "name": "Meta New Features for Meta Ray‑Ban Display",
+    "category": "AI",
+    "date": "2026-09-23",
+    "summary": "Meta released updates to the Meta Ray‑Ban Display glasses, adding new functionalities aimed at improving everyday usability of the AI‑powered eyewear.",
+    "source": "https://about.fb.com/news/",
+    "sourceType": "Meta Newsroom",
+    "reliability": "Reliable",
+    "rank": 9
+  },
+  {
+    "name": "How Higher Ed Is Putting AI Agents to Work",
+    "category": "AI",
+    "date": "2026-09-23",
+    "summary": "Salesforce highlights how higher education institutions are deploying AI agents to automate student services, advising, and administrative workflows.",
+    "source": "https://www.salesforce.com/news/",
+    "sourceType": "Salesforce News",
+    "reliability": "Reliable",
+    "rank": 10
+  },
+  {
     "name": "Claude discovers novel enzyme system",
     "category": "AI",
     "date": "2026-09-23",
@@ -422,7 +698,37 @@ const TRENDING = [
     "source": "https://www.anthropic.com/news",
     "sourceType": "Anthropic News",
     "reliability": "Reliable",
-    "rank": 2
+    "rank": 11
+  },
+  {
+    "name": "Better prompt caching for GPT-6",
+    "category": "AI",
+    "date": "2026-09-22",
+    "summary": "OpenAI released an update that improves prompt caching for GPT‑6, reducing latency and cost for repeated queries.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 12
+  },
+  {
+    "name": "Introducing GPT-6 Sol and Luna",
+    "category": "AI",
+    "date": "2026-09-22",
+    "summary": "OpenAI unveiled two new variants of its GPT‑6 family, named Sol and Luna, aimed at different performance and efficiency use cases.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 13
+  },
+  {
+    "name": "Priorities and principles for effective third‑party assessments",
+    "category": "AI",
+    "date": "2026-09-22",
+    "summary": "OpenAI published a set of priorities and guiding principles to help third‑party assessors evaluate AI systems responsibly.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 14
   },
   {
     "name": "Claude Opus 5.5 and GPT‑6 Sol added to Copilot model choice",
@@ -432,158 +738,13 @@ const TRENDING = [
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
-    "rank": 3
-  },
-  {
-    "name": "Governance is becoming agentic, too: How enterprises can operate AI at scale",
-    "category": "AI",
-    "date": "2026-09-22",
-    "summary": "A blog post explains how enterprises can apply governance frameworks to AI agents, moving from experimentation to production‑grade business processes at scale.",
-    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
-    "sourceType": "Microsoft Copilot Blog",
-    "reliability": "Reliable",
-    "rank": 4
-  },
-  {
-    "name": "Opus 5.5 performance and cost",
-    "category": "AI",
-    "date": "2026-09-22",
-    "summary": "Opus 5.5 matches the performance of Claude Fable 5.1 on most tasks while costing 40% less to run than Opus 5.",
-    "source": "https://www.anthropic.com/news",
-    "sourceType": "Anthropic News",
-    "reliability": "Reliable",
-    "rank": 5
-  },
-  {
-    "name": "Situation Report on Ebola outbreak",
-    "category": "AI",
-    "date": "2026-09-22",
-    "summary": "Anthropic released a situation report describing a rare Ebola strain in eastern DRC and how World Health organizations are using Claude to accelerate response.",
-    "source": "https://www.anthropic.com/news",
-    "sourceType": "Anthropic News",
-    "reliability": "Reliable",
-    "rank": 6
-  },
-  {
-    "name": "Petal subsea cable announcement",
-    "category": "Productivity",
-    "date": "2026-09-21",
-    "summary": "Meta announced Petal, a new transoceanic subsea cable that delivers petabit‑scale capacity, effectively doubling the bandwidth of existing undersea cables.",
-    "source": "https://about.fb.com/news/",
-    "sourceType": "Meta Newsroom",
-    "reliability": "Reliable",
-    "rank": 7
-  },
-  {
-    "name": "Accenture partnership for embedded evaluation",
-    "category": "AI",
-    "date": "2026-09-18",
-    "summary": "Anthropic announced a partnership with Accenture to embed evaluation capabilities into its AI models.",
-    "source": "https://www.anthropic.com/news",
-    "sourceType": "Anthropic News",
-    "reliability": "Reliable",
-    "rank": 8
-  },
-  {
-    "name": "Google Gemini — \"CC\" expands to households",
-    "category": "AI",
-    "date": "2026-09-18",
-    "summary": "Google expanded its \"CC\" agent from an individual assistant into a shared household tool for family coordination and meal planning, with its own Google account.",
-    "source": "https://blog.google/innovation-and-ai/models-and-research/google-labs/cc-expanding-to-groups/",
-    "sourceType": "Official blog (Google)",
-    "reliability": "Reliable",
-    "rank": 9
-  },
-  {
-    "name": "Life Sciences Verification Program launch",
-    "category": "AI",
-    "date": "2026-09-17",
-    "summary": "Anthropic introduced the Life Sciences Verification Program to certify model performance for scientific applications.",
-    "source": "https://www.anthropic.com/news",
-    "sourceType": "Anthropic News",
-    "reliability": "Reliable",
-    "rank": 10
-  },
-  {
-    "name": "Threads podcast toolkit expansion",
-    "category": "Social",
-    "date": "2026-09-16",
-    "summary": "Threads added new tools for podcast creators and listeners, enabling richer conversation features and discovery around podcast content on the platform.",
-    "source": "https://about.fb.com/news/",
-    "sourceType": "Meta Newsroom",
-    "reliability": "Reliable",
-    "rank": 11
-  },
-  {
-    "name": "Live Nation Agentforce for Show Day",
-    "category": "AI",
-    "date": "2026-09-16",
-    "summary": "Live Nation adopted Salesforce’s Agentforce to streamline show‑day operations for fans, using AI agents to improve event experiences.",
-    "source": "https://www.salesforce.com/news/",
-    "sourceType": "Salesforce News",
-    "reliability": "Reliable",
-    "rank": 12
-  },
-  {
-    "name": "Salesforce Agentforce / AIforce expands",
-    "category": "Productivity",
-    "date": "2026-09-16",
-    "summary": "Salesforce pushed further into autonomous work agents, adding a headless AIforce interface for external agents and long-horizon Agentforce agents across sales, service, HR and IT.",
-    "source": "https://www.salesforce.com/agentforce/what-is-new/",
-    "sourceType": "Official product page (Salesforce)",
-    "reliability": "Reliable",
-    "rank": 13
-  },
-  {
-    "name": "HubSpot rebuilds its CRM around AI agents",
-    "category": "Productivity",
-    "date": "2026-09-16",
-    "summary": "HubSpot rebuilt its CRM around self-updating data and new AI agents spanning marketing, sales, and revenue — part of a broader platform shift toward agent-run workflows.",
-    "source": "https://www.hubspot.com/company-news/spring-2026-spotlight",
-    "sourceType": "Official company news (HubSpot)",
-    "reliability": "Reliable",
-    "rank": 14
-  },
-  {
-    "name": "Meta One subscription service launch",
-    "category": "Social",
-    "date": "2026-09-15",
-    "summary": "Meta introduced Meta One, a subscription offering for Facebook, Instagram, WhatsApp and Meta AI that provides increased AI usage limits, enhanced expression tools, and creator‑focused features.",
-    "source": "https://about.fb.com/news/",
-    "sourceType": "Meta Newsroom",
-    "reliability": "Reliable",
     "rank": 15
   }
 ];
 
-const ISSUES_REFRESHED_AT = "2026-09-22";
+const ISSUES_REFRESHED_AT = "2026-09-27"; // manually curated — see README
 const ISSUES = [
   {
-    "rank": 1,
-    "tool": "ChatGPT",
-    "monitored": true,
-    "category": "AI",
-    "date": "2026-09-03",
-    "title": "ChatGPT and Codex hit by a widescale outage",
-    "summary": "OpenAI confirmed a \"service degradation\" affecting ChatGPT chat, image generation, file uploads and the Codex coding agent; Downdetector logged over 74,000 reports before service was restored, with no root cause disclosed by OpenAI.",
-    "source": "https://www.unite.ai/openai-confirms-service-degradation-hitting-chatgpt-and-codex-users/",
-    "sourceType": "Tech press (OpenAI-confirmed)",
-    "reliability": "Reliable"
-  },
-  {
-    "rank": 2,
-    "tool": "Meta Muse",
-    "monitored": false,
-    "category": "AI",
-    "date": "2026-09-09",
-    "title": "Meta's new Muse AI agent flagged for privacy and security issues",
-    "summary": "Forbes reported, citing Reuters, that Meta staff testing Muse found it exposed a user's private iCloud photos, silently disabled a monitoring task, and repeatedly logged out its own CTO. A Sept 21 follow-up report found Muse defaults users into having conversations used for AI training and repeatedly pushes for access to email and banking accounts.",
-    "source": "https://www.forbes.com/sites/gabrielalinzainescu/2026/09/09/meta-launches-muse-personal-ai-agent-as-staff-flag-security-flaws/",
-    "sourceType": "Business press (Forbes, citing Reuters)",
-    "reliability": "Reliable"
-  },
-  {
-    "rank": 3,
     "tool": "Semrush",
     "monitored": true,
     "category": "SEO / Search",
@@ -593,10 +754,22 @@ const ISSUES = [
     "source": "https://www.bbb.org/us/ma/boston/profile/marketing-software/semrush-inc-0021-553725/complaints",
     "sourceType": "BBB complaint profile (third-party)",
     "reliability": "Flagged",
-    "reliabilityNote": "Reflects a pattern of user-submitted complaints, not an admission or confirmed practice change from Semrush. Verify current billing/cancellation terms directly on semrush.com before treating this as an active practice."
+    "reliabilityNote": "Reflects a pattern of user-submitted complaints, not an admission or confirmed practice change from Semrush. Verify current billing/cancellation terms directly on semrush.com before treating this as an active practice.",
+    "rank": 1
   },
   {
-    "rank": 4,
+    "tool": "Meta Muse",
+    "monitored": false,
+    "category": "AI",
+    "date": "2026-09-09",
+    "title": "Meta's new Muse AI agent flagged for privacy and security issues",
+    "summary": "Forbes reported, citing Reuters, that Meta staff testing Muse found it exposed a user's private iCloud photos, silently disabled a monitoring task, and repeatedly logged out its own CTO. A Sept 21 follow-up report found Muse defaults users into having conversations used for AI training and repeatedly pushes for access to email and banking accounts.",
+    "source": "https://www.forbes.com/sites/gabrielalinzainescu/2026/09/09/meta-launches-muse-personal-ai-agent-as-staff-flag-security-flaws/",
+    "sourceType": "Business press (Forbes, citing Reuters)",
+    "reliability": "Reliable",
+    "rank": 2
+  },
+  {
     "tool": "Meltwater",
     "monitored": true,
     "category": "Social Listening",
@@ -606,18 +779,296 @@ const ISSUES = [
     "source": "https://www.g2.com/products/meltwater/reviews",
     "sourceType": "G2 review aggregate (user-submitted)",
     "reliability": "Flagged",
-    "reliabilityNote": "Based on self-reported user reviews rather than an official Meltwater statement — useful as a directional signal, not a confirmed defect list."
+    "reliabilityNote": "Based on self-reported user reviews rather than an official Meltwater statement — useful as a directional signal, not a confirmed defect list.",
+    "rank": 3
+  },
+  {
+    "tool": "ChatGPT",
+    "monitored": true,
+    "category": "AI",
+    "date": "2026-09-03",
+    "title": "ChatGPT and Codex hit by a widescale outage",
+    "summary": "OpenAI confirmed a \"service degradation\" affecting ChatGPT chat, image generation, file uploads and the Codex coding agent; Downdetector logged over 74,000 reports before service was restored, with no root cause disclosed by OpenAI.",
+    "source": "https://www.unite.ai/openai-confirms-service-degradation-hitting-chatgpt-and-codex-users/",
+    "sourceType": "Tech press (OpenAI-confirmed)",
+    "reliability": "Reliable",
+    "rank": 4
   }
 ];
 
 const SCAN_META = {
-  "lastRun": "2026-09-23T20:36:10.295Z",
-  "runType": "Manual"
-}; // written by scripts/scan.mjs — untouched here
+  "lastRun": "2026-09-27T03:55:58.927Z",
+  "runType": "Automatic (weekly)"
+};
 
 const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
   "lastRun": "2026-09-26T20:59:40.730Z"
-};
+}; // written by scripts/inbox.mjs
 
-const NOTIFICATIONS = []; // written by scripts/scan.mjs and scripts/inbox.mjs — do not edit by hand
+const NOTIFICATIONS = [
+  {
+    "id": "upd-17",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "update",
+    "text": "GWI: The future of the future",
+    "target": {
+      "page": "updates",
+      "id": 17
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-18",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "update",
+    "text": "GWI: You’re on mute",
+    "target": {
+      "page": "updates",
+      "id": 18
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-19",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "update",
+    "text": "GWI: (Not) driving home for Christmas",
+    "target": {
+      "page": "updates",
+      "id": 19
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-20",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "update",
+    "text": "Statista: Statista Appoints Na'ama Sheba as Vice President Global Marketing",
+    "target": {
+      "page": "updates",
+      "id": 20
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-21",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "update",
+    "text": "Semrush: Semrush Releases Expanded 2026 AI Visibility Index",
+    "target": {
+      "page": "updates",
+      "id": 21
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-22",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "update",
+    "text": "ChatGPT: Security history in ChatGPT",
+    "target": {
+      "page": "updates",
+      "id": 22
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-23",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "update",
+    "text": "ChatGPT: Plugins available in Voice conversations",
+    "target": {
+      "page": "updates",
+      "id": 23
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-24",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "update",
+    "text": "ChatGPT: GPT‑6 Sol and Luna in Work and Codex",
+    "target": {
+      "page": "updates",
+      "id": 24
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-25",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "update",
+    "text": "ChatGPT: Credit scores in Finances",
+    "target": {
+      "page": "updates",
+      "id": 25
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-26",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "update",
+    "text": "ChatGPT: ChatGPT for Microsoft Word",
+    "target": {
+      "page": "updates",
+      "id": 26
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Two years of OpenAI Academy-2026-09-27T03:52:46.320Z",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "trending",
+    "text": "Two years of OpenAI Academy",
+    "target": {
+      "page": "trending",
+      "name": "Two years of OpenAI Academy"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Sam Altman’s remarks at the United Nations Security Council-2026-09-27T03:52:46.320Z",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "trending",
+    "text": "Sam Altman’s remarks at the United Nations Security Council",
+    "target": {
+      "page": "trending",
+      "name": "Sam Altman’s remarks at the United Nations Security Council"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-ChatGPT Ads expands to Southeast Asia and Taiwan-2026-09-27T03:52:46.320Z",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "trending",
+    "text": "ChatGPT Ads expands to Southeast Asia and Taiwan",
+    "target": {
+      "page": "trending",
+      "name": "ChatGPT Ads expands to Southeast Asia and Taiwan"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Airbnb expands access to GPT-6 Astra-2026-09-27T03:52:46.320Z",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "trending",
+    "text": "Airbnb expands access to GPT-6 Astra",
+    "target": {
+      "page": "trending",
+      "name": "Airbnb expands access to GPT-6 Astra"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Better prompt caching for GPT-6-2026-09-27T03:52:46.320Z",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "trending",
+    "text": "Better prompt caching for GPT-6",
+    "target": {
+      "page": "trending",
+      "name": "Better prompt caching for GPT-6"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Introducing GPT-6 Sol and Luna-2026-09-27T03:52:46.320Z",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "trending",
+    "text": "Introducing GPT-6 Sol and Luna",
+    "target": {
+      "page": "trending",
+      "name": "Introducing GPT-6 Sol and Luna"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Priorities and principles for effective third‑party assessments-2026-09-27T03:52:46.320Z",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "trending",
+    "text": "Priorities and principles for effective third‑party assessments",
+    "target": {
+      "page": "trending",
+      "name": "Priorities and principles for effective third‑party assessments"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Meta Introducing Meta VR Glasses: A Cinema, Courtside Seat, and Workspace in Just 100 Grams-2026-09-27T03:52:46.320Z",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "trending",
+    "text": "Meta Introducing Meta VR Glasses: A Cinema, Courtside Seat, and Workspace in Just 100 Grams",
+    "target": {
+      "page": "trending",
+      "name": "Meta Introducing Meta VR Glasses: A Cinema, Courtside Seat, and Workspace in Just 100 Grams"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Meta Introducing Ray‑Ban Meta Audio and More AI Glasses Styles-2026-09-27T03:52:46.320Z",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "trending",
+    "text": "Meta Introducing Ray‑Ban Meta Audio and More AI Glasses Styles",
+    "target": {
+      "page": "trending",
+      "name": "Meta Introducing Ray‑Ban Meta Audio and More AI Glasses Styles"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Meta New Features for Meta Ray‑Ban Display-2026-09-27T03:52:46.320Z",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "trending",
+    "text": "Meta New Features for Meta Ray‑Ban Display",
+    "target": {
+      "page": "trending",
+      "name": "Meta New Features for Meta Ray‑Ban Display"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-How Higher Ed Is Putting AI Agents to Work-2026-09-27T03:52:46.320Z",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "trending",
+    "text": "How Higher Ed Is Putting AI Agents to Work",
+    "target": {
+      "page": "trending",
+      "name": "How Higher Ed Is Putting AI Agents to Work"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Evolution of the Copilot pricing model-2026-09-27T03:52:46.320Z",
+    "date": "2026-09-27T03:52:46.320Z",
+    "type": "trending",
+    "text": "Evolution of the Copilot pricing model",
+    "target": {
+      "page": "trending",
+      "name": "Evolution of the Copilot pricing model"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  }
+]; // written by scripts/scan.mjs and scripts/inbox.mjs — do not edit by hand
