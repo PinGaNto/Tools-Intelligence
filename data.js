@@ -803,7 +803,7 @@ const SCAN_META = {
 
 const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
-  "lastRun": "2026-10-03T11:31:46.013Z"
+  "lastRun": "2026-10-03T16:07:44.779Z"
 };
 
 const NOTIFICATIONS = [
