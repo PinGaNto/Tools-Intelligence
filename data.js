@@ -585,165 +585,294 @@ const UPDATES = [
     "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
     "sourceType": "Official source",
     "reliability": "Reliable"
+  },
+  {
+    "id": 27,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-10-02",
+    "title": "Finances expands to Free and Go users",
+    "summary": "Finances in ChatGPT is being rolled out to Free and Go plan users in the U.S. on web, iOS, and Android, letting them securely connect financial accounts to get budgeting, spending, and investment insights.",
+    "impact": "Broadens access to financial data insights, giving marketers more user‑level financial signals to analyze.",
+    "overlap": [
+      "Finances",
+      "Account integration",
+      "Personalization"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 28,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-10-01",
+    "title": "New shopping experiences with virtual try‑on and document scanning",
+    "summary": "ChatGPT adds a “Try on” button for clothing and accessories that generates virtual try‑ons from user selfies, saves reference photos, and introduces a camera scan feature that captures multiple pages into a single PDF for easy upload, currently on iOS.",
+    "impact": "Creates new e‑commerce interaction data and visual content that marketers can use to gauge consumer preferences and purchase intent.",
+    "overlap": [
+      "Shopping",
+      "Virtual try‑on",
+      "Document scanning"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 29,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-09-29",
+    "title": "Introduction of Pro 500 plan with Astra Ultrafast and new developer tools",
+    "summary": "OpenAI launches a $500/month Pro 500 plan that includes Astra Ultrafast model access in ChatGPT Work and Codex, adds Codex Cloud for persistent coding environments, and introduces collaborative Pages and editable Sites, while rolling out GPT‑6.1 Sol across plans.",
+    "impact": "Provides higher‑performance AI and collaborative development capabilities that can boost content creation volume and speed, affecting media production and analytics workflows.",
+    "overlap": [
+      "Pro plan",
+      "Astra Ultrafast",
+      "Codex Cloud"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
   }
 ];
 
-const TRENDING_REFRESHED_AT = "2026-09-27";
+const TRENDING_REFRESHED_AT = "2026-10-04"; // updated by scripts/scan.mjs
 const TRENDING = [
   {
     "name": "AI at Work Webinar: Copilot, Apps, & Agents",
     "category": "AI",
     "date": "2026-10-06",
-    "summary": "Microsoft is hosting an online webinar on October 6, 2026 to discuss Copilot, applications, and agents, helping attendees stay current on AI‑powered business capabilities.",
+    "summary": "Online webinar scheduled for Tuesday, Oct 6 2026 at 09:00 AM PDT to discuss the latest developments in Microsoft Copilot, its applications, and AI agents.",
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
     "rank": 1
   },
   {
-    "name": "Evolution of the Copilot pricing model",
-    "category": "Productivity",
-    "date": "2026-09-25",
-    "summary": "Microsoft announced an updated Copilot pricing model where everyday AI is billed at a fixed price per user, while advanced AI usage is charged based on Copilot Credits.",
-    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
-    "sourceType": "Microsoft Copilot Blog",
+    "name": "A practical guide to building with GPT-6",
+    "category": "AI",
+    "date": "2026-10-02",
+    "summary": "OpenAI released a practical guide that explains how developers can build applications using the GPT-6 model.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
     "reliability": "Reliable",
     "rank": 2
   },
   {
-    "name": "Meta Introducing Meta VR Glasses: A Cinema, Courtside Seat, and Workspace in Just 100 Grams",
-    "category": "AI",
-    "date": "2026-09-24",
-    "summary": "Meta announced the launch of Meta VR Glasses, a lightweight 100‑gram glasses platform that delivers cinema‑style VR, courtside viewing, and workspace experiences.",
-    "source": "https://about.fb.com/news/",
-    "sourceType": "Meta Newsroom",
+    "name": "Anthropic invests $100M in AI talent",
+    "category": "Productivity",
+    "date": "2026-10-02",
+    "summary": "Anthropic announced a $100 million investment to train 10,000 engineers and address the enterprise AI talent gap.",
+    "source": "https://www.anthropic.com/news",
+    "sourceType": "Anthropic News",
     "reliability": "Reliable",
     "rank": 3
   },
   {
-    "name": "Two years of OpenAI Academy",
+    "name": "The eternal complement Intelligence Age",
     "category": "AI",
-    "date": "2026-09-23",
-    "summary": "OpenAI marks the two‑year anniversary of its OpenAI Academy, highlighting its role in AI education and skill development.",
+    "date": "2026-10-01",
+    "summary": "OpenAI published an article titled “The eternal complement” that discusses themes related to the current Intelligence Age.",
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
     "rank": 4
   },
   {
-    "name": "Sam Altman’s remarks at the United Nations Security Council",
+    "name": "How Albertsons Companies is reimagining retail from the inside out",
     "category": "AI",
-    "date": "2026-09-23",
-    "summary": "CEO Sam Altman delivered remarks to the UN Security Council on the implications of artificial intelligence for global security and governance.",
+    "date": "2026-10-01",
+    "summary": "OpenAI highlighted a case study showing how Albertsons Companies is using OpenAI technology to transform its retail operations.",
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
     "rank": 5
   },
   {
-    "name": "ChatGPT Ads expands to Southeast Asia and Taiwan",
-    "category": "Productivity",
-    "date": "2026-09-23",
-    "summary": "OpenAI announced that its ChatGPT Ads product is now available in Southeast Asian markets and Taiwan, extending its advertising capabilities to new regions.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
+    "name": "Getting to ROI: How Brands Turn Cost Centers into Revenue Engines with AI",
+    "category": "AI",
+    "date": "2026-10-01",
+    "summary": "Salesforce outlines how brands can leverage AI to transform traditional cost‑center functions into revenue‑generating engines, highlighting case studies and best practices.",
+    "source": "https://www.salesforce.com/news/",
+    "sourceType": "Salesforce News",
     "reliability": "Reliable",
     "rank": 6
   },
   {
-    "name": "Airbnb expands access to GPT-6 Astra",
-    "category": "AI",
-    "date": "2026-09-23",
-    "summary": "Airbnb partners with OpenAI to give its hosts and guests access to the GPT‑6 Astra model for enhanced recommendation and communication features.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
+    "name": "Barclays scales Claude",
+    "category": "Productivity",
+    "date": "2026-10-01",
+    "summary": "Barclays is expanding its use of Anthropic's Claude model to upgrade operations and improve client experience.",
+    "source": "https://www.anthropic.com/news",
+    "sourceType": "Anthropic News",
     "reliability": "Reliable",
     "rank": 7
   },
   {
-    "name": "Meta Introducing Ray‑Ban Meta Audio and More AI Glasses Styles",
+    "name": "Disrupting a coordinated model-distillation campaign",
     "category": "AI",
-    "date": "2026-09-23",
-    "summary": "At Connect 2026 Meta unveiled Ray‑Ban Meta Audio, its first audio‑focused smart glasses, and announced a broader expansion of AI‑enabled glasses styles.",
-    "source": "https://about.fb.com/news/",
-    "sourceType": "Meta Newsroom",
+    "date": "2026-09-30",
+    "summary": "OpenAI announced research on methods to disrupt coordinated model‑distillation campaigns targeting AI systems.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
     "reliability": "Reliable",
     "rank": 8
   },
   {
-    "name": "Meta New Features for Meta Ray‑Ban Display",
+    "name": "OpenAI's GPT‑6.1 Sol and Claude Sonnet 5.5 now available in Microsoft Copilot",
     "category": "AI",
-    "date": "2026-09-23",
-    "summary": "Meta released updates to the Meta Ray‑Ban Display glasses, adding new functionalities aimed at improving everyday usability of the AI‑powered eyewear.",
-    "source": "https://about.fb.com/news/",
-    "sourceType": "Meta Newsroom",
+    "date": "2026-09-30",
+    "summary": "Blog announcement that GPT‑6.1 Sol and Claude Sonnet 5.5 have been added as selectable models in Microsoft Copilot, expanding the AI model portfolio for users.",
+    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
+    "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
     "rank": 9
   },
   {
-    "name": "How Higher Ed Is Putting AI Agents to Work",
+    "name": "What’s New in Microsoft Copilot – September 2026",
     "category": "AI",
-    "date": "2026-09-23",
-    "summary": "Salesforce highlights how higher education institutions are deploying AI agents to automate student services, advising, and administrative workflows.",
-    "source": "https://www.salesforce.com/news/",
-    "sourceType": "Salesforce News",
+    "date": "2026-09-30",
+    "summary": "Monthly roundup post highlighting new features, updates, and enhancements to Microsoft Copilot released in September 2026.",
+    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
+    "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
     "rank": 10
   },
   {
-    "name": "Claude discovers novel enzyme system",
+    "name": "DevDay 2026 Recap",
     "category": "AI",
-    "date": "2026-09-23",
-    "summary": "Claude identified a new enzyme system featuring CRISPR-like repeats, highlighting its capability for scientific discovery.",
-    "source": "https://www.anthropic.com/news",
-    "sourceType": "Anthropic News",
+    "date": "2026-09-29",
+    "summary": "OpenAI posted a recap of its 2026 Developer Day, summarizing new product announcements and developer sessions.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
     "reliability": "Reliable",
     "rank": 11
   },
   {
-    "name": "Better prompt caching for GPT-6",
+    "name": "Introducing GPT-6.1 Sol",
     "category": "AI",
-    "date": "2026-09-22",
-    "summary": "OpenAI released an update that improves prompt caching for GPT‑6, reducing latency and cost for repeated queries.",
+    "date": "2026-09-29",
+    "summary": "OpenAI introduced the GPT‑6.1 Sol model, an updated iteration in the GPT‑6 series with enhanced capabilities.",
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
     "rank": 12
   },
   {
-    "name": "Introducing GPT-6 Sol and Luna",
+    "name": "Addendum: GPT‑6.1 Sol Safety",
     "category": "AI",
-    "date": "2026-09-22",
-    "summary": "OpenAI unveiled two new variants of its GPT‑6 family, named Sol and Luna, aimed at different performance and efficiency use cases.",
+    "date": "2026-09-29",
+    "summary": "OpenAI released a safety addendum outlining precautions, usage guidelines, and risk mitigations for GPT‑6.1 Sol.",
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
     "rank": 13
   },
   {
-    "name": "Priorities and principles for effective third‑party assessments",
+    "name": "Introducing dots",
     "category": "AI",
-    "date": "2026-09-22",
-    "summary": "OpenAI published a set of priorities and guiding principles to help third‑party assessors evaluate AI systems responsibly.",
+    "date": "2026-09-29",
+    "summary": "OpenAI announced a new product called Dots, aimed at extending developer capabilities within the OpenAI ecosystem.",
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
     "rank": 14
   },
   {
-    "name": "Claude Opus 5.5 and GPT‑6 Sol added to Copilot model choice",
+    "name": "Muse for Small Business",
     "category": "AI",
-    "date": "2026-09-22",
-    "summary": "Microsoft announced that the Claude Opus 5.5 and GPT‑6 Sol models are now selectable within Microsoft Copilot, expanding the platform’s available large‑language‑model options.",
-    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
-    "sourceType": "Microsoft Copilot Blog",
+    "date": "2026-09-29",
+    "summary": "Meta launched Muse for Small Business, a personal AI agent that operates in the background to help small businesses achieve their goals.",
+    "source": "https://about.fb.com/news/",
+    "sourceType": "Meta Newsroom",
     "reliability": "Reliable",
     "rank": 15
   }
 ];
 
-const ISSUES_REFRESHED_AT = "2026-09-27";
+const ISSUES_REFRESHED_AT = "2026-10-04"; // manually curated — see README
 const ISSUES = [
+  {
+    "tool": "OpenAI",
+    "category": "AI",
+    "date": "2026-10-04",
+    "title": "OpenAI safety employee resigns, citing broken culture",
+    "summary": "A safety team member at OpenAI quit, alleging that the company's culture is broken and raising concerns about internal safety practices.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "monitored": false,
+    "rank": 1
+  },
+  {
+    "tool": "Amazon Web Services",
+    "category": "AI",
+    "date": "2026-10-04",
+    "title": "Amazon faces backlash over data‑center NDAs, says it will stop using them",
+    "summary": "Amazon received criticism for requiring nondisclosure agreements on AI‑related data‑center work and announced it will no longer use such NDAs after the backlash.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "monitored": false,
+    "rank": 2
+  },
+  {
+    "tool": "OpenAI",
+    "category": "AI",
+    "date": "2026-10-02",
+    "title": "OpenAI cuts ties with three safety researchers",
+    "summary": "OpenAI ended relationships with three AI safety researchers, prompting criticism about its commitment to AI safety and transparency.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "monitored": false,
+    "rank": 3
+  },
+  {
+    "tool": "Grok (xAI)",
+    "category": "AI",
+    "date": "2026-10-02",
+    "title": "Grok chatbot allegedly urged Trump to capture Venezuela's president",
+    "summary": "Reports claim the AI chatbot Grok suggested that former President Donald Trump should capture the Venezuelan president, sparking political controversy and criticism of the model's outputs.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "monitored": false,
+    "rank": 4
+  },
+  {
+    "tool": "OpenAI models",
+    "category": "AI",
+    "date": "2026-09-30",
+    "title": "Disrupting a coordinated model-distillation campaign",
+    "summary": "OpenAI announced that it had identified and disrupted a coordinated effort to distill its models, indicating a security threat to its AI systems.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "monitored": false,
+    "rank": 5
+  },
+  {
+    "tool": "Claude",
+    "category": "AI",
+    "date": "2026-09-10",
+    "title": "Misuse of Claude by threat actors",
+    "summary": "Anthropic’s Threat Intelligence team reported that over the past eight months, threat actors attempted to use Claude for malicious activities; the team identified and disrupted these operations and released case studies describing the evolving misuse.",
+    "source": "https://www.anthropic.com/news",
+    "sourceType": "Anthropic News",
+    "reliability": "Reliable",
+    "monitored": false,
+    "rank": 6
+  },
   {
     "tool": "Semrush",
     "monitored": true,
@@ -755,7 +884,7 @@ const ISSUES = [
     "sourceType": "BBB complaint profile (third-party)",
     "reliability": "Flagged",
     "reliabilityNote": "Reflects a pattern of user-submitted complaints, not an admission or confirmed practice change from Semrush. Verify current billing/cancellation terms directly on semrush.com before treating this as an active practice.",
-    "rank": 1
+    "rank": 7
   },
   {
     "tool": "Meta Muse",
@@ -767,46 +896,309 @@ const ISSUES = [
     "source": "https://www.forbes.com/sites/gabrielalinzainescu/2026/09/09/meta-launches-muse-personal-ai-agent-as-staff-flag-security-flaws/",
     "sourceType": "Business press (Forbes, citing Reuters)",
     "reliability": "Reliable",
-    "rank": 2
-  },
-  {
-    "tool": "Meltwater",
-    "monitored": true,
-    "category": "Social Listening",
-    "date": "2026-09-05",
-    "title": "Users cite pricing rigidity and data-consistency gaps",
-    "summary": "Aggregated G2 reviews describe rising, inflexible pricing tiers, inconsistent numbers between Meltwater's own reporting modules, occasional slowness on large data pulls, and coverage gaps including lost TikTok access.",
-    "source": "https://www.g2.com/products/meltwater/reviews",
-    "sourceType": "G2 review aggregate (user-submitted)",
-    "reliability": "Flagged",
-    "reliabilityNote": "Based on self-reported user reviews rather than an official Meltwater statement — useful as a directional signal, not a confirmed defect list.",
-    "rank": 3
-  },
-  {
-    "tool": "ChatGPT",
-    "monitored": true,
-    "category": "AI",
-    "date": "2026-09-03",
-    "title": "ChatGPT and Codex hit by a widescale outage",
-    "summary": "OpenAI confirmed a \"service degradation\" affecting ChatGPT chat, image generation, file uploads and the Codex coding agent; Downdetector logged over 74,000 reports before service was restored, with no root cause disclosed by OpenAI.",
-    "source": "https://www.unite.ai/openai-confirms-service-degradation-hitting-chatgpt-and-codex-users/",
-    "sourceType": "Tech press (OpenAI-confirmed)",
-    "reliability": "Reliable",
-    "rank": 4
+    "rank": 8
   }
 ];
 
 const SCAN_META = {
-  "lastRun": "2026-09-27T03:55:58.927Z",
+  "lastRun": "2026-10-04T04:34:41.830Z",
   "runType": "Automatic (weekly)"
-}; // written by scripts/scan.mjs — untouched here
+};
 
 const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
   "lastRun": "2026-10-03T20:57:41.190Z"
-};
+}; // written by scripts/inbox.mjs
 
 const NOTIFICATIONS = [
+  {
+    "id": "upd-27",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "update",
+    "text": "ChatGPT: Finances expands to Free and Go users",
+    "target": {
+      "page": "updates",
+      "id": 27
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-28",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "update",
+    "text": "ChatGPT: New shopping experiences with virtual try‑on and document scanning",
+    "target": {
+      "page": "updates",
+      "id": 28
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-29",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "update",
+    "text": "ChatGPT: Introduction of Pro 500 plan with Astra Ultrafast and new developer tools",
+    "target": {
+      "page": "updates",
+      "id": 29
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-A practical guide to building with GPT-6-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "trending",
+    "text": "A practical guide to building with GPT-6",
+    "target": {
+      "page": "trending",
+      "name": "A practical guide to building with GPT-6"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-The eternal complement Intelligence Age-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "trending",
+    "text": "The eternal complement Intelligence Age",
+    "target": {
+      "page": "trending",
+      "name": "The eternal complement Intelligence Age"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-How Albertsons Companies is reimagining retail from the inside out-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "trending",
+    "text": "How Albertsons Companies is reimagining retail from the inside out",
+    "target": {
+      "page": "trending",
+      "name": "How Albertsons Companies is reimagining retail from the inside out"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Disrupting a coordinated model-distillation campaign-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "trending",
+    "text": "Disrupting a coordinated model-distillation campaign",
+    "target": {
+      "page": "trending",
+      "name": "Disrupting a coordinated model-distillation campaign"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-DevDay 2026 Recap-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "trending",
+    "text": "DevDay 2026 Recap",
+    "target": {
+      "page": "trending",
+      "name": "DevDay 2026 Recap"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Introducing GPT-6.1 Sol-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "trending",
+    "text": "Introducing GPT-6.1 Sol",
+    "target": {
+      "page": "trending",
+      "name": "Introducing GPT-6.1 Sol"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Addendum: GPT‑6.1 Sol Safety-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "trending",
+    "text": "Addendum: GPT‑6.1 Sol Safety",
+    "target": {
+      "page": "trending",
+      "name": "Addendum: GPT‑6.1 Sol Safety"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Introducing dots-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "trending",
+    "text": "Introducing dots",
+    "target": {
+      "page": "trending",
+      "name": "Introducing dots"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Muse for Small Business-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "trending",
+    "text": "Muse for Small Business",
+    "target": {
+      "page": "trending",
+      "name": "Muse for Small Business"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Getting to ROI: How Brands Turn Cost Centers into Revenue Engines with AI-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "trending",
+    "text": "Getting to ROI: How Brands Turn Cost Centers into Revenue Engines with AI",
+    "target": {
+      "page": "trending",
+      "name": "Getting to ROI: How Brands Turn Cost Centers into Revenue Engines with AI"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-AI at Work Webinar: Copilot, Apps, & Agents-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "trending",
+    "text": "AI at Work Webinar: Copilot, Apps, & Agents",
+    "target": {
+      "page": "trending",
+      "name": "AI at Work Webinar: Copilot, Apps, & Agents"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-OpenAI's GPT‑6.1 Sol and Claude Sonnet 5.5 now available in Microsoft Copilot-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "trending",
+    "text": "OpenAI's GPT‑6.1 Sol and Claude Sonnet 5.5 now available in Microsoft Copilot",
+    "target": {
+      "page": "trending",
+      "name": "OpenAI's GPT‑6.1 Sol and Claude Sonnet 5.5 now available in Microsoft Copilot"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-What’s New in Microsoft Copilot – September 2026-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "trending",
+    "text": "What’s New in Microsoft Copilot – September 2026",
+    "target": {
+      "page": "trending",
+      "name": "What’s New in Microsoft Copilot – September 2026"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Anthropic invests $100M in AI talent-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "trending",
+    "text": "Anthropic invests $100M in AI talent",
+    "target": {
+      "page": "trending",
+      "name": "Anthropic invests $100M in AI talent"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Barclays scales Claude-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "trending",
+    "text": "Barclays scales Claude",
+    "target": {
+      "page": "trending",
+      "name": "Barclays scales Claude"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "issue-OpenAI models-Disrupting a coordinated model-distillation campaign-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "issue",
+    "text": "OpenAI models: Disrupting a coordinated model-distillation campaign",
+    "target": {
+      "page": "issues",
+      "key": "OpenAI models|Disrupting a coordinated model-distillation campaign"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "issue-Claude-Misuse of Claude by threat actors-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "issue",
+    "text": "Claude: Misuse of Claude by threat actors",
+    "target": {
+      "page": "issues",
+      "key": "Claude|Misuse of Claude by threat actors"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "issue-OpenAI-OpenAI safety employee resigns, citing broken culture-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "issue",
+    "text": "OpenAI: OpenAI safety employee resigns, citing broken culture",
+    "target": {
+      "page": "issues",
+      "key": "OpenAI|OpenAI safety employee resigns, citing broken culture"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "issue-OpenAI-OpenAI cuts ties with three safety researchers-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "issue",
+    "text": "OpenAI: OpenAI cuts ties with three safety researchers",
+    "target": {
+      "page": "issues",
+      "key": "OpenAI|OpenAI cuts ties with three safety researchers"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "issue-Grok (xAI)-Grok chatbot allegedly urged Trump to capture Venezuela's president-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "issue",
+    "text": "Grok (xAI): Grok chatbot allegedly urged Trump to capture Venezuela's president",
+    "target": {
+      "page": "issues",
+      "key": "Grok (xAI)|Grok chatbot allegedly urged Trump to capture Venezuela's president"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "issue-Amazon Web Services-Amazon faces backlash over data‑center NDAs, says it will stop using them-2026-10-04T04:30:48.385Z",
+    "date": "2026-10-04T04:30:48.385Z",
+    "type": "issue",
+    "text": "Amazon Web Services: Amazon faces backlash over data‑center NDAs, says it will stop using them",
+    "target": {
+      "page": "issues",
+      "key": "Amazon Web Services|Amazon faces backlash over data‑center NDAs, says it will stop using them"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
   {
     "id": "upd-17",
     "date": "2026-09-27T03:52:46.320Z",
