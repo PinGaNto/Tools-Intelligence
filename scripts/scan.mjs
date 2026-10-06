@@ -186,7 +186,21 @@ async function scanToolUpdates(tool, url, data) {
     .map(u => `- ${u.date}: ${u.title}`)
     .join('\n') || '(none recorded yet)';
 
-  const system = `You are a research analyst for THE·TEAM, extracting genuinely NEW product updates for one monitored tool from its own official page. Only report items that represent real, dated announcements visible in the page text. If you cannot find any clearly new dated item beyond what's already known, return an empty array. Never invent a date, url, or fact not present in the page text. Output ONLY a JSON array, no prose.`;
+  const system = `You are a research analyst for THE·TEAM, extracting genuinely NEW product updates for one monitored tool from its own official page.
+
+Only extract an item if it describes ONE specific, concrete, named feature, capability, or product change that this tool actually shipped, launched, or updated — with enough detail that you could explain exactly what changed. It needs a real date.
+
+Do NOT extract:
+- Newsletter- or digest-style posts that bundle multiple unrelated updates into one roundup — skip the whole thing rather than picking pieces out of it
+- Thought-leadership, opinion, "best practices," or how-to content that merely mentions the product
+- Teasers with no concrete detail ("coming soon", "stay tuned") — wait until there's an actual description of what it does
+- Re-shares or recaps of something already announced earlier
+- Marketing copy that describes the product in general terms without naming what's NEW about it
+
+A real example of what to extract: "GPT-6 Astra launches in ChatGPT, adding improvements to coding, research, and multi-step tasks" — one named feature, concrete description, dated.
+A real example of what NOT to extract: "5 ways teams are using ChatGPT this quarter" — no single concrete release, just a roundup/listicle.
+
+If you cannot find any clearly new, concrete, dated item beyond what's already known, return an empty array. Never invent a date, url, or fact not present in the page text. Output ONLY a JSON array, no prose.`;
 
   const user = `Tool: ${tool.name}
 Category: ${tool.category}
@@ -224,7 +238,22 @@ async function scanTrendingSource(source, existingNames) {
   const pageText = await fetchPageText(source.url);
   if (!pageText) return [];
 
-  const system = `You are a research analyst tracking notable AI/social/productivity tool news for THE·TEAM. Extract only real, dated items visible in the page text. Never invent facts. Output ONLY a JSON array, no prose.`;
+  const system = `You are a research analyst tracking notable AI/social/productivity tool releases for THE·TEAM.
+
+Only extract an item if it reports ONE specific, concrete, named feature or product that a company actually released, launched, updated, or rolled out — described with enough specificity that you could explain what changed. It needs a real date.
+
+Do NOT extract:
+- Weekly/monthly news roundups or digests that bundle many items together — if an article is itself a list covering several unrelated releases, skip the whole article rather than extracting individual items out of its list format
+- Opinion, analysis, or "state of the industry" think-pieces about trends
+- Listicles ("best AI tools for X", "top 10 features to try")
+- Funding, hiring, executive, or other business news with no product feature attached
+- Rumors, leaks, or speculation about something not yet actually released
+- Recycled coverage of something that's already old news
+
+A real example of what to extract: a dedicated article reporting "Meta launches a new AI video generation feature in Instagram" — one named feature, concrete, dated.
+A real example of what NOT to extract: "This week in AI: 12 releases you might have missed" — no single focal release, it's a digest.
+
+Never invent facts. Output ONLY a JSON array, no prose.`;
   const user = `Source: ${source.name} (${source.url})
 
 Already known trending items (do NOT repeat these by name):
@@ -259,7 +288,17 @@ async function scanIssueSource(source, existingKeys) {
   const pageText = await fetchPageText(source.url);
   if (!pageText) return [];
 
-  const system = `You are a research analyst tracking reported problems, complaints, outages, criticism, or controversies involving AI/social/productivity tools for THE·TEAM. Extract only real, dated items visible in the page text — do not extract ordinary positive product-launch news, only actual problems/complaints/criticism. Never invent facts. Output ONLY a JSON array, no prose.`;
+  const system = `You are a research analyst tracking reported problems, complaints, outages, criticism, or controversies involving AI/social/productivity tools for THE·TEAM.
+
+Only extract an item if it reports ONE specific, concrete, dated incident or complaint about a named tool — an actual outage, a specific bug, a specific privacy/security problem, a specific pricing backlash, a specific controversy — described with enough detail that you could explain exactly what happened. Do not extract ordinary positive product-launch news.
+
+Do NOT extract:
+- Roundup/digest articles that bundle multiple tools' issues together in a list — skip the whole article rather than extracting pieces out of it
+- General "AI has risks" opinion/analysis pieces with no specific named incident
+- Vague or unsubstantiated complaints with no concrete detail
+- Old, already-resolved issues being recapped
+
+Never invent facts. Output ONLY a JSON array, no prose.`;
   const user = `Source: ${source.name} (${source.url})
 
 Already known issue items (do NOT repeat these by tool+title):

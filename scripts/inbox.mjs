@@ -194,7 +194,16 @@ function parseCsv(text) {
 async function processSubmission({ name, tool, sourceLink, notes }, data) {
   const pageText = await fetchPageText(sourceLink);
 
-  const system = `You are a strict fact-checking research analyst for THE·TEAM. You receive a public, unauthenticated submission claiming a tool update/news item, plus (when available) the actual text of the source page the submitter linked. Your job: decide whether this is a real, substantiated, relevant tool/AI/productivity/social-tool update — and if so, produce a clean structured record. REJECT (return {"reject": true, "reason": "..."}) if: the submission is spam, promotional junk, unrelated to tools/software, or the fetched source page (when present) does not actually support the claim. If the source page could not be fetched, do not auto-reject just for that (fetches sometimes get bot-blocked even for real pages) — instead accept cautiously based on the submitter's note if it reads as a plausible, specific, genuine claim, and note the lack of verification in your summary. Never invent facts beyond what's given. Output ONLY one JSON object, no prose.`;
+  const system = `You are a strict fact-checking research analyst for THE·TEAM. You receive a public, unauthenticated submission claiming a tool update/news item, plus (when available) the actual text of the source page the submitter linked. Your job: decide whether this describes ONE specific, concrete, named feature/capability that was actually released or changed — not just that a source mentions the tool — and if so, produce a clean structured record grounded in that concrete detail.
+
+REJECT (return {"reject": true, "reason": "..."}) if:
+- The submission is spam, promotional junk, or unrelated to tools/software
+- The fetched source page (when present) does not actually support the specific claim
+- The source is a newsletter/digest/roundup covering many unrelated items rather than one focal release — even if the tool is mentioned somewhere in it
+- It's an opinion/analysis piece, listicle, or general commentary with no single concrete release described
+- The claim is vague with no actual detail about what changed
+
+If the source page could not be fetched, do not auto-reject just for that (fetches sometimes get bot-blocked even for real pages) — instead accept cautiously based on the submitter's note if it reads as a plausible, SPECIFIC, concrete claim (not a vague mention), and note the lack of verification in your summary. Never invent facts beyond what's given. Output ONLY one JSON object, no prose.`;
 
   const user = `Submitted by: ${name || '(not given)'}
 Claimed tool: ${tool || '(not given)'}
@@ -252,7 +261,15 @@ async function processSubmissionFromSearch({ name, notes, results }, data) {
     .map((r, i) => `[${i}] ${r.title}\nURL: ${r.url}\nContent: ${(r.content || '').slice(0, 800)}`)
     .join('\n\n');
 
-  const system = `You are a strict fact-checking research analyst for THE·TEAM. A public submitter described a tool update/news item in their own words, with no link. You've been given web search results that might corroborate it. Your job: decide whether any of these search results actually substantiate the submitter's claim about a real, specific, relevant tool/AI/productivity/social-tool update — and if so, produce a clean structured record grounded in that one best-matching result. REJECT (return {"reject": true, "reason": "..."}) if none of the results actually corroborate the specific claim, or if the claim is vague/spam/unrelated to tools. Never invent facts beyond what the matched search result actually says. Output ONLY one JSON object, no prose.`;
+  const system = `You are a strict fact-checking research analyst for THE·TEAM. A public submitter described a tool update/news item in their own words, with no link. You've been given web search results that might corroborate it. Your job: decide whether any of these search results actually substantiate the submitter's claim about ONE specific, concrete, named feature/capability that was really released or changed — not just a result that happens to mention the tool — and if so, produce a clean structured record grounded in that one best-matching result.
+
+REJECT (return {"reject": true, "reason": "..."}) if:
+- None of the results actually corroborate the specific claim
+- The claim itself is vague, spam, or unrelated to tools
+- The best-matching result is a newsletter/digest/roundup or opinion piece rather than a source describing one concrete release
+- The result only mentions the tool in passing without describing the specific change the submitter claimed
+
+Never invent facts beyond what the matched search result actually says. Output ONLY one JSON object, no prose.`;
 
   const user = `Submitted by: ${name || '(not given)'}
 Submitter's description (no link given): ${notes}
