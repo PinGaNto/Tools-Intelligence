@@ -474,11 +474,118 @@ const UPDATES = [
     "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
     "sourceType": "Official source",
     "reliability": "Reliable"
+  },
+  {
+    "id": 30,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-09-29",
+    "title": "Codex Cloud launches for coding tasks",
+    "summary": "Codex Cloud lets users start and continue coding tasks from desktop, web, or mobile using reusable environments with project repositories, tools, and dependencies, providing isolated workspaces that persist while the computer sleeps.",
+    "impact": "Enables faster, more reliable code generation and debugging, helping marketing teams automate custom analytics scripts and integrations.",
+    "overlap": [
+      "coding",
+      "cloud",
+      "automation"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 31,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-09-29",
+    "title": "Pages feature for collaborative document creation",
+    "summary": "Pages lets users turn a conversation into a Page, start from a template, or write directly in Space, with editing, chart creation, interactive content, and multi‑user collaboration while preserving privacy of private chats.",
+    "impact": "Provides a shared workspace for marketing analysts to co‑author reports, dashboards, and campaign briefs within ChatGPT.",
+    "overlap": [
+      "collaboration",
+      "content",
+      "document"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 32,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-09-29",
+    "title": "Site editing and scheduling capabilities added",
+    "summary": "Site owners and editors on Plus and Pro can edit published Sites from a desktop browser within ChatGPT, review changes, publish updates, and create recurring cloud schedules via Automations.",
+    "impact": "Allows marketing teams to quickly update web‑based campaign pages and schedule releases directly from ChatGPT, streamlining content rollout.",
+    "overlap": [
+      "website",
+      "automation",
+      "content"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
   }
 ];
 
-const TRENDING_REFRESHED_AT = "2026-10-04";
+const TRENDING_REFRESHED_AT = "2026-10-06"; // updated by scripts/scan.mjs
 const TRENDING = [
+  {
+    "name": "Hark AI Personal Assistant",
+    "category": "AI",
+    "date": "2026-10-06",
+    "summary": "Hark released a privacy‑focused AI personal assistant, allowing users to interact with a conversational agent that keeps data on‑device.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 1
+  },
+  {
+    "name": "LibreOffice “no AI” Feature",
+    "category": "Productivity",
+    "date": "2026-10-06",
+    "summary": "LibreOffice added a new “no AI” software feature that disables any AI‑based assistance, giving users a completely offline editing experience.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 2
+  },
+  {
+    "name": "Mistral 1T Model",
+    "category": "AI",
+    "date": "2026-10-06",
+    "summary": "Mistral announced the launch of its 1‑trillion‑parameter model, aiming to outperform existing closed‑source and open‑source language models.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 3
+  },
+  {
+    "name": "Pinterest Beauty Pins Action Plans",
+    "category": "Social",
+    "date": "2026-10-06",
+    "summary": "Pinterest introduced an AI feature that converts beauty‑related Pins into actionable shopping plans for users.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 4
+  },
+  {
+    "name": "Petlibro AI‑Powered Feeder",
+    "category": "AI",
+    "date": "2026-10-06",
+    "summary": "Petlibro launched a new AI‑powered pet feeder designed to manage feeding schedules for multi‑cat households.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 5
+  },
   {
     "name": "AI at Work Webinar: Copilot, Apps, & Agents",
     "category": "AI",
@@ -487,7 +594,67 @@ const TRENDING = [
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
-    "rank": 1
+    "rank": 6
+  },
+  {
+    "name": "OpenAI ChatGPT EU Watermarking",
+    "category": "AI",
+    "date": "2026-10-05",
+    "summary": "OpenAI began watermarking ChatGPT‑generated text for users in the European Union to improve transparency and combat misuse.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 7
+  },
+  {
+    "name": "Reflection Beam Model",
+    "category": "AI",
+    "date": "2026-10-05",
+    "summary": "Reflection released Beam, an open‑weight AI model positioned as a lower‑cost alternative to Chinese large‑scale models.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 8
+  },
+  {
+    "name": "Instinct Group Chat AI Agent",
+    "category": "Social",
+    "date": "2026-10-05",
+    "summary": "Instinct rolled out its AI agent to group chats, enabling users to interact with the assistant even without a personal account.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 9
+  },
+  {
+    "name": "TikTok AI Shopping Assistant",
+    "category": "Social",
+    "date": "2026-10-05",
+    "summary": "TikTok launched an AI‑driven shopping assistant that offers one‑click checkout directly within the app.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 10
+  },
+  {
+    "name": "HackerRank AI Interviewer",
+    "category": "Productivity",
+    "date": "2026-10-05",
+    "summary": "HackerRank introduced an AI interviewer tool that simulates technical interview questions and provides real‑time feedback to candidates.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 11
+  },
+  {
+    "name": "OpenAI Visual Ads for Image Generation",
+    "category": "AI",
+    "date": "2026-10-05",
+    "summary": "OpenAI started displaying visual advertisements alongside the results of its image‑generation models.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 12
   },
   {
     "name": "A practical guide to building with GPT-6",
@@ -497,7 +664,7 @@ const TRENDING = [
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
-    "rank": 2
+    "rank": 13
   },
   {
     "name": "Anthropic invests $100M in AI talent",
@@ -507,7 +674,7 @@ const TRENDING = [
     "source": "https://www.anthropic.com/news",
     "sourceType": "Anthropic News",
     "reliability": "Reliable",
-    "rank": 3
+    "rank": 14
   },
   {
     "name": "Barclays scales Claude",
@@ -517,58 +684,18 @@ const TRENDING = [
     "source": "https://www.anthropic.com/news",
     "sourceType": "Anthropic News",
     "reliability": "Reliable",
-    "rank": 4
-  },
-  {
-    "name": "Disrupting a coordinated model-distillation campaign",
-    "category": "AI",
-    "date": "2026-09-30",
-    "summary": "OpenAI announced research on methods to disrupt coordinated model‑distillation campaigns targeting AI systems.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
-    "reliability": "Reliable",
-    "rank": 5
-  },
-  {
-    "name": "OpenAI's GPT‑6.1 Sol and Claude Sonnet 5.5 now available in Microsoft Copilot",
-    "category": "AI",
-    "date": "2026-09-30",
-    "summary": "Blog announcement that GPT‑6.1 Sol and Claude Sonnet 5.5 have been added as selectable models in Microsoft Copilot, expanding the AI model portfolio for users.",
-    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
-    "sourceType": "Microsoft Copilot Blog",
-    "reliability": "Reliable",
-    "rank": 6
-  },
-  {
-    "name": "Addendum: GPT‑6.1 Sol Safety",
-    "category": "AI",
-    "date": "2026-09-29",
-    "summary": "OpenAI released a safety addendum outlining precautions, usage guidelines, and risk mitigations for GPT‑6.1 Sol.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
-    "reliability": "Reliable",
-    "rank": 7
-  },
-  {
-    "name": "Muse for Small Business",
-    "category": "AI",
-    "date": "2026-09-29",
-    "summary": "Meta launched Muse for Small Business, a personal AI agent that operates in the background to help small businesses achieve their goals.",
-    "source": "https://about.fb.com/news/",
-    "sourceType": "Meta Newsroom",
-    "reliability": "Reliable",
-    "rank": 8
+    "rank": 15
   }
 ];
 
-const ISSUES_REFRESHED_AT = "2026-10-04";
+const ISSUES_REFRESHED_AT = "2026-10-06"; // manually curated — see README
 const ISSUES = [
   {
-    "tool": "OpenAI",
+    "tool": "Google Open Source Bug Bounty Program",
     "category": "AI",
     "date": "2026-10-04",
-    "title": "OpenAI safety employee resigns, citing broken culture",
-    "summary": "A safety team member at OpenAI quit, alleging that the company's culture is broken and raising concerns about internal safety practices.",
+    "title": "Google freezes open source bug bounty program due to surge in AI submissions",
+    "summary": "Google temporarily halted its open‑source bug bounty program after reporting a significant rise in AI‑related vulnerability submissions, saying the volume and nature of the reports required a pause to reassess the process.",
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
@@ -576,7 +703,20 @@ const ISSUES = [
     "rank": 1
   },
   {
+    "tool": "OpenAI",
+    "monitored": false,
+    "category": "AI",
+    "date": "2026-10-04",
+    "title": "OpenAI safety employee resigns, citing broken culture",
+    "summary": "A safety team member at OpenAI quit, alleging that the company's culture is broken and raising concerns about internal safety practices.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 2
+  },
+  {
     "tool": "Amazon Web Services",
+    "monitored": false,
     "category": "AI",
     "date": "2026-10-04",
     "title": "Amazon faces backlash over data‑center NDAs, says it will stop using them",
@@ -584,11 +724,11 @@ const ISSUES = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "monitored": false,
-    "rank": 2
+    "rank": 3
   },
   {
     "tool": "OpenAI",
+    "monitored": false,
     "category": "AI",
     "date": "2026-10-02",
     "title": "OpenAI cuts ties with three safety researchers",
@@ -596,11 +736,11 @@ const ISSUES = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "monitored": false,
-    "rank": 3
+    "rank": 4
   },
   {
     "tool": "Grok (xAI)",
+    "monitored": false,
     "category": "AI",
     "date": "2026-10-02",
     "title": "Grok chatbot allegedly urged Trump to capture Venezuela's president",
@@ -608,11 +748,11 @@ const ISSUES = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "monitored": false,
-    "rank": 4
+    "rank": 5
   },
   {
     "tool": "OpenAI models",
+    "monitored": false,
     "category": "AI",
     "date": "2026-09-30",
     "title": "Disrupting a coordinated model-distillation campaign",
@@ -620,11 +760,11 @@ const ISSUES = [
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
-    "monitored": false,
-    "rank": 5
+    "rank": 6
   },
   {
     "tool": "Claude",
+    "monitored": false,
     "category": "AI",
     "date": "2026-09-10",
     "title": "Misuse of Claude by threat actors",
@@ -632,8 +772,7 @@ const ISSUES = [
     "source": "https://www.anthropic.com/news",
     "sourceType": "Anthropic News",
     "reliability": "Reliable",
-    "monitored": false,
-    "rank": 6
+    "rank": 7
   },
   {
     "tool": "Semrush",
@@ -646,7 +785,7 @@ const ISSUES = [
     "sourceType": "BBB complaint profile (third-party)",
     "reliability": "Flagged",
     "reliabilityNote": "Reflects a pattern of user-submitted complaints, not an admission or confirmed practice change from Semrush. Verify current billing/cancellation terms directly on semrush.com before treating this as an active practice.",
-    "rank": 7
+    "rank": 8
   },
   {
     "tool": "Meta Muse",
@@ -658,21 +797,201 @@ const ISSUES = [
     "source": "https://www.forbes.com/sites/gabrielalinzainescu/2026/09/09/meta-launches-muse-personal-ai-agent-as-staff-flag-security-flaws/",
     "sourceType": "Business press (Forbes, citing Reuters)",
     "reliability": "Reliable",
-    "rank": 8
+    "rank": 9
   }
 ];
 
 const SCAN_META = {
-  "lastRun": "2026-10-04T04:34:41.830Z",
-  "runType": "Automatic (weekly)"
+  "lastRun": "2026-10-06T19:13:01.045Z",
+  "runType": "Manual"
 };
 
-const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"];
+const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
   "lastRun": "2026-10-06T18:17:00.248Z"
-};
+}; // written by scripts/inbox.mjs
 
 const NOTIFICATIONS = [
+  {
+    "id": "upd-30",
+    "date": "2026-10-06T19:09:32.618Z",
+    "type": "update",
+    "text": "ChatGPT: Codex Cloud launches for coding tasks",
+    "target": {
+      "page": "updates",
+      "id": 30
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-31",
+    "date": "2026-10-06T19:09:32.618Z",
+    "type": "update",
+    "text": "ChatGPT: Pages feature for collaborative document creation",
+    "target": {
+      "page": "updates",
+      "id": 31
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-32",
+    "date": "2026-10-06T19:09:32.618Z",
+    "type": "update",
+    "text": "ChatGPT: Site editing and scheduling capabilities added",
+    "target": {
+      "page": "updates",
+      "id": 32
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-Hark AI Personal Assistant-2026-10-06T19:09:32.618Z",
+    "date": "2026-10-06T19:09:32.618Z",
+    "type": "trending",
+    "text": "Hark AI Personal Assistant",
+    "target": {
+      "page": "trending",
+      "name": "Hark AI Personal Assistant"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-LibreOffice “no AI” Feature-2026-10-06T19:09:32.618Z",
+    "date": "2026-10-06T19:09:32.618Z",
+    "type": "trending",
+    "text": "LibreOffice “no AI” Feature",
+    "target": {
+      "page": "trending",
+      "name": "LibreOffice “no AI” Feature"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-Mistral 1T Model-2026-10-06T19:09:32.618Z",
+    "date": "2026-10-06T19:09:32.618Z",
+    "type": "trending",
+    "text": "Mistral 1T Model",
+    "target": {
+      "page": "trending",
+      "name": "Mistral 1T Model"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-Pinterest Beauty Pins Action Plans-2026-10-06T19:09:32.618Z",
+    "date": "2026-10-06T19:09:32.618Z",
+    "type": "trending",
+    "text": "Pinterest Beauty Pins Action Plans",
+    "target": {
+      "page": "trending",
+      "name": "Pinterest Beauty Pins Action Plans"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-Petlibro AI‑Powered Feeder-2026-10-06T19:09:32.618Z",
+    "date": "2026-10-06T19:09:32.618Z",
+    "type": "trending",
+    "text": "Petlibro AI‑Powered Feeder",
+    "target": {
+      "page": "trending",
+      "name": "Petlibro AI‑Powered Feeder"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-OpenAI ChatGPT EU Watermarking-2026-10-06T19:09:32.618Z",
+    "date": "2026-10-06T19:09:32.618Z",
+    "type": "trending",
+    "text": "OpenAI ChatGPT EU Watermarking",
+    "target": {
+      "page": "trending",
+      "name": "OpenAI ChatGPT EU Watermarking"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-Reflection Beam Model-2026-10-06T19:09:32.618Z",
+    "date": "2026-10-06T19:09:32.618Z",
+    "type": "trending",
+    "text": "Reflection Beam Model",
+    "target": {
+      "page": "trending",
+      "name": "Reflection Beam Model"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-Instinct Group Chat AI Agent-2026-10-06T19:09:32.618Z",
+    "date": "2026-10-06T19:09:32.618Z",
+    "type": "trending",
+    "text": "Instinct Group Chat AI Agent",
+    "target": {
+      "page": "trending",
+      "name": "Instinct Group Chat AI Agent"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-TikTok AI Shopping Assistant-2026-10-06T19:09:32.618Z",
+    "date": "2026-10-06T19:09:32.618Z",
+    "type": "trending",
+    "text": "TikTok AI Shopping Assistant",
+    "target": {
+      "page": "trending",
+      "name": "TikTok AI Shopping Assistant"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-HackerRank AI Interviewer-2026-10-06T19:09:32.618Z",
+    "date": "2026-10-06T19:09:32.618Z",
+    "type": "trending",
+    "text": "HackerRank AI Interviewer",
+    "target": {
+      "page": "trending",
+      "name": "HackerRank AI Interviewer"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-OpenAI Visual Ads for Image Generation-2026-10-06T19:09:32.618Z",
+    "date": "2026-10-06T19:09:32.618Z",
+    "type": "trending",
+    "text": "OpenAI Visual Ads for Image Generation",
+    "target": {
+      "page": "trending",
+      "name": "OpenAI Visual Ads for Image Generation"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "issue-Google Open Source Bug Bounty Program-Google freezes open source bug bounty program due to surge in AI submissions-2026-10-06T19:09:32.618Z",
+    "date": "2026-10-06T19:09:32.618Z",
+    "type": "issue",
+    "text": "Google Open Source Bug Bounty Program: Google freezes open source bug bounty program due to surge in AI submissions",
+    "target": {
+      "page": "issues",
+      "key": "Google Open Source Bug Bounty Program|Google freezes open source bug bounty program due to surge in AI submissions"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
   {
     "id": "upd-27",
     "date": "2026-10-04T04:30:48.385Z",
@@ -1092,137 +1411,5 @@ const NOTIFICATIONS = [
     },
     "source": "scan",
     "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Sam Altman’s remarks at the United Nations Security Council-2026-09-27T03:52:46.320Z",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "trending",
-    "text": "Sam Altman’s remarks at the United Nations Security Council",
-    "target": {
-      "page": "trending",
-      "name": "Sam Altman’s remarks at the United Nations Security Council"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-ChatGPT Ads expands to Southeast Asia and Taiwan-2026-09-27T03:52:46.320Z",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "trending",
-    "text": "ChatGPT Ads expands to Southeast Asia and Taiwan",
-    "target": {
-      "page": "trending",
-      "name": "ChatGPT Ads expands to Southeast Asia and Taiwan"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Airbnb expands access to GPT-6 Astra-2026-09-27T03:52:46.320Z",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "trending",
-    "text": "Airbnb expands access to GPT-6 Astra",
-    "target": {
-      "page": "trending",
-      "name": "Airbnb expands access to GPT-6 Astra"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Better prompt caching for GPT-6-2026-09-27T03:52:46.320Z",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "trending",
-    "text": "Better prompt caching for GPT-6",
-    "target": {
-      "page": "trending",
-      "name": "Better prompt caching for GPT-6"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Introducing GPT-6 Sol and Luna-2026-09-27T03:52:46.320Z",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "trending",
-    "text": "Introducing GPT-6 Sol and Luna",
-    "target": {
-      "page": "trending",
-      "name": "Introducing GPT-6 Sol and Luna"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Priorities and principles for effective third‑party assessments-2026-09-27T03:52:46.320Z",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "trending",
-    "text": "Priorities and principles for effective third‑party assessments",
-    "target": {
-      "page": "trending",
-      "name": "Priorities and principles for effective third‑party assessments"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Meta Introducing Meta VR Glasses: A Cinema, Courtside Seat, and Workspace in Just 100 Grams-2026-09-27T03:52:46.320Z",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "trending",
-    "text": "Meta Introducing Meta VR Glasses: A Cinema, Courtside Seat, and Workspace in Just 100 Grams",
-    "target": {
-      "page": "trending",
-      "name": "Meta Introducing Meta VR Glasses: A Cinema, Courtside Seat, and Workspace in Just 100 Grams"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Meta Introducing Ray‑Ban Meta Audio and More AI Glasses Styles-2026-09-27T03:52:46.320Z",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "trending",
-    "text": "Meta Introducing Ray‑Ban Meta Audio and More AI Glasses Styles",
-    "target": {
-      "page": "trending",
-      "name": "Meta Introducing Ray‑Ban Meta Audio and More AI Glasses Styles"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Meta New Features for Meta Ray‑Ban Display-2026-09-27T03:52:46.320Z",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "trending",
-    "text": "Meta New Features for Meta Ray‑Ban Display",
-    "target": {
-      "page": "trending",
-      "name": "Meta New Features for Meta Ray‑Ban Display"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-How Higher Ed Is Putting AI Agents to Work-2026-09-27T03:52:46.320Z",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "trending",
-    "text": "How Higher Ed Is Putting AI Agents to Work",
-    "target": {
-      "page": "trending",
-      "name": "How Higher Ed Is Putting AI Agents to Work"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Evolution of the Copilot pricing model-2026-09-27T03:52:46.320Z",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "trending",
-    "text": "Evolution of the Copilot pricing model",
-    "target": {
-      "page": "trending",
-      "name": "Evolution of the Copilot pricing model"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
   }
-];
+]; // written by scripts/scan.mjs and scripts/inbox.mjs — do not edit by hand
