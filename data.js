@@ -93,24 +93,6 @@ const TOOLS = [
 
 const UPDATES = [
   {
-    "id": 1,
-    "date": "2026-09-02",
-    "tool": "GWI",
-    "category": "Audience",
-    "title": "Dolly does data: consumer insight trends and audience context",
-    "summary": "GWI’s official On the Dot archive lists the September 2, 2026 edition covering current consumer-insight signals and audience context.",
-    "impact": "Useful for keeping audience planning grounded in current consumer behavior and cultural signals.",
-    "overlap": [
-      "Audience research",
-      "Consumer insights"
-    ],
-    "confidence": "High",
-    "priority": "Medium",
-    "source": "https://www.gwi.com/on-the-dot-archive",
-    "sourceType": "Official newsletter archive",
-    "reliability": "Reliable"
-  },
-  {
     "id": 2,
     "date": "2026-03-19",
     "tool": "Brandwatch",
@@ -205,26 +187,6 @@ const UPDATES = [
     "reliability": "Reliable"
   },
   {
-    "id": 7,
-    "date": "2026-08-31",
-    "tool": "Slack",
-    "category": "Collaboration",
-    "title": "Slack Feature Drop: Where Agents are Heating Up",
-    "summary": "Slack’s August 31 feature drop introduced new agentic-work and search capabilities, including Slack Code and deeper AI context inside team conversations.",
-    "impact": "Relevant to how analytics, research and AI workflows may move into collaboration tools and shared team context.",
-    "overlap": [
-      "AI agents",
-      "Collaboration",
-      "Search",
-      "Automation"
-    ],
-    "confidence": "High",
-    "priority": "High",
-    "source": "https://slack.com/blog/news/slack-feature-drop-august2026",
-    "sourceType": "Official product update",
-    "reliability": "Reliable"
-  },
-  {
     "id": 8,
     "date": "2026-09-02",
     "tool": "Sprinklr",
@@ -280,26 +242,6 @@ const UPDATES = [
     "source": "https://finance.yahoo.com/media-advertising/articles/creatoriq-connect-returns-october-13-130000523.html",
     "sourceType": "Press release (wire syndication)",
     "reliability": "Reliable"
-  },
-  {
-    "id": 11,
-    "date": "2026-09-15",
-    "tool": "Slack",
-    "category": "Collaboration",
-    "title": "Slack Code and expanded Salesforce/admin controls (unverified)",
-    "summary": "A third-party Slack consulting blog describes a new \"Slack Code\" workspace for coding agents (Claude, Devin, GitHub Copilot, Vercel) plus a Salesforce integration change where enabling create/update permissions for Slackbot reportedly also enables record deletion, alongside new Enterprise+ governance controls.",
-    "impact": "If accurate, this is directly relevant to agentic coding workflows and to data-safety controls on Salesforce records connected through Slack — but the record-deletion claim in particular should be confirmed before acting on it.",
-    "overlap": [
-      "AI agents",
-      "Collaboration",
-      "Data governance"
-    ],
-    "confidence": "Low",
-    "priority": "Medium",
-    "source": "https://vantagepoint.io/blog/sf/slack-september-2026-admin-updates",
-    "sourceType": "Third-party consultancy blog (unofficial)",
-    "reliability": "Flagged",
-    "reliabilityNote": "Not yet confirmed on Slack’s own blog or changelog (slack.com/blog/news, docs.slack.dev/changelog). Verify directly with Slack before treating this as confirmed, especially the Salesforce record-deletion behavior."
   },
   {
     "id": 12,
@@ -401,59 +343,6 @@ const UPDATES = [
     }
   },
   {
-    "id": 17,
-    "tool": "GWI",
-    "category": "Audience",
-    "date": "2026-09-23",
-    "title": "The future of the future",
-    "summary": "A newsletter entry titled “The future of the future” was published on September 23, 2026.",
-    "impact": "Highlights emerging themes that could influence future audience research and media strategy.",
-    "overlap": [
-      "Insights",
-      "Trends"
-    ],
-    "confidence": "Medium",
-    "priority": "Medium",
-    "source": "https://www.gwi.com/on-the-dot-archive",
-    "sourceType": "Official source",
-    "reliability": "Reliable"
-  },
-  {
-    "id": 18,
-    "tool": "GWI",
-    "category": "Audience",
-    "date": "2026-09-16",
-    "title": "You’re on mute",
-    "summary": "A newsletter entry titled “You’re on mute” was published on September 16, 2026.",
-    "impact": "May reflect communication or digital behavior insights relevant for audience segmentation.",
-    "overlap": [
-      "Insights"
-    ],
-    "confidence": "Medium",
-    "priority": "Low",
-    "source": "https://www.gwi.com/on-the-dot-archive",
-    "sourceType": "Official source",
-    "reliability": "Reliable"
-  },
-  {
-    "id": 19,
-    "tool": "GWI",
-    "category": "Audience",
-    "date": "2026-09-09",
-    "title": "(Not) driving home for Christmas",
-    "summary": "A newsletter entry titled “(Not) driving home for Christmas” was published on September 9, 2026.",
-    "impact": "Provides cultural or seasonal consumer behavior cues that can inform campaign timing.",
-    "overlap": [
-      "Insights",
-      "Cultural trends"
-    ],
-    "confidence": "Medium",
-    "priority": "Low",
-    "source": "https://www.gwi.com/on-the-dot-archive",
-    "sourceType": "Official source",
-    "reliability": "Reliable"
-  },
-  {
     "id": 20,
     "tool": "Statista",
     "category": "Market Intelligence",
@@ -525,63 +414,6 @@ const UPDATES = [
     ],
     "confidence": "High",
     "priority": "High",
-    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-    "sourceType": "Official source",
-    "reliability": "Reliable"
-  },
-  {
-    "id": 24,
-    "tool": "ChatGPT",
-    "category": "AI",
-    "date": "2026-09-22",
-    "title": "GPT‑6 Sol and Luna in Work and Codex",
-    "summary": "Adds two new model families, GPT‑6 Sol and GPT‑6 Luna, to ChatGPT Work and Codex, with model and reasoning‑effort options governed by plan and workspace settings.",
-    "impact": "Gives analytics teams access to specialized, higher‑capacity models for generating insights and code, improving the quality of automated reporting.",
-    "overlap": [
-      "Models",
-      "Work",
-      "Codex"
-    ],
-    "confidence": "High",
-    "priority": "High",
-    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-    "sourceType": "Official source",
-    "reliability": "Reliable"
-  },
-  {
-    "id": 25,
-    "tool": "ChatGPT",
-    "category": "AI",
-    "date": "2026-09-21",
-    "title": "Credit scores in Finances",
-    "summary": "Allows users to securely connect an Experian credit report and VantageScore 3.0, view monthly updates, and receive alerts about credit‑related changes.",
-    "impact": "Gives marketers a new data source for audience segmentation and financial‑product targeting, enhancing campaign relevance.",
-    "overlap": [
-      "Finances",
-      "Credit",
-      "Data Integration"
-    ],
-    "confidence": "High",
-    "priority": "Medium",
-    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-    "sourceType": "Official source",
-    "reliability": "Reliable"
-  },
-  {
-    "id": 26,
-    "tool": "ChatGPT",
-    "category": "AI",
-    "date": "2026-09-17",
-    "title": "ChatGPT for Microsoft Word",
-    "summary": "Integrates ChatGPT into the Word sidebar, enabling drafting from notes, summarizing documents, revising selected text, and adjusting headings and formatting.",
-    "impact": "Streamlines copy creation directly within Word, reducing context‑switching for marketing writers and accelerating content turnaround.",
-    "overlap": [
-      "Word",
-      "Integration",
-      "Productivity"
-    ],
-    "confidence": "High",
-    "priority": "Medium",
     "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
     "sourceType": "Official source",
     "reliability": "Reliable"
@@ -678,36 +510,6 @@ const TRENDING = [
     "rank": 3
   },
   {
-    "name": "The eternal complement Intelligence Age",
-    "category": "AI",
-    "date": "2026-10-01",
-    "summary": "OpenAI published an article titled “The eternal complement” that discusses themes related to the current Intelligence Age.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
-    "reliability": "Reliable",
-    "rank": 4
-  },
-  {
-    "name": "How Albertsons Companies is reimagining retail from the inside out",
-    "category": "AI",
-    "date": "2026-10-01",
-    "summary": "OpenAI highlighted a case study showing how Albertsons Companies is using OpenAI technology to transform its retail operations.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
-    "reliability": "Reliable",
-    "rank": 5
-  },
-  {
-    "name": "Getting to ROI: How Brands Turn Cost Centers into Revenue Engines with AI",
-    "category": "AI",
-    "date": "2026-10-01",
-    "summary": "Salesforce outlines how brands can leverage AI to transform traditional cost‑center functions into revenue‑generating engines, highlighting case studies and best practices.",
-    "source": "https://www.salesforce.com/news/",
-    "sourceType": "Salesforce News",
-    "reliability": "Reliable",
-    "rank": 6
-  },
-  {
     "name": "Barclays scales Claude",
     "category": "Productivity",
     "date": "2026-10-01",
@@ -715,7 +517,7 @@ const TRENDING = [
     "source": "https://www.anthropic.com/news",
     "sourceType": "Anthropic News",
     "reliability": "Reliable",
-    "rank": 7
+    "rank": 4
   },
   {
     "name": "Disrupting a coordinated model-distillation campaign",
@@ -725,7 +527,7 @@ const TRENDING = [
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
-    "rank": 8
+    "rank": 5
   },
   {
     "name": "OpenAI's GPT‑6.1 Sol and Claude Sonnet 5.5 now available in Microsoft Copilot",
@@ -735,37 +537,7 @@ const TRENDING = [
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
-    "rank": 9
-  },
-  {
-    "name": "What’s New in Microsoft Copilot – September 2026",
-    "category": "AI",
-    "date": "2026-09-30",
-    "summary": "Monthly roundup post highlighting new features, updates, and enhancements to Microsoft Copilot released in September 2026.",
-    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
-    "sourceType": "Microsoft Copilot Blog",
-    "reliability": "Reliable",
-    "rank": 10
-  },
-  {
-    "name": "DevDay 2026 Recap",
-    "category": "AI",
-    "date": "2026-09-29",
-    "summary": "OpenAI posted a recap of its 2026 Developer Day, summarizing new product announcements and developer sessions.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
-    "reliability": "Reliable",
-    "rank": 11
-  },
-  {
-    "name": "Introducing GPT-6.1 Sol",
-    "category": "AI",
-    "date": "2026-09-29",
-    "summary": "OpenAI introduced the GPT‑6.1 Sol model, an updated iteration in the GPT‑6 series with enhanced capabilities.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
-    "reliability": "Reliable",
-    "rank": 12
+    "rank": 6
   },
   {
     "name": "Addendum: GPT‑6.1 Sol Safety",
@@ -775,17 +547,7 @@ const TRENDING = [
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
-    "rank": 13
-  },
-  {
-    "name": "Introducing dots",
-    "category": "AI",
-    "date": "2026-09-29",
-    "summary": "OpenAI announced a new product called Dots, aimed at extending developer capabilities within the OpenAI ecosystem.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
-    "reliability": "Reliable",
-    "rank": 14
+    "rank": 7
   },
   {
     "name": "Muse for Small Business",
@@ -795,7 +557,7 @@ const TRENDING = [
     "source": "https://about.fb.com/news/",
     "sourceType": "Meta Newsroom",
     "reliability": "Reliable",
-    "rank": 15
+    "rank": 8
   }
 ];
 
@@ -903,9 +665,9 @@ const ISSUES = [
 const SCAN_META = {
   "lastRun": "2026-10-04T04:34:41.830Z",
   "runType": "Automatic (weekly)"
-}; // written by scripts/scan.mjs — untouched here
+};
 
-const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
+const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"];
 const INBOX_META = {
   "lastRun": "2026-10-06T18:17:00.248Z"
 };
@@ -1463,4 +1225,4 @@ const NOTIFICATIONS = [
     "source": "scan",
     "runType": "Automatic (weekly)"
   }
-]; // written by scripts/scan.mjs and scripts/inbox.mjs — do not edit by hand
+];
