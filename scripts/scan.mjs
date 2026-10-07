@@ -44,10 +44,31 @@ const SOURCES_PATH = path.join(ROOT, 'data', 'sources.json');
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
 const MODEL = process.env.SCAN_MODEL || 'openai/gpt-oss-120b';
 const MODELS_ENDPOINT = 'https://api.groq.com/openai/v1/chat/completions';
+const TAVILY_API_KEY = process.env.TAVILY_API_KEY || '';
+const TAVILY_ENDPOINT = 'https://api.tavily.com/search';
 
 if (!GROQ_API_KEY) {
   console.error('GROQ_API_KEY is not set. Add it as a repo secret (see SCANNING_SETUP.md) — get a free key at https://console.groq.com/keys');
   process.exit(1);
+}
+if (!TAVILY_API_KEY) {
+  console.log('Note: TAVILY_API_KEY is not set. If a configured source URL is wrong/dead/blocked, that tool just finds nothing this run instead of falling back to a live search for the real page. Same free key used for the inbox works here too — see INBOX_SETUP.md.');
+}
+
+async function tavilySearch(query) {
+  try {
+    const res = await fetch(TAVILY_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${TAVILY_API_KEY}` },
+      body: JSON.stringify({ query, max_results: 3, search_depth: 'basic' }),
+    });
+    if (!res.ok) { console.warn(`  ! Tavily search failed: HTTP ${res.status}`); return []; }
+    const json = await res.json();
+    return Array.isArray(json.results) ? json.results : [];
+  } catch (err) {
+    console.warn(`  ! Tavily search error: ${err.message}`);
+    return [];
+  }
 }
 
 // ---------- load existing data.js ----------
@@ -175,8 +196,23 @@ function extractJson(text) {
 }
 
 // ---------- per-tool update extraction ----------
-async function scanToolUpdates(tool, url, data) {
-  const pageText = await fetchPageText(url);
+async function scanToolUpdates(tool, configuredUrl, data) {
+  let pageText = await fetchPageText(configuredUrl);
+  let url = configuredUrl;
+
+  if (!pageText && TAVILY_API_KEY) {
+    console.log(`  ! configured URL returned nothing usable for ${tool.name} — searching the web for their real update source instead`);
+    const results = await tavilySearch(`${tool.name} official product updates OR release notes OR changelog`);
+    for (const r of results) {
+      if (r.content && r.content.length > 200) {
+        pageText = r.content.slice(0, 4000);
+        url = r.url;
+        console.log(`  → found via search: ${url}`);
+        break;
+      }
+    }
+  }
+
   if (!pageText) return [];
 
   const knownForTool = data.UPDATES
@@ -188,17 +224,20 @@ async function scanToolUpdates(tool, url, data) {
 
   const system = `You are a research analyst for THE·TEAM, extracting genuinely NEW product updates for one monitored tool from its own official page.
 
-Only extract an item if it describes ONE specific, concrete, named feature, capability, or product change that this tool actually shipped, launched, or updated — with enough detail that you could explain exactly what changed. It needs a real date.
+Only extract an item if it describes ONE specific, concrete, named feature, capability, or product change — with enough detail that you could explain exactly what it does. This can be something the tool ALREADY shipped, OR something concretely announced for near-future release (e.g. "rolling out next month", "launching in Q4", "available starting November") — both count, as long as there's a real description of the capability itself, not just that something is coming. It needs a real date (the ship date if already live, or the announcement/expected-release date if upcoming).
 
 Do NOT extract:
 - Newsletter- or digest-style posts that bundle multiple unrelated updates into one roundup — skip the whole thing rather than picking pieces out of it
 - Thought-leadership, opinion, "best practices," or how-to content that merely mentions the product
-- Teasers with no concrete detail ("coming soon", "stay tuned") — wait until there's an actual description of what it does
+- Vague teasers with NO concrete detail about what the feature actually does ("something big is coming", "stay tuned", "exciting things ahead") — the bar is whether you could explain what the feature DOES, not whether it's live yet
 - Re-shares or recaps of something already announced earlier
 - Marketing copy that describes the product in general terms without naming what's NEW about it
+- Announcements of an upcoming conference, summit, webinar, or event — even with a specific date, location, or attendee count. A scheduled event is not a feature release. Only extract it if the text also describes a specific new product capability being launched there, and then extract THAT capability, not the event itself
 
-A real example of what to extract: "GPT-6 Astra launches in ChatGPT, adding improvements to coding, research, and multi-step tasks" — one named feature, concrete description, dated.
+A real example of what to extract (already shipped): "GPT-6 Astra launches in ChatGPT, adding improvements to coding, research, and multi-step tasks" — one named feature, concrete description, dated.
+A real example of what to extract (upcoming, still valid): "Slack will launch an AI meeting-notes agent in November, which will auto-summarize calls and surface action items" — concrete capability description, even though not live yet.
 A real example of what NOT to extract: "5 ways teams are using ChatGPT this quarter" — no single concrete release, just a roundup/listicle.
+Another real example of what NOT to extract: "Something exciting is coming to ChatGPT soon" — no detail about what it actually does.
 
 If you cannot find any clearly new, concrete, dated item beyond what's already known, return an empty array. Never invent a date, url, or fact not present in the page text. Output ONLY a JSON array, no prose.`;
 
@@ -240,18 +279,20 @@ async function scanTrendingSource(source, existingNames) {
 
   const system = `You are a research analyst tracking notable AI/social/productivity tool releases for THE·TEAM.
 
-Only extract an item if it reports ONE specific, concrete, named feature or product that a company actually released, launched, updated, or rolled out — described with enough specificity that you could explain what changed. It needs a real date.
+Only extract an item if it reports ONE specific, concrete, named feature or product that a company either actually released, OR has concretely announced for near-future release (e.g. "rolling out next month", "launching in Q4") — described with enough specificity that you could explain what it does. It needs a real date (ship date or announcement/expected-release date).
 
 Do NOT extract:
 - Weekly/monthly news roundups or digests that bundle many items together — if an article is itself a list covering several unrelated releases, skip the whole article rather than extracting individual items out of its list format
 - Opinion, analysis, or "state of the industry" think-pieces about trends
 - Listicles ("best AI tools for X", "top 10 features to try")
 - Funding, hiring, executive, or other business news with no product feature attached
-- Rumors, leaks, or speculation about something not yet actually released
+- Unsubstantiated rumors or leaks with no concrete detail about what the feature does — but a company's OWN concrete, detailed announcement of an upcoming feature is fine to include, that's not a rumor
 - Recycled coverage of something that's already old news
+- Announcements of an upcoming conference, summit, or webinar — even with a specific date, location, or attendee count. A scheduled event is not a feature release. Only extract it if the announcement also describes a specific new product capability being launched there, and then extract THAT capability, not the event logistics
 
 A real example of what to extract: a dedicated article reporting "Meta launches a new AI video generation feature in Instagram" — one named feature, concrete, dated.
 A real example of what NOT to extract: "This week in AI: 12 releases you might have missed" — no single focal release, it's a digest.
+Another real example of what NOT to extract: "CreatorIQ Connect 2026 announced for October 13 in LA, with 1,000+ attendees expected" — this has specific details (date, location, attendee count) but describes an event being scheduled, not a product feature being released.
 
 Never invent facts. Output ONLY a JSON array, no prose.`;
   const user = `Source: ${source.name} (${source.url})
@@ -297,6 +338,7 @@ Do NOT extract:
 - General "AI has risks" opinion/analysis pieces with no specific named incident
 - Vague or unsubstantiated complaints with no concrete detail
 - Old, already-resolved issues being recapped
+- Announcements of upcoming events/conferences — not an issue/complaint at all
 
 Never invent facts. Output ONLY a JSON array, no prose.`;
   const user = `Source: ${source.name} (${source.url})
