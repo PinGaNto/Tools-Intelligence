@@ -1,21 +1,21 @@
 {
   "_comment": "Root/listing pages to fetch for each monitored tool. 'verify' true = guessed URL pattern, not yet manually confirmed — check it actually lists recent posts before relying on it.",
   "toolSources": [
-    { "tool": "GWI", "url": "https://www.gwi.com/on-the-dot-archive", "verify": false },
-    { "tool": "Tubular", "url": "https://tubularlabs.com/blog/", "verify": false },
+    { "tool": "GWI", "url": "https://help.globalwebindex.com/en/articles/16845188-release-notes-september-2026", "verify": true },
+    { "tool": "Tubular", "url": "https://tubularlabs.com/solutions/", "verify": true },
     { "tool": "Statista", "url": "https://www.statista.com/press/", "verify": true },
-    { "tool": "Brandwatch", "url": "https://www.brandwatch.com/blog/", "verify": true },
-    { "tool": "Meltwater", "url": "https://www.meltwater.com/en/product-updates", "verify": true },
-    { "tool": "CreatorIQ", "url": "https://www.creatoriq.com/press", "verify": false },
+    { "tool": "Brandwatch", "url": "https://influence-help.brandwatch.com/en/collections/16576596-product-updates", "verify": false },
+    { "tool": "Meltwater", "url": "https://www.meltwater.com/en/product-updates", "verify": false },
+    { "tool": "CreatorIQ", "url": "https://www.creatoriq.com/whats-new-in-creatoriq/product-release-roundups", "verify": false },
     { "tool": "ListenFirst", "url": "https://www.listenfirstmedia.com/blog", "verify": true },
-    { "tool": "Semrush", "url": "https://www.semrush.com/news/", "verify": false },
-    { "tool": "Mintel", "url": "https://www.mintel.com/press-centre/", "verify": true },
+    { "tool": "Semrush", "url": "https://developer.semrush.com/api/v3/introduction/release-notes/", "verify": false },
+    { "tool": "Mintel", "url": "https://www.mintel.com/press-centre/mintel-in-the-media/", "verify": true },
     { "tool": "Julius", "url": "https://www.juliusworks.com/blog", "verify": true },
-    { "tool": "Siftsy", "url": "https://www.siftsy.com/blog", "verify": true },
+    { "tool": "Siftsy", "url": "https://signal.getsiftsy.com/", "verify": false },
     { "tool": "ChatGPT", "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes", "verify": false },
     { "tool": "Slack", "url": "https://slack.com/blog/news", "verify": false },
-    { "tool": "VwD", "url": "https://www.vwd.ai/blog", "verify": true },
-    { "tool": "Sprinklr", "url": "https://www.sprinklr.com/blog/", "verify": true }
+    { "tool": "VwD", "url": "https://www.vwd.ai/pulse/discovery-launch", "verify": true },
+    { "tool": "Sprinklr", "url": "https://www.sprinklr.com/help/categories/2610-release-26th-sep-26-onwards/6a97ef72673bd48edfcf2b01", "verify": true }
   ],
   "_comment2": "General sources used to source the Trending page. These are broad, well-known channels rather than tool-specific.",
   "trendingSources": [
@@ -27,6 +27,6 @@
     { "name": "Anthropic News", "url": "https://www.anthropic.com/news" },
     { "name": "TechCrunch AI", "url": "https://techcrunch.com/category/artificial-intelligence/" }
   ],
-  "_comment3": "Issues/complaints sourcing is NOT automated yet — see README. Add real sources here once you have a workable approach (e.g. a search API) and update scripts/scan.mjs accordingly.",
+  "_comment3": "Issues is now automated too — it reuses trendingSources above (same general news outlets), just with a different extraction prompt looking for problems/complaints instead of launches. This issueSources list is unused; it's kept here in case you want to add dedicated complaint sources later (would need a real search/scraping API for sites like G2/BBB, since plain fetch() won't get real content from them).",
   "issueSources": []
 }
