@@ -610,7 +610,7 @@ const UPDATES = [
   }
 ];
 
-const TRENDING_REFRESHED_AT = "2026-10-07"; // updated by scripts/scan.mjs
+const TRENDING_REFRESHED_AT = "2026-10-07";
 const TRENDING = [
   {
     "name": "Expanded Cyber Verification Program",
@@ -764,7 +764,7 @@ const TRENDING = [
   }
 ];
 
-const ISSUES_REFRESHED_AT = "2026-10-07"; // manually curated — see README
+const ISSUES_REFRESHED_AT = "2026-10-07";
 const ISSUES = [
   {
     "tool": "Google Open Source Bug Bounty Program",
@@ -880,12 +880,12 @@ const ISSUES = [
 const SCAN_META = {
   "lastRun": "2026-10-07T14:01:56.894Z",
   "runType": "Manual"
-};
+}; // written by scripts/scan.mjs — untouched here
 
 const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
-  "lastRun": "2026-10-07T13:09:43.750Z"
-}; // written by scripts/inbox.mjs
+  "lastRun": "2026-10-07T23:00:02.952Z"
+};
 
 const NOTIFICATIONS = [
   {
