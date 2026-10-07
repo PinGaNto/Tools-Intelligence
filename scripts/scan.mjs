@@ -226,8 +226,10 @@ async function scanToolUpdates(tool, configuredUrl, data) {
 
 Only extract an item if it describes ONE specific, concrete, named feature, capability, or product change — with enough detail that you could explain exactly what it does. This can be something the tool ALREADY shipped, OR something concretely announced for near-future release (e.g. "rolling out next month", "launching in Q4", "available starting November") — both count, as long as there's a real description of the capability itself, not just that something is coming. It needs a real date (the ship date if already live, or the announcement/expected-release date if upcoming).
 
+Note: this page is the tool's OWN official source, so it's normal and fine for it to bundle several of its OWN features into one monthly release-notes post (e.g. "September release roundup: feature A, feature B, feature C") — extract each distinct feature from a post like that as its own item. That is NOT the "newsletter/roundup" problem below; that problem is specifically about third-party content that bundles unrelated news from many different companies/tools together.
+
 Do NOT extract:
-- Newsletter- or digest-style posts that bundle multiple unrelated updates into one roundup — skip the whole thing rather than picking pieces out of it
+- Third-party newsletter- or digest-style posts that bundle unrelated updates from many different companies/tools into one roundup — skip the whole thing rather than picking pieces out of it (this does not apply to a tool's own official release notes, see note above)
 - Thought-leadership, opinion, "best practices," or how-to content that merely mentions the product
 - Vague teasers with NO concrete detail about what the feature actually does ("something big is coming", "stay tuned", "exciting things ahead") — the bar is whether you could explain what the feature DOES, not whether it's live yet
 - Re-shares or recaps of something already announced earlier
