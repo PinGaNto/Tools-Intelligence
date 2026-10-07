@@ -531,11 +531,97 @@ const UPDATES = [
     "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
     "sourceType": "Official source",
     "reliability": "Reliable"
+  },
+  {
+    "id": 33,
+    "tool": "GWI",
+    "category": "Audience",
+    "date": "2026-09-07",
+    "title": "GWI insights, now in Slack",
+    "summary": "GWI integrated its Spark MCP‑powered insights into Slack via a Slackbot, allowing users to ask questions and receive GWI‑backed answers directly in Slack conversations.",
+    "impact": "Analytics teams can retrieve trusted audience data without leaving Slack, speeding up decision‑making and reducing context‑switching.",
+    "overlap": [
+      "Slack integration",
+      "AI chatbot",
+      "Data access"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.globalwebindex.com/en/articles/16845188-release-notes-september-2026",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 34,
+    "tool": "GWI",
+    "category": "Audience",
+    "date": "2026-09-07",
+    "title": "Public dashboards are now live",
+    "summary": "GWI launched Public dashboards, letting Pro‑plan users generate a shareable public link that provides a live, interactive view of a dashboard to anyone, with automatic expiration after 30 days.",
+    "impact": "Marketing teams can share up‑to‑date audience insights with external stakeholders or clients without requiring them to have a GWI account.",
+    "overlap": [
+      "Dashboard sharing",
+      "Public link",
+      "Collaboration"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.globalwebindex.com/en/articles/16845188-release-notes-september-2026",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 35,
+    "tool": "Mintel",
+    "category": "Market Intelligence",
+    "date": "2026-03-11",
+    "title": "Mintel partners with Dragonfly AI to add predictive attention intelligence and packaging performance scores to GNPD",
+    "summary": "Mintel announced a new partnership with Dragonfly AI, integrating predictive attention intelligence directly into the Mintel Global New Products Database (GNPD) and adding a packaging performance score for every product entry.",
+    "impact": "Provides media and marketing analytics teams with actionable insights on how packaging influences consumer attention, improving forecasting and product strategy.",
+    "overlap": [
+      "Predictive analytics",
+      "Packaging performance",
+      "Product database"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.mintel.com/press-centre/mintel-announces-the-global-launch-of-mintel-futures",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 36,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-09-29",
+    "title": "GPT-6.1 Sol rollout in ChatGPT Work and Codex",
+    "summary": "GPT-6.1 Sol, an upgraded model that improves on GPT-6 Sol for agentic coding, computer use, and professional work, is being rolled out in ChatGPT Work and Codex, starting with Pro users and expanding to Plus, Business, Enterprise, and Edu plans; Enterprise and Edu workspace owners can enable model access in workspace settings.",
+    "impact": "The more powerful model can automate and accelerate complex data analysis, reporting, and workflow automation for media and marketing analytics teams.",
+    "overlap": [
+      "GPT-6.1 Sol",
+      "agentic coding",
+      "professional work"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
   }
 ];
 
-const TRENDING_REFRESHED_AT = "2026-10-06";
+const TRENDING_REFRESHED_AT = "2026-10-07"; // updated by scripts/scan.mjs
 const TRENDING = [
+  {
+    "name": "Expanded Cyber Verification Program",
+    "category": "AI",
+    "date": "2026-10-06",
+    "summary": "Anthropic launched an expanded version of its Cyber Verification Program, offering advanced cyber capabilities and reduced‑blocking classifiers to qualified security professionals.",
+    "source": "https://www.anthropic.com/news",
+    "sourceType": "Anthropic News",
+    "reliability": "Reliable",
+    "rank": 1
+  },
   {
     "name": "Hark AI Personal Assistant",
     "category": "AI",
@@ -544,7 +630,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 1
+    "rank": 2
   },
   {
     "name": "LibreOffice “no AI” Feature",
@@ -554,7 +640,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 2
+    "rank": 3
   },
   {
     "name": "Mistral 1T Model",
@@ -564,7 +650,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 3
+    "rank": 4
   },
   {
     "name": "Pinterest Beauty Pins Action Plans",
@@ -574,7 +660,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 4
+    "rank": 5
   },
   {
     "name": "Petlibro AI‑Powered Feeder",
@@ -584,7 +670,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 5
+    "rank": 6
   },
   {
     "name": "AI at Work Webinar: Copilot, Apps, & Agents",
@@ -594,7 +680,27 @@ const TRENDING = [
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
-    "rank": 6
+    "rank": 7
+  },
+  {
+    "name": "Hot Girl Hotline",
+    "category": "Social",
+    "date": "2026-10-05",
+    "summary": "Hot Girl Hotline is an AI‑powered advice chatbot that functions like a modern “Dear Abby,” offering users personalized responses to personal and relationship questions.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 8
+  },
+  {
+    "name": "Linkdaze Smart Calendar",
+    "category": "Productivity",
+    "date": "2026-10-05",
+    "summary": "Linkdaze introduced a smart calendar designed to manage household tasks and family schedules, going beyond traditional event tracking to coordinate chores, meals, and shared responsibilities.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 9
   },
   {
     "name": "OpenAI ChatGPT EU Watermarking",
@@ -604,7 +710,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 7
+    "rank": 10
   },
   {
     "name": "Reflection Beam Model",
@@ -614,7 +720,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 8
+    "rank": 11
   },
   {
     "name": "Instinct Group Chat AI Agent",
@@ -624,7 +730,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 9
+    "rank": 12
   },
   {
     "name": "TikTok AI Shopping Assistant",
@@ -634,7 +740,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 10
+    "rank": 13
   },
   {
     "name": "HackerRank AI Interviewer",
@@ -644,7 +750,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 11
+    "rank": 14
   },
   {
     "name": "OpenAI Visual Ads for Image Generation",
@@ -654,44 +760,15 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 12
-  },
-  {
-    "name": "A practical guide to building with GPT-6",
-    "category": "AI",
-    "date": "2026-10-02",
-    "summary": "OpenAI released a practical guide that explains how developers can build applications using the GPT-6 model.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
-    "reliability": "Reliable",
-    "rank": 13
-  },
-  {
-    "name": "Anthropic invests $100M in AI talent",
-    "category": "Productivity",
-    "date": "2026-10-02",
-    "summary": "Anthropic announced a $100 million investment to train 10,000 engineers and address the enterprise AI talent gap.",
-    "source": "https://www.anthropic.com/news",
-    "sourceType": "Anthropic News",
-    "reliability": "Reliable",
-    "rank": 14
-  },
-  {
-    "name": "Barclays scales Claude",
-    "category": "Productivity",
-    "date": "2026-10-01",
-    "summary": "Barclays is expanding its use of Anthropic's Claude model to upgrade operations and improve client experience.",
-    "source": "https://www.anthropic.com/news",
-    "sourceType": "Anthropic News",
-    "reliability": "Reliable",
     "rank": 15
   }
 ];
 
-const ISSUES_REFRESHED_AT = "2026-10-06";
+const ISSUES_REFRESHED_AT = "2026-10-07"; // manually curated — see README
 const ISSUES = [
   {
     "tool": "Google Open Source Bug Bounty Program",
+    "monitored": false,
     "category": "AI",
     "date": "2026-10-04",
     "title": "Google freezes open source bug bounty program due to surge in AI submissions",
@@ -699,7 +776,6 @@ const ISSUES = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "monitored": false,
     "rank": 1
   },
   {
@@ -752,14 +828,14 @@ const ISSUES = [
   },
   {
     "tool": "OpenAI models",
-    "monitored": false,
     "category": "AI",
     "date": "2026-09-30",
     "title": "Disrupting a coordinated model-distillation campaign",
-    "summary": "OpenAI announced that it had identified and disrupted a coordinated effort to distill its models, indicating a security threat to its AI systems.",
+    "summary": "OpenAI disclosed that it detected and stopped a coordinated effort to distill its proprietary models, averting unauthorized replication of its AI technology.",
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
+    "monitored": false,
     "rank": 6
   },
   {
@@ -802,16 +878,112 @@ const ISSUES = [
 ];
 
 const SCAN_META = {
-  "lastRun": "2026-10-06T19:13:01.045Z",
+  "lastRun": "2026-10-07T14:01:56.894Z",
   "runType": "Manual"
-}; // written by scripts/scan.mjs — untouched here
+};
 
 const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
   "lastRun": "2026-10-07T13:09:43.750Z"
-};
+}; // written by scripts/inbox.mjs
 
 const NOTIFICATIONS = [
+  {
+    "id": "upd-33",
+    "date": "2026-10-07T13:58:26.930Z",
+    "type": "update",
+    "text": "GWI: GWI insights, now in Slack",
+    "target": {
+      "page": "updates",
+      "id": 33
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-34",
+    "date": "2026-10-07T13:58:26.930Z",
+    "type": "update",
+    "text": "GWI: Public dashboards are now live",
+    "target": {
+      "page": "updates",
+      "id": 34
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-35",
+    "date": "2026-10-07T13:58:26.930Z",
+    "type": "update",
+    "text": "Mintel: Mintel partners with Dragonfly AI to add predictive attention intelligence and packaging performance scores to GNPD",
+    "target": {
+      "page": "updates",
+      "id": 35
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-36",
+    "date": "2026-10-07T13:58:26.930Z",
+    "type": "update",
+    "text": "ChatGPT: GPT-6.1 Sol rollout in ChatGPT Work and Codex",
+    "target": {
+      "page": "updates",
+      "id": 36
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-Expanded Cyber Verification Program-2026-10-07T13:58:26.930Z",
+    "date": "2026-10-07T13:58:26.930Z",
+    "type": "trending",
+    "text": "Expanded Cyber Verification Program",
+    "target": {
+      "page": "trending",
+      "name": "Expanded Cyber Verification Program"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-Hot Girl Hotline-2026-10-07T13:58:26.930Z",
+    "date": "2026-10-07T13:58:26.930Z",
+    "type": "trending",
+    "text": "Hot Girl Hotline",
+    "target": {
+      "page": "trending",
+      "name": "Hot Girl Hotline"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-Linkdaze Smart Calendar-2026-10-07T13:58:26.930Z",
+    "date": "2026-10-07T13:58:26.930Z",
+    "type": "trending",
+    "text": "Linkdaze Smart Calendar",
+    "target": {
+      "page": "trending",
+      "name": "Linkdaze Smart Calendar"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "issue-OpenAI models-Disrupting a coordinated model-distillation campaign-2026-10-07T13:58:26.930Z",
+    "date": "2026-10-07T13:58:26.930Z",
+    "type": "issue",
+    "text": "OpenAI models: Disrupting a coordinated model-distillation campaign",
+    "target": {
+      "page": "issues",
+      "key": "OpenAI models|Disrupting a coordinated model-distillation campaign"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
   {
     "id": "upd-30",
     "date": "2026-10-06T19:09:32.618Z",
@@ -1312,102 +1484,6 @@ const NOTIFICATIONS = [
     "target": {
       "page": "updates",
       "id": 19
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-20",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "update",
-    "text": "Statista: Statista Appoints Na'ama Sheba as Vice President Global Marketing",
-    "target": {
-      "page": "updates",
-      "id": 20
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-21",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "update",
-    "text": "Semrush: Semrush Releases Expanded 2026 AI Visibility Index",
-    "target": {
-      "page": "updates",
-      "id": 21
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-22",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "update",
-    "text": "ChatGPT: Security history in ChatGPT",
-    "target": {
-      "page": "updates",
-      "id": 22
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-23",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "update",
-    "text": "ChatGPT: Plugins available in Voice conversations",
-    "target": {
-      "page": "updates",
-      "id": 23
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-24",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "update",
-    "text": "ChatGPT: GPT‑6 Sol and Luna in Work and Codex",
-    "target": {
-      "page": "updates",
-      "id": 24
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-25",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "update",
-    "text": "ChatGPT: Credit scores in Finances",
-    "target": {
-      "page": "updates",
-      "id": 25
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-26",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "update",
-    "text": "ChatGPT: ChatGPT for Microsoft Word",
-    "target": {
-      "page": "updates",
-      "id": 26
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Two years of OpenAI Academy-2026-09-27T03:52:46.320Z",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "trending",
-    "text": "Two years of OpenAI Academy",
-    "target": {
-      "page": "trending",
-      "name": "Two years of OpenAI Academy"
     },
     "source": "scan",
     "runType": "Automatic (weekly)"
