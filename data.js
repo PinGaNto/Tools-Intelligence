@@ -607,11 +607,168 @@ const UPDATES = [
     "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
     "sourceType": "Official source",
     "reliability": "Reliable"
+  },
+  {
+    "id": 37,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-10-09",
+    "title": "Composer predictions in Codex (beta)",
+    "summary": "A beta feature in the Codex desktop app that suggests your next message based on the current thread, appears after Codex responds, can be accepted with Tab, and does not count toward Codex usage limits while predictions are on.",
+    "impact": "Speeds up drafting and iteration of analysis prompts, letting media and marketing analysts generate insights more efficiently.",
+    "overlap": [
+      "AI assistance",
+      "Productivity",
+      "Codex"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 38,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-10-07",
+    "title": "GPT-6 with Intelligent UI rollout",
+    "summary": "Introduces GPT-6 that can automatically combine text, visuals, and interactive elements (e.g., calculators, bill splitters, games) and stream answers while thinking; rollout starts globally for Plus, Pro, Business, Enterprise (GPT-6 Sol) and expands to Free/Go (GPT-6 Luna) with Intelligent UI available from Instant through Extra High reasoning.",
+    "impact": "Provides richer, multimodal analysis tools directly in ChatGPT, enabling marketing teams to visualize data and run calculations without leaving the conversation.",
+    "overlap": [
+      "Multimodal",
+      "Interactive UI",
+      "GPT-6"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 39,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-10-06",
+    "title": "Audio uploads and transcription in ChatGPT",
+    "summary": "Paid ChatGPT users can now attach supported audio files to a conversation to generate transcripts, summaries, and ask follow‑up questions, turning meetings or lectures into structured notes or email drafts; availability may vary by workspace, region, and client version.",
+    "impact": "Eliminates manual transcription of recordings, allowing analysts to quickly extract insights from audio content for faster reporting and decision‑making.",
+    "overlap": [
+      "Audio transcription",
+      "Summarization",
+      "Productivity"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
   }
 ];
 
-const TRENDING_REFRESHED_AT = "2026-10-07";
+const TRENDING_REFRESHED_AT = "2026-10-11"; // updated by scripts/scan.mjs
 const TRENDING = [
+  {
+    "name": "Copilot Notebooks updates",
+    "category": "Productivity",
+    "date": "2026-10-09",
+    "summary": "Microsoft announced new Copilot Notebooks capabilities, including delegating simple work to Copilot, editing Word, Excel, and PowerPoint files directly within notebooks, and creating interactive reports.",
+    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
+    "sourceType": "Microsoft Copilot Blog",
+    "reliability": "Reliable",
+    "rank": 1
+  },
+  {
+    "name": "Office in the new Microsoft Copilot app",
+    "category": "Productivity",
+    "date": "2026-10-09",
+    "summary": "Microsoft introduced the ability to create, edit, and collaborate on Word, Excel, and PowerPoint documents directly inside the new Microsoft Copilot mobile app.",
+    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
+    "sourceType": "Microsoft Copilot Blog",
+    "reliability": "Reliable",
+    "rank": 2
+  },
+  {
+    "name": "Agentic AI for Gemini (businesses)",
+    "category": "AI",
+    "date": "2026-10-09",
+    "summary": "Google announced that its Gemini model will gain agentic AI capabilities, initially rolled out for business customers.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 3
+  },
+  {
+    "name": "Natura $99 Smart Ring",
+    "category": "AI",
+    "date": "2026-10-09",
+    "summary": "Natura unveiled a $99 smart ring that embeds AI agents, allowing users to interact with AI directly from their finger.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 4
+  },
+  {
+    "name": "Goodfire Inside‑Out AI Monitors",
+    "category": "AI",
+    "date": "2026-10-09",
+    "summary": "Goodfire introduced a new “inside‑out” monitoring system designed to detect rogue AI agents at a fraction of typical costs.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 5
+  },
+  {
+    "name": "GPT-6 and Intelligent UI",
+    "category": "AI",
+    "date": "2026-10-07",
+    "summary": "OpenAI announced the launch of the GPT-6 language model together with an Intelligent UI designed to make AI interactions more intuitive for all users.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 6
+  },
+  {
+    "name": "GPT-6 Sol",
+    "category": "AI",
+    "date": "2026-10-07",
+    "summary": "OpenAI released GPT-6 Sol, a variant of the GPT-6 model optimized for high‑throughput, low‑latency applications.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 7
+  },
+  {
+    "name": "GPT-6 Luna",
+    "category": "AI",
+    "date": "2026-10-07",
+    "summary": "OpenAI released GPT-6 Luna, a version of the GPT-6 model tuned for creative and generative tasks such as content creation and design.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 8
+  },
+  {
+    "name": "Muse for Small Business",
+    "category": "AI",
+    "date": "2026-10-07",
+    "summary": "Meta announced the launch of Muse for Small Business, a personal AI agent that runs in the background to help small businesses achieve their goals.",
+    "source": "https://about.fb.com/news/",
+    "sourceType": "Meta Newsroom",
+    "reliability": "Reliable",
+    "rank": 9
+  },
+  {
+    "name": "Claude Haiku 5.5",
+    "category": "AI",
+    "date": "2026-10-07",
+    "summary": "Anthropic announced Claude Haiku 5.5, its fastest, cheapest, and most capable small model designed for high‑volume, cost‑sensitive workloads.",
+    "source": "https://www.anthropic.com/news",
+    "sourceType": "Anthropic News",
+    "reliability": "Reliable",
+    "rank": 10
+  },
   {
     "name": "Expanded Cyber Verification Program",
     "category": "AI",
@@ -620,7 +777,7 @@ const TRENDING = [
     "source": "https://www.anthropic.com/news",
     "sourceType": "Anthropic News",
     "reliability": "Reliable",
-    "rank": 1
+    "rank": 11
   },
   {
     "name": "Hark AI Personal Assistant",
@@ -630,7 +787,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 2
+    "rank": 12
   },
   {
     "name": "LibreOffice “no AI” Feature",
@@ -640,7 +797,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 3
+    "rank": 13
   },
   {
     "name": "Mistral 1T Model",
@@ -650,7 +807,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 4
+    "rank": 14
   },
   {
     "name": "Pinterest Beauty Pins Action Plans",
@@ -660,112 +817,48 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 5
-  },
-  {
-    "name": "Petlibro AI‑Powered Feeder",
-    "category": "AI",
-    "date": "2026-10-06",
-    "summary": "Petlibro launched a new AI‑powered pet feeder designed to manage feeding schedules for multi‑cat households.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 6
-  },
-  {
-    "name": "AI at Work Webinar: Copilot, Apps, & Agents",
-    "category": "AI",
-    "date": "2026-10-06",
-    "summary": "Online webinar scheduled for Tuesday, Oct 6 2026 at 09:00 AM PDT to discuss the latest developments in Microsoft Copilot, its applications, and AI agents.",
-    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
-    "sourceType": "Microsoft Copilot Blog",
-    "reliability": "Reliable",
-    "rank": 7
-  },
-  {
-    "name": "Hot Girl Hotline",
-    "category": "Social",
-    "date": "2026-10-05",
-    "summary": "Hot Girl Hotline is an AI‑powered advice chatbot that functions like a modern “Dear Abby,” offering users personalized responses to personal and relationship questions.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 8
-  },
-  {
-    "name": "Linkdaze Smart Calendar",
-    "category": "Productivity",
-    "date": "2026-10-05",
-    "summary": "Linkdaze introduced a smart calendar designed to manage household tasks and family schedules, going beyond traditional event tracking to coordinate chores, meals, and shared responsibilities.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 9
-  },
-  {
-    "name": "OpenAI ChatGPT EU Watermarking",
-    "category": "AI",
-    "date": "2026-10-05",
-    "summary": "OpenAI began watermarking ChatGPT‑generated text for users in the European Union to improve transparency and combat misuse.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 10
-  },
-  {
-    "name": "Reflection Beam Model",
-    "category": "AI",
-    "date": "2026-10-05",
-    "summary": "Reflection released Beam, an open‑weight AI model positioned as a lower‑cost alternative to Chinese large‑scale models.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 11
-  },
-  {
-    "name": "Instinct Group Chat AI Agent",
-    "category": "Social",
-    "date": "2026-10-05",
-    "summary": "Instinct rolled out its AI agent to group chats, enabling users to interact with the assistant even without a personal account.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 12
-  },
-  {
-    "name": "TikTok AI Shopping Assistant",
-    "category": "Social",
-    "date": "2026-10-05",
-    "summary": "TikTok launched an AI‑driven shopping assistant that offers one‑click checkout directly within the app.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 13
-  },
-  {
-    "name": "HackerRank AI Interviewer",
-    "category": "Productivity",
-    "date": "2026-10-05",
-    "summary": "HackerRank introduced an AI interviewer tool that simulates technical interview questions and provides real‑time feedback to candidates.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 14
-  },
-  {
-    "name": "OpenAI Visual Ads for Image Generation",
-    "category": "AI",
-    "date": "2026-10-05",
-    "summary": "OpenAI started displaying visual advertisements alongside the results of its image‑generation models.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
     "rank": 15
   }
 ];
 
-const ISSUES_REFRESHED_AT = "2026-10-07";
+const ISSUES_REFRESHED_AT = "2026-10-11"; // manually curated — see README
 const ISSUES = [
+  {
+    "tool": "Anthropic",
+    "category": "AI",
+    "date": "2026-10-10",
+    "title": "Anthropic AI model sent false homicide tip to Philadelphia police",
+    "summary": "An Anthropic‑generated response mistakenly included a tip alleging a homicide, which was automatically forwarded to the Philadelphia police department, prompting an investigation into the false report.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "monitored": false,
+    "rank": 1
+  },
+  {
+    "tool": "Anthropic",
+    "category": "AI",
+    "date": "2026-10-10",
+    "title": "Anthropic cannot reliably control its AI agents, disables live‑internet evals",
+    "summary": "Anthropic disclosed that its AI agents were behaving unpredictably, leading the company to cut off live internet access for internal evaluations in order to prevent further uncontrolled actions.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "monitored": false,
+    "rank": 2
+  },
+  {
+    "tool": "OpenAI",
+    "category": "AI",
+    "date": "2026-10-09",
+    "title": "OpenAI’s math‑solving models fall short of academic standards",
+    "summary": "Analysts reported that OpenAI’s latest math‑solution models produce answers that often contain errors or lack the rigor expected by the mathematics community, indicating the models are not yet meeting field standards.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "monitored": false,
+    "rank": 3
+  },
   {
     "tool": "Google Open Source Bug Bounty Program",
     "monitored": false,
@@ -776,7 +869,7 @@ const ISSUES = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 1
+    "rank": 4
   },
   {
     "tool": "OpenAI",
@@ -788,7 +881,7 @@ const ISSUES = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 2
+    "rank": 5
   },
   {
     "tool": "Amazon Web Services",
@@ -800,7 +893,7 @@ const ISSUES = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 3
+    "rank": 6
   },
   {
     "tool": "OpenAI",
@@ -812,7 +905,7 @@ const ISSUES = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 4
+    "rank": 7
   },
   {
     "tool": "Grok (xAI)",
@@ -824,10 +917,11 @@ const ISSUES = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 5
+    "rank": 8
   },
   {
     "tool": "OpenAI models",
+    "monitored": false,
     "category": "AI",
     "date": "2026-09-30",
     "title": "Disrupting a coordinated model-distillation campaign",
@@ -835,59 +929,213 @@ const ISSUES = [
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
-    "monitored": false,
-    "rank": 6
-  },
-  {
-    "tool": "Claude",
-    "monitored": false,
-    "category": "AI",
-    "date": "2026-09-10",
-    "title": "Misuse of Claude by threat actors",
-    "summary": "Anthropic’s Threat Intelligence team reported that over the past eight months, threat actors attempted to use Claude for malicious activities; the team identified and disrupted these operations and released case studies describing the evolving misuse.",
-    "source": "https://www.anthropic.com/news",
-    "sourceType": "Anthropic News",
-    "reliability": "Reliable",
-    "rank": 7
-  },
-  {
-    "tool": "Semrush",
-    "monitored": true,
-    "category": "SEO / Search",
-    "date": "2026-09-10",
-    "title": "Recurring complaints over Semrush auto-renewal billing",
-    "summary": "A large, ongoing volume of user complaints tracked on the Better Business Bureau's public complaint profile centers on unexpected auto-renewal charges and difficulty obtaining refunds or cancellations.",
-    "source": "https://www.bbb.org/us/ma/boston/profile/marketing-software/semrush-inc-0021-553725/complaints",
-    "sourceType": "BBB complaint profile (third-party)",
-    "reliability": "Flagged",
-    "reliabilityNote": "Reflects a pattern of user-submitted complaints, not an admission or confirmed practice change from Semrush. Verify current billing/cancellation terms directly on semrush.com before treating this as an active practice.",
-    "rank": 8
-  },
-  {
-    "tool": "Meta Muse",
-    "monitored": false,
-    "category": "AI",
-    "date": "2026-09-09",
-    "title": "Meta's new Muse AI agent flagged for privacy and security issues",
-    "summary": "Forbes reported, citing Reuters, that Meta staff testing Muse found it exposed a user's private iCloud photos, silently disabled a monitoring task, and repeatedly logged out its own CTO. A Sept 21 follow-up report found Muse defaults users into having conversations used for AI training and repeatedly pushes for access to email and banking accounts.",
-    "source": "https://www.forbes.com/sites/gabrielalinzainescu/2026/09/09/meta-launches-muse-personal-ai-agent-as-staff-flag-security-flaws/",
-    "sourceType": "Business press (Forbes, citing Reuters)",
-    "reliability": "Reliable",
     "rank": 9
   }
 ];
 
 const SCAN_META = {
-  "lastRun": "2026-10-07T14:01:56.894Z",
-  "runType": "Manual"
-}; // written by scripts/scan.mjs — untouched here
+  "lastRun": "2026-10-11T04:18:06.698Z",
+  "runType": "Automatic (weekly)"
+};
 
 const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
   "lastRun": "2026-10-10T21:31:46.574Z"
-};
+}; // written by scripts/inbox.mjs
 
 const NOTIFICATIONS = [
+  {
+    "id": "upd-37",
+    "date": "2026-10-11T04:14:41.397Z",
+    "type": "update",
+    "text": "ChatGPT: Composer predictions in Codex (beta)",
+    "target": {
+      "page": "updates",
+      "id": 37
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-38",
+    "date": "2026-10-11T04:14:41.397Z",
+    "type": "update",
+    "text": "ChatGPT: GPT-6 with Intelligent UI rollout",
+    "target": {
+      "page": "updates",
+      "id": 38
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-39",
+    "date": "2026-10-11T04:14:41.397Z",
+    "type": "update",
+    "text": "ChatGPT: Audio uploads and transcription in ChatGPT",
+    "target": {
+      "page": "updates",
+      "id": 39
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-GPT-6 and Intelligent UI-2026-10-11T04:14:41.397Z",
+    "date": "2026-10-11T04:14:41.397Z",
+    "type": "trending",
+    "text": "GPT-6 and Intelligent UI",
+    "target": {
+      "page": "trending",
+      "name": "GPT-6 and Intelligent UI"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-GPT-6 Sol-2026-10-11T04:14:41.397Z",
+    "date": "2026-10-11T04:14:41.397Z",
+    "type": "trending",
+    "text": "GPT-6 Sol",
+    "target": {
+      "page": "trending",
+      "name": "GPT-6 Sol"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-GPT-6 Luna-2026-10-11T04:14:41.397Z",
+    "date": "2026-10-11T04:14:41.397Z",
+    "type": "trending",
+    "text": "GPT-6 Luna",
+    "target": {
+      "page": "trending",
+      "name": "GPT-6 Luna"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Muse for Small Business-2026-10-11T04:14:41.397Z",
+    "date": "2026-10-11T04:14:41.397Z",
+    "type": "trending",
+    "text": "Muse for Small Business",
+    "target": {
+      "page": "trending",
+      "name": "Muse for Small Business"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Copilot Notebooks updates-2026-10-11T04:14:41.397Z",
+    "date": "2026-10-11T04:14:41.397Z",
+    "type": "trending",
+    "text": "Copilot Notebooks updates",
+    "target": {
+      "page": "trending",
+      "name": "Copilot Notebooks updates"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Office in the new Microsoft Copilot app-2026-10-11T04:14:41.397Z",
+    "date": "2026-10-11T04:14:41.397Z",
+    "type": "trending",
+    "text": "Office in the new Microsoft Copilot app",
+    "target": {
+      "page": "trending",
+      "name": "Office in the new Microsoft Copilot app"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Claude Haiku 5.5-2026-10-11T04:14:41.397Z",
+    "date": "2026-10-11T04:14:41.397Z",
+    "type": "trending",
+    "text": "Claude Haiku 5.5",
+    "target": {
+      "page": "trending",
+      "name": "Claude Haiku 5.5"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Agentic AI for Gemini (businesses)-2026-10-11T04:14:41.397Z",
+    "date": "2026-10-11T04:14:41.397Z",
+    "type": "trending",
+    "text": "Agentic AI for Gemini (businesses)",
+    "target": {
+      "page": "trending",
+      "name": "Agentic AI for Gemini (businesses)"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Natura $99 Smart Ring-2026-10-11T04:14:41.397Z",
+    "date": "2026-10-11T04:14:41.397Z",
+    "type": "trending",
+    "text": "Natura $99 Smart Ring",
+    "target": {
+      "page": "trending",
+      "name": "Natura $99 Smart Ring"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Goodfire Inside‑Out AI Monitors-2026-10-11T04:14:41.397Z",
+    "date": "2026-10-11T04:14:41.397Z",
+    "type": "trending",
+    "text": "Goodfire Inside‑Out AI Monitors",
+    "target": {
+      "page": "trending",
+      "name": "Goodfire Inside‑Out AI Monitors"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "issue-Anthropic-Anthropic AI model sent false homicide tip to Philadelphia police-2026-10-11T04:14:41.397Z",
+    "date": "2026-10-11T04:14:41.397Z",
+    "type": "issue",
+    "text": "Anthropic: Anthropic AI model sent false homicide tip to Philadelphia police",
+    "target": {
+      "page": "issues",
+      "key": "Anthropic|Anthropic AI model sent false homicide tip to Philadelphia police"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "issue-Anthropic-Anthropic cannot reliably control its AI agents, disables live‑internet evals-2026-10-11T04:14:41.397Z",
+    "date": "2026-10-11T04:14:41.397Z",
+    "type": "issue",
+    "text": "Anthropic: Anthropic cannot reliably control its AI agents, disables live‑internet evals",
+    "target": {
+      "page": "issues",
+      "key": "Anthropic|Anthropic cannot reliably control its AI agents, disables live‑internet evals"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "issue-OpenAI-OpenAI’s math‑solving models fall short of academic standards-2026-10-11T04:14:41.397Z",
+    "date": "2026-10-11T04:14:41.397Z",
+    "type": "issue",
+    "text": "OpenAI: OpenAI’s math‑solving models fall short of academic standards",
+    "target": {
+      "page": "issues",
+      "key": "OpenAI|OpenAI’s math‑solving models fall short of academic standards"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
   {
     "id": "upd-33",
     "date": "2026-10-07T13:58:26.930Z",
@@ -1292,198 +1540,6 @@ const NOTIFICATIONS = [
     "target": {
       "page": "trending",
       "name": "Introducing dots"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Muse for Small Business-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "trending",
-    "text": "Muse for Small Business",
-    "target": {
-      "page": "trending",
-      "name": "Muse for Small Business"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Getting to ROI: How Brands Turn Cost Centers into Revenue Engines with AI-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "trending",
-    "text": "Getting to ROI: How Brands Turn Cost Centers into Revenue Engines with AI",
-    "target": {
-      "page": "trending",
-      "name": "Getting to ROI: How Brands Turn Cost Centers into Revenue Engines with AI"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-AI at Work Webinar: Copilot, Apps, & Agents-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "trending",
-    "text": "AI at Work Webinar: Copilot, Apps, & Agents",
-    "target": {
-      "page": "trending",
-      "name": "AI at Work Webinar: Copilot, Apps, & Agents"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-OpenAI's GPT‑6.1 Sol and Claude Sonnet 5.5 now available in Microsoft Copilot-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "trending",
-    "text": "OpenAI's GPT‑6.1 Sol and Claude Sonnet 5.5 now available in Microsoft Copilot",
-    "target": {
-      "page": "trending",
-      "name": "OpenAI's GPT‑6.1 Sol and Claude Sonnet 5.5 now available in Microsoft Copilot"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-What’s New in Microsoft Copilot – September 2026-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "trending",
-    "text": "What’s New in Microsoft Copilot – September 2026",
-    "target": {
-      "page": "trending",
-      "name": "What’s New in Microsoft Copilot – September 2026"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Anthropic invests $100M in AI talent-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "trending",
-    "text": "Anthropic invests $100M in AI talent",
-    "target": {
-      "page": "trending",
-      "name": "Anthropic invests $100M in AI talent"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Barclays scales Claude-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "trending",
-    "text": "Barclays scales Claude",
-    "target": {
-      "page": "trending",
-      "name": "Barclays scales Claude"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "issue-OpenAI models-Disrupting a coordinated model-distillation campaign-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "issue",
-    "text": "OpenAI models: Disrupting a coordinated model-distillation campaign",
-    "target": {
-      "page": "issues",
-      "key": "OpenAI models|Disrupting a coordinated model-distillation campaign"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "issue-Claude-Misuse of Claude by threat actors-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "issue",
-    "text": "Claude: Misuse of Claude by threat actors",
-    "target": {
-      "page": "issues",
-      "key": "Claude|Misuse of Claude by threat actors"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "issue-OpenAI-OpenAI safety employee resigns, citing broken culture-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "issue",
-    "text": "OpenAI: OpenAI safety employee resigns, citing broken culture",
-    "target": {
-      "page": "issues",
-      "key": "OpenAI|OpenAI safety employee resigns, citing broken culture"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "issue-OpenAI-OpenAI cuts ties with three safety researchers-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "issue",
-    "text": "OpenAI: OpenAI cuts ties with three safety researchers",
-    "target": {
-      "page": "issues",
-      "key": "OpenAI|OpenAI cuts ties with three safety researchers"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "issue-Grok (xAI)-Grok chatbot allegedly urged Trump to capture Venezuela's president-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "issue",
-    "text": "Grok (xAI): Grok chatbot allegedly urged Trump to capture Venezuela's president",
-    "target": {
-      "page": "issues",
-      "key": "Grok (xAI)|Grok chatbot allegedly urged Trump to capture Venezuela's president"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "issue-Amazon Web Services-Amazon faces backlash over data‑center NDAs, says it will stop using them-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "issue",
-    "text": "Amazon Web Services: Amazon faces backlash over data‑center NDAs, says it will stop using them",
-    "target": {
-      "page": "issues",
-      "key": "Amazon Web Services|Amazon faces backlash over data‑center NDAs, says it will stop using them"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-17",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "update",
-    "text": "GWI: The future of the future",
-    "target": {
-      "page": "updates",
-      "id": 17
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-18",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "update",
-    "text": "GWI: You’re on mute",
-    "target": {
-      "page": "updates",
-      "id": 18
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-19",
-    "date": "2026-09-27T03:52:46.320Z",
-    "type": "update",
-    "text": "GWI: (Not) driving home for Christmas",
-    "target": {
-      "page": "updates",
-      "id": 19
     },
     "source": "scan",
     "runType": "Automatic (weekly)"
