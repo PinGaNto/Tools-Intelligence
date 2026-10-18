@@ -664,11 +664,251 @@ const UPDATES = [
     "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
     "sourceType": "Official source",
     "reliability": "Reliable"
+  },
+  {
+    "id": 40,
+    "tool": "Julius",
+    "category": "Creator",
+    "date": "2025-07-31",
+    "title": "Touch Support added",
+    "summary": "The 1.8.0 release adds touch screen support, enabling Julius to be operated via touch input on compatible devices.",
+    "impact": "Allows marketing teams to run Julius on tablets or other touch-enabled hardware for on‑site data collection and interactive demos.",
+    "overlap": [
+      "Touch Input",
+      "User Interface"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://github.com/bvschaik/julius/wiki/Julius-release",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 41,
+    "tool": "Julius",
+    "category": "Creator",
+    "date": "2025-07-31",
+    "title": "MP3 Support added",
+    "summary": "The 1.8.0 release adds MP3 audio support, allowing Julius to play MP3 files.",
+    "impact": "Enables marketing analysts to embed or trigger MP3 audio cues within Julius‑based presentations or simulations.",
+    "overlap": [
+      "Audio",
+      "Media Playback"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://github.com/bvschaik/julius/wiki/Julius-release",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 42,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-10-16",
+    "title": "ChatGPT Slides lets you create and collaborate on presentations",
+    "summary": "ChatGPT Slides enables users to build slide decks directly in ChatGPT, edit text, images, shapes, and charts, generate custom images, collaborate in real time, and present or export to PowerPoint, PDF, Google Slides, or open in PowerPoint/Keynote via the desktop app. It is rolling out to eligible Pro, Business, and Enterprise users with Space access.",
+    "impact": "Marketing and media teams can produce polished presentation decks instantly within ChatGPT, speeding up campaign reporting and stakeholder communication.",
+    "overlap": [
+      "Presentation creation",
+      "Collaboration",
+      "Export formats"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 43,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-10-16",
+    "title": "GPT-6 Pro model adds faster responses, better plugins, and parallel agents",
+    "summary": "The GPT-6 Pro model in the chat tab now provides faster response times, improved use of plugins and tools, and multiple agents that can work on different parts of a task in parallel, with progress shown in the conversation and the ability to open completed tasks to see each agent's work.",
+    "impact": "Analysts can run complex, multi‑step data queries more quickly, leveraging parallel agents to accelerate insight generation.",
+    "overlap": [
+      "Speed",
+      "Plugins",
+      "Parallel agents"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 44,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-10-15",
+    "title": "GPT‑Live‑1.1 and new multilingual voices released in ChatGPT Voice",
+    "summary": "GPT‑Live‑1.1 and the mini‑model GPT‑Live‑1.1 Quip are now available in ChatGPT Voice, adding more natural accents for French, German, Hindi, Japanese, Korean, Mexican Spanish, and a new English voice named Bubbie, plus additional short phrases that indicate when the model is searching.",
+    "impact": "Voice‑based interactions become more natural and accessible for global teams, improving real‑time analytics workflows in multiple languages.",
+    "overlap": [
+      "Voice",
+      "Multilingual",
+      "Live model"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 45,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-10-15",
+    "title": "Rosalind Academic Plan opens applications for free Business Standard seats",
+    "summary": "The Rosalind Academic Plan now accepts applications from U.S. university labs, offering up to 30 ChatGPT Business Standard seats at no cost for 12 months, with access to GPT‑Rosalind pending trusted‑access approval.",
+    "impact": "Academic researchers can leverage advanced ChatGPT capabilities for life‑sciences and media studies without incurring costs, potentially generating new insights for the industry.",
+    "overlap": [
+      "Academic access",
+      "Free seats",
+      "GPT‑Rosalind"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 46,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-10-15",
+    "title": "Removal of fixed Site limits for Plus and Pro plans",
+    "summary": "The previous fixed limit on the number of Sites a Plus or Pro user can create has been removed; usage and storage limits still apply.",
+    "impact": "Teams can create more independent workspaces for separate campaigns or analyses without hitting an arbitrary cap, enhancing scalability.",
+    "overlap": [
+      "Site limits",
+      "Workspace scaling"
+    ],
+    "confidence": "High",
+    "priority": "Low",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
   }
 ];
 
-const TRENDING_REFRESHED_AT = "2026-10-11";
+const TRENDING_REFRESHED_AT = "2026-10-18"; // updated by scripts/scan.mjs
 const TRENDING = [
+  {
+    "name": "Meta open-weight AI model for Macs",
+    "category": "AI",
+    "date": "2026-10-16",
+    "summary": "Meta released an open‑weight large language model that can run locally on macOS devices, enabling on‑device AI processing without cloud dependence.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 1
+  },
+  {
+    "name": "Bluesky Attie app expansion",
+    "category": "Social",
+    "date": "2026-10-16",
+    "summary": "Bluesky expanded its AI‑powered Attie app, allowing users to create websites, games, and other interactive content directly within the platform.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 2
+  },
+  {
+    "name": "Rosalind Academic Plan",
+    "category": "AI",
+    "date": "2026-10-15",
+    "summary": "OpenAI announced the Rosalind Academic Plan, a subscription offering that gives students and educators access to OpenAI models and tools for learning through question‑driven curricula.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 3
+  },
+  {
+    "name": "Microsoft Copilot for Legal",
+    "category": "AI",
+    "date": "2026-10-15",
+    "summary": "Microsoft announced the general availability of Microsoft Copilot for Legal, adding more than 20 purpose‑built legal skills and partner‑built plugins that embed legal‑specific capabilities and trusted sources directly into Microsoft 365 applications.",
+    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
+    "sourceType": "Microsoft Copilot Blog",
+    "reliability": "Reliable",
+    "rank": 4
+  },
+  {
+    "name": "Amazon Bee personal AI devices",
+    "category": "AI",
+    "date": "2026-10-15",
+    "summary": "Amazon introduced two new Bee‑branded personal AI devices priced from $75, offering voice‑activated assistants and on‑device AI capabilities.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 5
+  },
+  {
+    "name": "Figma AI agent features",
+    "category": "Productivity",
+    "date": "2026-10-15",
+    "summary": "Figma announced new features that define how AI agents operate on its design platform, giving designers programmable AI assistance for tasks like layout and asset generation.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 6
+  },
+  {
+    "name": "Google Universal Cart shopping tool US launch",
+    "category": "AI",
+    "date": "2026-10-15",
+    "summary": "Google launched its Universal Cart shopping tool in the United States, an AI‑driven checkout experience that automatically fills cart details and streamlines purchases across sites.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 7
+  },
+  {
+    "name": "WhatsApp Invite Anyone to Call",
+    "category": "Social",
+    "date": "2026-10-14",
+    "summary": "WhatsApp introduced a feature that lets users invite anyone, even non‑WhatsApp users, to join a WhatsApp call.",
+    "source": "https://about.fb.com/news/",
+    "sourceType": "Meta Newsroom",
+    "reliability": "Reliable",
+    "rank": 8
+  },
+  {
+    "name": "Facebook AI‑powered Feed Personalization Tools",
+    "category": "Social",
+    "date": "2026-10-13",
+    "summary": "Facebook rolled out new AI‑driven tools that allow users to shape their Feed and Reels content by describing their interests in their own words.",
+    "source": "https://about.fb.com/news/",
+    "sourceType": "Meta Newsroom",
+    "reliability": "Reliable",
+    "rank": 9
+  },
+  {
+    "name": "Trust‑Aware Controls for AI",
+    "category": "AI",
+    "date": "2026-10-13",
+    "summary": "Microsoft introduced a new enforcement layer called Trust‑Aware Controls in Microsoft 365 Copilot, designed to isolate untrusted content, constrain its processing, and protect against indirect prompt‑injection attacks.",
+    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
+    "sourceType": "Microsoft Copilot Blog",
+    "reliability": "Reliable",
+    "rank": 10
+  },
+  {
+    "name": "Muse Wonder & Muse Wonder Full models",
+    "category": "AI",
+    "date": "2026-10-12",
+    "summary": "Meta announced its most capable AI models to date, Muse Wonder and Muse Wonder Full, designed for high‑performance personal and professional agentic tasks.",
+    "source": "https://about.fb.com/news/",
+    "sourceType": "Meta Newsroom",
+    "reliability": "Reliable",
+    "rank": 11
+  },
   {
     "name": "Copilot Notebooks updates",
     "category": "Productivity",
@@ -677,7 +917,7 @@ const TRENDING = [
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
-    "rank": 1
+    "rank": 12
   },
   {
     "name": "Office in the new Microsoft Copilot app",
@@ -687,7 +927,7 @@ const TRENDING = [
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
-    "rank": 2
+    "rank": 13
   },
   {
     "name": "Agentic AI for Gemini (businesses)",
@@ -697,7 +937,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 3
+    "rank": 14
   },
   {
     "name": "Natura $99 Smart Ring",
@@ -707,124 +947,15 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 4
-  },
-  {
-    "name": "Goodfire Inside‑Out AI Monitors",
-    "category": "AI",
-    "date": "2026-10-09",
-    "summary": "Goodfire introduced a new “inside‑out” monitoring system designed to detect rogue AI agents at a fraction of typical costs.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 5
-  },
-  {
-    "name": "GPT-6 and Intelligent UI",
-    "category": "AI",
-    "date": "2026-10-07",
-    "summary": "OpenAI announced the launch of the GPT-6 language model together with an Intelligent UI designed to make AI interactions more intuitive for all users.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
-    "reliability": "Reliable",
-    "rank": 6
-  },
-  {
-    "name": "GPT-6 Sol",
-    "category": "AI",
-    "date": "2026-10-07",
-    "summary": "OpenAI released GPT-6 Sol, a variant of the GPT-6 model optimized for high‑throughput, low‑latency applications.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
-    "reliability": "Reliable",
-    "rank": 7
-  },
-  {
-    "name": "GPT-6 Luna",
-    "category": "AI",
-    "date": "2026-10-07",
-    "summary": "OpenAI released GPT-6 Luna, a version of the GPT-6 model tuned for creative and generative tasks such as content creation and design.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
-    "reliability": "Reliable",
-    "rank": 8
-  },
-  {
-    "name": "Muse for Small Business",
-    "category": "AI",
-    "date": "2026-10-07",
-    "summary": "Meta announced the launch of Muse for Small Business, a personal AI agent that runs in the background to help small businesses achieve their goals.",
-    "source": "https://about.fb.com/news/",
-    "sourceType": "Meta Newsroom",
-    "reliability": "Reliable",
-    "rank": 9
-  },
-  {
-    "name": "Claude Haiku 5.5",
-    "category": "AI",
-    "date": "2026-10-07",
-    "summary": "Anthropic announced Claude Haiku 5.5, its fastest, cheapest, and most capable small model designed for high‑volume, cost‑sensitive workloads.",
-    "source": "https://www.anthropic.com/news",
-    "sourceType": "Anthropic News",
-    "reliability": "Reliable",
-    "rank": 10
-  },
-  {
-    "name": "Expanded Cyber Verification Program",
-    "category": "AI",
-    "date": "2026-10-06",
-    "summary": "Anthropic launched an expanded version of its Cyber Verification Program, offering advanced cyber capabilities and reduced‑blocking classifiers to qualified security professionals.",
-    "source": "https://www.anthropic.com/news",
-    "sourceType": "Anthropic News",
-    "reliability": "Reliable",
-    "rank": 11
-  },
-  {
-    "name": "Hark AI Personal Assistant",
-    "category": "AI",
-    "date": "2026-10-06",
-    "summary": "Hark released a privacy‑focused AI personal assistant, allowing users to interact with a conversational agent that keeps data on‑device.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 12
-  },
-  {
-    "name": "LibreOffice “no AI” Feature",
-    "category": "Productivity",
-    "date": "2026-10-06",
-    "summary": "LibreOffice added a new “no AI” software feature that disables any AI‑based assistance, giving users a completely offline editing experience.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 13
-  },
-  {
-    "name": "Mistral 1T Model",
-    "category": "AI",
-    "date": "2026-10-06",
-    "summary": "Mistral announced the launch of its 1‑trillion‑parameter model, aiming to outperform existing closed‑source and open‑source language models.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 14
-  },
-  {
-    "name": "Pinterest Beauty Pins Action Plans",
-    "category": "Social",
-    "date": "2026-10-06",
-    "summary": "Pinterest introduced an AI feature that converts beauty‑related Pins into actionable shopping plans for users.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
     "rank": 15
   }
 ];
 
-const ISSUES_REFRESHED_AT = "2026-10-11";
+const ISSUES_REFRESHED_AT = "2026-10-18"; // manually curated — see README
 const ISSUES = [
   {
     "tool": "Anthropic",
+    "monitored": false,
     "category": "AI",
     "date": "2026-10-10",
     "title": "Anthropic AI model sent false homicide tip to Philadelphia police",
@@ -832,11 +963,11 @@ const ISSUES = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "monitored": false,
     "rank": 1
   },
   {
     "tool": "Anthropic",
+    "monitored": false,
     "category": "AI",
     "date": "2026-10-10",
     "title": "Anthropic cannot reliably control its AI agents, disables live‑internet evals",
@@ -844,11 +975,11 @@ const ISSUES = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "monitored": false,
     "rank": 2
   },
   {
     "tool": "OpenAI",
+    "monitored": false,
     "category": "AI",
     "date": "2026-10-09",
     "title": "OpenAI’s math‑solving models fall short of academic standards",
@@ -856,7 +987,6 @@ const ISSUES = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "monitored": false,
     "rank": 3
   },
   {
@@ -934,16 +1064,232 @@ const ISSUES = [
 ];
 
 const SCAN_META = {
-  "lastRun": "2026-10-11T04:18:06.698Z",
+  "lastRun": "2026-10-18T03:16:52.339Z",
   "runType": "Automatic (weekly)"
-}; // written by scripts/scan.mjs — untouched here
+};
 
 const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
   "lastRun": "2026-10-17T20:27:40.862Z"
-};
+}; // written by scripts/inbox.mjs
 
 const NOTIFICATIONS = [
+  {
+    "id": "upd-40",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "update",
+    "text": "Julius: Touch Support added",
+    "target": {
+      "page": "updates",
+      "id": 40
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-41",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "update",
+    "text": "Julius: MP3 Support added",
+    "target": {
+      "page": "updates",
+      "id": 41
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-42",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "update",
+    "text": "ChatGPT: ChatGPT Slides lets you create and collaborate on presentations",
+    "target": {
+      "page": "updates",
+      "id": 42
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-43",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "update",
+    "text": "ChatGPT: GPT-6 Pro model adds faster responses, better plugins, and parallel agents",
+    "target": {
+      "page": "updates",
+      "id": 43
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-44",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "update",
+    "text": "ChatGPT: GPT‑Live‑1.1 and new multilingual voices released in ChatGPT Voice",
+    "target": {
+      "page": "updates",
+      "id": 44
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-45",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "update",
+    "text": "ChatGPT: Rosalind Academic Plan opens applications for free Business Standard seats",
+    "target": {
+      "page": "updates",
+      "id": 45
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-46",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "update",
+    "text": "ChatGPT: Removal of fixed Site limits for Plus and Pro plans",
+    "target": {
+      "page": "updates",
+      "id": 46
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Rosalind Academic Plan-2026-10-18T03:13:05.588Z",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "trending",
+    "text": "Rosalind Academic Plan",
+    "target": {
+      "page": "trending",
+      "name": "Rosalind Academic Plan"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Muse Wonder & Muse Wonder Full models-2026-10-18T03:13:05.588Z",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "trending",
+    "text": "Muse Wonder & Muse Wonder Full models",
+    "target": {
+      "page": "trending",
+      "name": "Muse Wonder & Muse Wonder Full models"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-WhatsApp Invite Anyone to Call-2026-10-18T03:13:05.588Z",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "trending",
+    "text": "WhatsApp Invite Anyone to Call",
+    "target": {
+      "page": "trending",
+      "name": "WhatsApp Invite Anyone to Call"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Facebook AI‑powered Feed Personalization Tools-2026-10-18T03:13:05.588Z",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "trending",
+    "text": "Facebook AI‑powered Feed Personalization Tools",
+    "target": {
+      "page": "trending",
+      "name": "Facebook AI‑powered Feed Personalization Tools"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Microsoft Copilot for Legal-2026-10-18T03:13:05.588Z",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "trending",
+    "text": "Microsoft Copilot for Legal",
+    "target": {
+      "page": "trending",
+      "name": "Microsoft Copilot for Legal"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Trust‑Aware Controls for AI-2026-10-18T03:13:05.588Z",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "trending",
+    "text": "Trust‑Aware Controls for AI",
+    "target": {
+      "page": "trending",
+      "name": "Trust‑Aware Controls for AI"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Meta open-weight AI model for Macs-2026-10-18T03:13:05.588Z",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "trending",
+    "text": "Meta open-weight AI model for Macs",
+    "target": {
+      "page": "trending",
+      "name": "Meta open-weight AI model for Macs"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Amazon Bee personal AI devices-2026-10-18T03:13:05.588Z",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "trending",
+    "text": "Amazon Bee personal AI devices",
+    "target": {
+      "page": "trending",
+      "name": "Amazon Bee personal AI devices"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Bluesky Attie app expansion-2026-10-18T03:13:05.588Z",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "trending",
+    "text": "Bluesky Attie app expansion",
+    "target": {
+      "page": "trending",
+      "name": "Bluesky Attie app expansion"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Figma AI agent features-2026-10-18T03:13:05.588Z",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "trending",
+    "text": "Figma AI agent features",
+    "target": {
+      "page": "trending",
+      "name": "Figma AI agent features"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Google Universal Cart shopping tool US launch-2026-10-18T03:13:05.588Z",
+    "date": "2026-10-18T03:13:05.588Z",
+    "type": "trending",
+    "text": "Google Universal Cart shopping tool US launch",
+    "target": {
+      "page": "trending",
+      "name": "Google Universal Cart shopping tool US launch"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
   {
     "id": "upd-37",
     "date": "2026-10-11T04:14:41.397Z",
@@ -1327,221 +1673,5 @@ const NOTIFICATIONS = [
     },
     "source": "scan",
     "runType": "Manual"
-  },
-  {
-    "id": "trend-OpenAI ChatGPT EU Watermarking-2026-10-06T19:09:32.618Z",
-    "date": "2026-10-06T19:09:32.618Z",
-    "type": "trending",
-    "text": "OpenAI ChatGPT EU Watermarking",
-    "target": {
-      "page": "trending",
-      "name": "OpenAI ChatGPT EU Watermarking"
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "trend-Reflection Beam Model-2026-10-06T19:09:32.618Z",
-    "date": "2026-10-06T19:09:32.618Z",
-    "type": "trending",
-    "text": "Reflection Beam Model",
-    "target": {
-      "page": "trending",
-      "name": "Reflection Beam Model"
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "trend-Instinct Group Chat AI Agent-2026-10-06T19:09:32.618Z",
-    "date": "2026-10-06T19:09:32.618Z",
-    "type": "trending",
-    "text": "Instinct Group Chat AI Agent",
-    "target": {
-      "page": "trending",
-      "name": "Instinct Group Chat AI Agent"
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "trend-TikTok AI Shopping Assistant-2026-10-06T19:09:32.618Z",
-    "date": "2026-10-06T19:09:32.618Z",
-    "type": "trending",
-    "text": "TikTok AI Shopping Assistant",
-    "target": {
-      "page": "trending",
-      "name": "TikTok AI Shopping Assistant"
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "trend-HackerRank AI Interviewer-2026-10-06T19:09:32.618Z",
-    "date": "2026-10-06T19:09:32.618Z",
-    "type": "trending",
-    "text": "HackerRank AI Interviewer",
-    "target": {
-      "page": "trending",
-      "name": "HackerRank AI Interviewer"
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "trend-OpenAI Visual Ads for Image Generation-2026-10-06T19:09:32.618Z",
-    "date": "2026-10-06T19:09:32.618Z",
-    "type": "trending",
-    "text": "OpenAI Visual Ads for Image Generation",
-    "target": {
-      "page": "trending",
-      "name": "OpenAI Visual Ads for Image Generation"
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "issue-Google Open Source Bug Bounty Program-Google freezes open source bug bounty program due to surge in AI submissions-2026-10-06T19:09:32.618Z",
-    "date": "2026-10-06T19:09:32.618Z",
-    "type": "issue",
-    "text": "Google Open Source Bug Bounty Program: Google freezes open source bug bounty program due to surge in AI submissions",
-    "target": {
-      "page": "issues",
-      "key": "Google Open Source Bug Bounty Program|Google freezes open source bug bounty program due to surge in AI submissions"
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "upd-27",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "update",
-    "text": "ChatGPT: Finances expands to Free and Go users",
-    "target": {
-      "page": "updates",
-      "id": 27
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-28",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "update",
-    "text": "ChatGPT: New shopping experiences with virtual try‑on and document scanning",
-    "target": {
-      "page": "updates",
-      "id": 28
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-29",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "update",
-    "text": "ChatGPT: Introduction of Pro 500 plan with Astra Ultrafast and new developer tools",
-    "target": {
-      "page": "updates",
-      "id": 29
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-A practical guide to building with GPT-6-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "trending",
-    "text": "A practical guide to building with GPT-6",
-    "target": {
-      "page": "trending",
-      "name": "A practical guide to building with GPT-6"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-The eternal complement Intelligence Age-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "trending",
-    "text": "The eternal complement Intelligence Age",
-    "target": {
-      "page": "trending",
-      "name": "The eternal complement Intelligence Age"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-How Albertsons Companies is reimagining retail from the inside out-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "trending",
-    "text": "How Albertsons Companies is reimagining retail from the inside out",
-    "target": {
-      "page": "trending",
-      "name": "How Albertsons Companies is reimagining retail from the inside out"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Disrupting a coordinated model-distillation campaign-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "trending",
-    "text": "Disrupting a coordinated model-distillation campaign",
-    "target": {
-      "page": "trending",
-      "name": "Disrupting a coordinated model-distillation campaign"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-DevDay 2026 Recap-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "trending",
-    "text": "DevDay 2026 Recap",
-    "target": {
-      "page": "trending",
-      "name": "DevDay 2026 Recap"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Introducing GPT-6.1 Sol-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "trending",
-    "text": "Introducing GPT-6.1 Sol",
-    "target": {
-      "page": "trending",
-      "name": "Introducing GPT-6.1 Sol"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Addendum: GPT‑6.1 Sol Safety-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "trending",
-    "text": "Addendum: GPT‑6.1 Sol Safety",
-    "target": {
-      "page": "trending",
-      "name": "Addendum: GPT‑6.1 Sol Safety"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Introducing dots-2026-10-04T04:30:48.385Z",
-    "date": "2026-10-04T04:30:48.385Z",
-    "type": "trending",
-    "text": "Introducing dots",
-    "target": {
-      "page": "trending",
-      "name": "Introducing dots"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
   }
 ]; // written by scripts/scan.mjs and scripts/inbox.mjs — do not edit by hand
