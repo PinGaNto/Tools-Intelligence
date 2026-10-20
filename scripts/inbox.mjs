@@ -36,6 +36,7 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import vm from 'node:vm';
+import { fetchPageText, closeBrowser } from './lib/fetch-page.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -90,30 +91,6 @@ function serializeData(d) {
     `const NOTIFICATIONS = ${JSON.stringify(d.NOTIFICATIONS, null, 2)}; // written by scripts/scan.mjs and scripts/inbox.mjs — do not edit by hand`,
     ''
   ].join('\n');
-}
-
-// ---------- fetch + strip a source page down to plain text (same approach as scan.mjs) ----------
-async function fetchPageText(url) {
-  try {
-    const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36' } });
-    if (!res.ok) {
-      console.warn(`  ! source link -> HTTP ${res.status}`);
-      return null;
-    }
-    const html = await res.text();
-    const text = html
-      .replace(/<script[\s\S]*?<\/script>/gi, ' ')
-      .replace(/<style[\s\S]*?<\/style>/gi, ' ')
-      .replace(/<[^>]+>/g, ' ')
-      .replace(/&nbsp;/g, ' ')
-      .replace(/\s+/g, ' ')
-      .trim();
-    if (text.length < 100) return null;
-    return text.slice(0, 4000);
-  } catch (err) {
-    console.warn(`  ! source link fetch failed: ${err.message}`);
-    return null;
-  }
 }
 
 function sleep(ms) {
@@ -505,7 +482,9 @@ async function main() {
   console.log('data.js rewritten.');
 }
 
-main().catch(err => {
-  console.error(err);
-  process.exit(1);
-});
+main()
+  .catch(err => {
+    console.error(err);
+    process.exitCode = 1;
+  })
+  .finally(() => closeBrowser());

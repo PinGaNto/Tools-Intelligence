@@ -21,6 +21,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import vm from 'node:vm';
+import { fetchPageText, closeBrowser } from './lib/fetch-page.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -69,19 +70,6 @@ function serializeData(d) {
   ].join('\n');
 }
 
-async function fetchPageText(url) {
-  try {
-    const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36' } });
-    if (!res.ok) return null;
-    const html = await res.text();
-    const text = html.replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<style[\s\S]*?<\/style>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
-    if (text.length < 200) return null;
-    return text.slice(0, 3000);
-  } catch {
-    return null;
-  }
-}
-
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
 async function callModel(system, user, attempt = 1) {
@@ -111,21 +99,22 @@ function extractJsonObject(text) {
 
 const AUDIT_SYSTEM = `You are auditing already-published items on THE·TEAM's tool intelligence dashboard against a strict editorial bar.
 
-KEEP an item only if it describes ONE specific, concrete, named feature, capability, incident, or complaint that was actually released, changed, or happened — with enough detail that you could explain exactly what it was.
+KEEP an item only if it describes ONE specific, concrete, named feature, capability, incident, or complaint — either already released/happened, OR (for Updates/Trending only, not Issues) concretely announced for near-future release (e.g. "launching next month", "rolling out in Q4") with real detail about what the feature does. The bar is whether you could explain exactly what it is/does, not whether it's live yet.
 
 REMOVE an item if:
 - It reads like it came from a newsletter/digest/roundup that bundles multiple unrelated things
 - It's a general opinion/analysis/"state of the industry" piece with no single concrete release or incident
 - It's a listicle ("best tools for X")
-- It's vague marketing copy or a teaser with no concrete detail about what actually changed
+- It's vague marketing copy or a teaser with NO concrete detail about what the feature actually does, whether shipped or upcoming ("something exciting is coming", "stay tuned")
 - The summary given doesn't actually describe a specific, real, dated event — just a general mention of the tool
+- It's an announcement of an upcoming conference, summit, or webinar — even with a specific date, location, or attendee count. A scheduled event is not a feature release. Example that should be REMOVED: "CreatorIQ Connect 2026 announced for October 13 in LA, with 1,000+ attendees expected" — specific details, but about an event being scheduled, not a product capability being released. Only keep it if it also describes a specific new product capability being launched there
 
-When in doubt between a borderline-concrete item and a clearly vague one, lean toward KEEP for the borderline case — this audit is meant to catch clear newsletter/roundup/opinion-piece contamination, not to second-guess every reasonably specific item.
+When in doubt between a borderline-concrete item and a clearly vague one, lean toward KEEP for the borderline case — this audit is meant to catch clear newsletter/roundup/opinion-piece/event-announcement contamination, not to second-guess every reasonably specific item.
 
 Output ONLY one JSON object: {"keep": true, "reason": "short reason"} or {"keep": false, "reason": "short reason"}`;
 
 async function auditItem(label, summaryText, sourceUrl) {
-  const pageText = sourceUrl ? await fetchPageText(sourceUrl) : null;
+  const pageText = sourceUrl ? await fetchPageText(sourceUrl, 3000) : null;
   const user = `Item: ${label}
 Stored summary: ${summaryText}
 Source URL: ${sourceUrl || '(none)'}
@@ -193,7 +182,9 @@ async function main() {
   console.log('data.js rewritten.');
 }
 
-main().catch(err => {
-  console.error(err);
-  process.exit(1);
-});
+main()
+  .catch(err => {
+    console.error(err);
+    process.exitCode = 1;
+  })
+  .finally(() => closeBrowser());
