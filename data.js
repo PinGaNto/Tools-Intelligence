@@ -794,11 +794,40 @@ const UPDATES = [
     "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
     "sourceType": "Official source",
     "reliability": "Reliable"
+  },
+  {
+    "id": 47,
+    "tool": "VwD",
+    "category": "Media Intelligence",
+    "date": "2026-10-01",
+    "title": "Creator Discovery launches in VwD",
+    "summary": "VwD introduced Creator Discovery, a live workflow that lets users run unlimited searches across 2.5M+ creators, build Shortlists of up to 100 creators, and scan selected creators with three depth levels (Lite, Medium, Comprehensive) for brand safety, suitability, and compliance insights.",
+    "impact": "This lets media and marketing teams source, evaluate, and vet creators entirely within VwD, speeding up campaign planning and reducing reliance on external tools.",
+    "overlap": [
+      "creator sourcing",
+      "brand safety",
+      "content scanning"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.vwd.ai/pulse/discovery-launch",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
   }
 ];
 
-const TRENDING_REFRESHED_AT = "2026-10-18";
+const TRENDING_REFRESHED_AT = "2026-10-20"; // updated by scripts/scan.mjs
 const TRENDING = [
+  {
+    "name": "Interactive Slides in PowerPoint",
+    "category": "Productivity",
+    "date": "2026-10-19",
+    "summary": "Microsoft announced a new feature that adds interactive slide capabilities to PowerPoint, enabling richer storytelling and more engaging presentations.",
+    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
+    "sourceType": "Microsoft Copilot Blog",
+    "reliability": "Reliable",
+    "rank": 1
+  },
   {
     "name": "Meta open-weight AI model for Macs",
     "category": "AI",
@@ -807,7 +836,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 1
+    "rank": 2
   },
   {
     "name": "Bluesky Attie app expansion",
@@ -817,7 +846,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 2
+    "rank": 3
   },
   {
     "name": "Rosalind Academic Plan",
@@ -827,7 +856,7 @@ const TRENDING = [
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
-    "rank": 3
+    "rank": 4
   },
   {
     "name": "Microsoft Copilot for Legal",
@@ -837,7 +866,7 @@ const TRENDING = [
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
-    "rank": 4
+    "rank": 5
   },
   {
     "name": "Amazon Bee personal AI devices",
@@ -847,7 +876,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 5
+    "rank": 6
   },
   {
     "name": "Figma AI agent features",
@@ -857,7 +886,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 6
+    "rank": 7
   },
   {
     "name": "Google Universal Cart shopping tool US launch",
@@ -867,7 +896,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 7
+    "rank": 8
   },
   {
     "name": "WhatsApp Invite Anyone to Call",
@@ -877,7 +906,17 @@ const TRENDING = [
     "source": "https://about.fb.com/news/",
     "sourceType": "Meta Newsroom",
     "reliability": "Reliable",
-    "rank": 8
+    "rank": 9
+  },
+  {
+    "name": "Your Algorithm, Your Words: Feed Personalization Tools",
+    "category": "Social",
+    "date": "2026-10-13",
+    "summary": "Meta launched new AI-powered tools on Facebook that let users shape what appears in their Feed and Reels by entering interests in their own words.",
+    "source": "https://about.fb.com/news/",
+    "sourceType": "Meta Newsroom",
+    "reliability": "Reliable",
+    "rank": 10
   },
   {
     "name": "Facebook AI‑powered Feed Personalization Tools",
@@ -887,7 +926,7 @@ const TRENDING = [
     "source": "https://about.fb.com/news/",
     "sourceType": "Meta Newsroom",
     "reliability": "Reliable",
-    "rank": 9
+    "rank": 11
   },
   {
     "name": "Trust‑Aware Controls for AI",
@@ -897,7 +936,7 @@ const TRENDING = [
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
-    "rank": 10
+    "rank": 12
   },
   {
     "name": "Muse Wonder & Muse Wonder Full models",
@@ -907,7 +946,7 @@ const TRENDING = [
     "source": "https://about.fb.com/news/",
     "sourceType": "Meta Newsroom",
     "reliability": "Reliable",
-    "rank": 11
+    "rank": 13
   },
   {
     "name": "Copilot Notebooks updates",
@@ -917,7 +956,7 @@ const TRENDING = [
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
-    "rank": 12
+    "rank": 14
   },
   {
     "name": "Office in the new Microsoft Copilot app",
@@ -927,31 +966,11 @@ const TRENDING = [
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
-    "rank": 13
-  },
-  {
-    "name": "Agentic AI for Gemini (businesses)",
-    "category": "AI",
-    "date": "2026-10-09",
-    "summary": "Google announced that its Gemini model will gain agentic AI capabilities, initially rolled out for business customers.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 14
-  },
-  {
-    "name": "Natura $99 Smart Ring",
-    "category": "AI",
-    "date": "2026-10-09",
-    "summary": "Natura unveiled a $99 smart ring that embeds AI agents, allowing users to interact with AI directly from their finger.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
     "rank": 15
   }
 ];
 
-const ISSUES_REFRESHED_AT = "2026-10-18";
+const ISSUES_REFRESHED_AT = "2026-10-20"; // manually curated — see README
 const ISSUES = [
   {
     "tool": "Anthropic",
@@ -1064,16 +1083,52 @@ const ISSUES = [
 ];
 
 const SCAN_META = {
-  "lastRun": "2026-10-18T03:16:52.339Z",
-  "runType": "Automatic (weekly)"
-}; // written by scripts/scan.mjs — untouched here
+  "lastRun": "2026-10-20T14:54:52.747Z",
+  "runType": "Manual"
+};
 
 const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
   "lastRun": "2026-10-20T11:22:53.107Z"
-};
+}; // written by scripts/inbox.mjs
 
 const NOTIFICATIONS = [
+  {
+    "id": "upd-47",
+    "date": "2026-10-20T14:50:43.422Z",
+    "type": "update",
+    "text": "VwD: Creator Discovery launches in VwD",
+    "target": {
+      "page": "updates",
+      "id": 47
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-Your Algorithm, Your Words: Feed Personalization Tools-2026-10-20T14:50:43.422Z",
+    "date": "2026-10-20T14:50:43.422Z",
+    "type": "trending",
+    "text": "Your Algorithm, Your Words: Feed Personalization Tools",
+    "target": {
+      "page": "trending",
+      "name": "Your Algorithm, Your Words: Feed Personalization Tools"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-Interactive Slides in PowerPoint-2026-10-20T14:50:43.422Z",
+    "date": "2026-10-20T14:50:43.422Z",
+    "type": "trending",
+    "text": "Interactive Slides in PowerPoint",
+    "target": {
+      "page": "trending",
+      "name": "Interactive Slides in PowerPoint"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
   {
     "id": "upd-40",
     "date": "2026-10-18T03:13:05.588Z",
@@ -1634,42 +1689,6 @@ const NOTIFICATIONS = [
     "target": {
       "page": "trending",
       "name": "LibreOffice “no AI” Feature"
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "trend-Mistral 1T Model-2026-10-06T19:09:32.618Z",
-    "date": "2026-10-06T19:09:32.618Z",
-    "type": "trending",
-    "text": "Mistral 1T Model",
-    "target": {
-      "page": "trending",
-      "name": "Mistral 1T Model"
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "trend-Pinterest Beauty Pins Action Plans-2026-10-06T19:09:32.618Z",
-    "date": "2026-10-06T19:09:32.618Z",
-    "type": "trending",
-    "text": "Pinterest Beauty Pins Action Plans",
-    "target": {
-      "page": "trending",
-      "name": "Pinterest Beauty Pins Action Plans"
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "trend-Petlibro AI‑Powered Feeder-2026-10-06T19:09:32.618Z",
-    "date": "2026-10-06T19:09:32.618Z",
-    "type": "trending",
-    "text": "Petlibro AI‑Powered Feeder",
-    "target": {
-      "page": "trending",
-      "name": "Petlibro AI‑Powered Feeder"
     },
     "source": "scan",
     "runType": "Manual"
