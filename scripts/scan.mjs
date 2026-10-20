@@ -35,6 +35,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import vm from 'node:vm';
+import { fetchPageText, closeBrowser } from './lib/fetch-page.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -106,38 +107,6 @@ function serializeData(d) {
     `const NOTIFICATIONS = ${JSON.stringify(d.NOTIFICATIONS, null, 2)}; // written by scripts/scan.mjs and scripts/inbox.mjs — do not edit by hand`,
     ''
   ].join('\n');
-}
-
-// ---------- fetch + strip a source page down to plain text ----------
-// Uses a normal browser User-Agent rather than a self-identifying bot string —
-// some sources (notably OpenAI's Zendesk-hosted help center) return a fake 404
-// to requests that look like scripts, even though the page is real and live.
-// This won't get past sources with real Cloudflare JS-challenge protection
-// (openai.com/news is one) — that needs a headless browser, not a plain fetch.
-async function fetchPageText(url) {
-  try {
-    const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36' } });
-    if (!res.ok) {
-      console.warn(`  ! ${url} -> HTTP ${res.status}`);
-      return null;
-    }
-    const html = await res.text();
-    const text = html
-      .replace(/<script[\s\S]*?<\/script>/gi, ' ')
-      .replace(/<style[\s\S]*?<\/style>/gi, ' ')
-      .replace(/<[^>]+>/g, ' ')
-      .replace(/&nbsp;/g, ' ')
-      .replace(/\s+/g, ' ')
-      .trim();
-    if (text.length < 200) {
-      console.warn(`  ! ${url} -> extracted text too short (${text.length} chars), likely JS-rendered. Skipping.`);
-      return null;
-    }
-    return text.slice(0, 4000); // keep prompts small — free tier TPM budget is tight
-  } catch (err) {
-    console.warn(`  ! ${url} -> fetch failed: ${err.message}`);
-    return null;
-  }
 }
 
 function sleep(ms) {
@@ -561,7 +530,9 @@ async function main() {
   console.log('data.js rewritten.');
 }
 
-main().catch(err => {
-  console.error(err);
-  process.exit(1);
-});
+main()
+  .catch(err => {
+    console.error(err);
+    process.exitCode = 1;
+  })
+  .finally(() => closeBrowser());
