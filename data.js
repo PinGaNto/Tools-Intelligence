@@ -1089,7 +1089,7 @@ const SCAN_META = {
 
 const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
-  "lastRun": "2026-10-20T16:47:52.371Z"
+  "lastRun": "2026-10-20T21:30:34.935Z"
 };
 
 const NOTIFICATIONS = [
@@ -1629,66 +1629,6 @@ const NOTIFICATIONS = [
     "target": {
       "page": "issues",
       "key": "OpenAI models|Disrupting a coordinated model-distillation campaign"
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "upd-30",
-    "date": "2026-10-06T19:09:32.618Z",
-    "type": "update",
-    "text": "ChatGPT: Codex Cloud launches for coding tasks",
-    "target": {
-      "page": "updates",
-      "id": 30
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "upd-31",
-    "date": "2026-10-06T19:09:32.618Z",
-    "type": "update",
-    "text": "ChatGPT: Pages feature for collaborative document creation",
-    "target": {
-      "page": "updates",
-      "id": 31
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "upd-32",
-    "date": "2026-10-06T19:09:32.618Z",
-    "type": "update",
-    "text": "ChatGPT: Site editing and scheduling capabilities added",
-    "target": {
-      "page": "updates",
-      "id": 32
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "trend-Hark AI Personal Assistant-2026-10-06T19:09:32.618Z",
-    "date": "2026-10-06T19:09:32.618Z",
-    "type": "trending",
-    "text": "Hark AI Personal Assistant",
-    "target": {
-      "page": "trending",
-      "name": "Hark AI Personal Assistant"
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "trend-LibreOffice “no AI” Feature-2026-10-06T19:09:32.618Z",
-    "date": "2026-10-06T19:09:32.618Z",
-    "type": "trending",
-    "text": "LibreOffice “no AI” Feature",
-    "target": {
-      "page": "trending",
-      "name": "LibreOffice “no AI” Feature"
     },
     "source": "scan",
     "runType": "Manual"
