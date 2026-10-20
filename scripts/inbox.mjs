@@ -151,6 +151,39 @@ async function callModel(system, user, attempt = 1) {
   return json.choices?.[0]?.message?.content ?? '';
 }
 
+// ---------- pass 2: adversarial second-opinion verification (single item) ----------
+// Mirrors scan.mjs's verifyCandidates but for one item at a time, since inbox
+// submissions are processed individually rather than as a batch per source.
+async function verifyOne(groundingText, item, concept) {
+  if (!groundingText) return { confirm: true, reason: 'no source text to verify against — accepted on first-pass judgment alone' };
+  const system = `You are a skeptical second-opinion reviewer at THE·TEAM, checking another analyst's draft extraction against the original source text. Decide CONFIRM or REJECT.
+
+REJECT if:
+- It is not actually grounded in the source text (invented, inferred, or exaggerated beyond what the text actually says)
+- It does not describe ${concept}
+- The date is not supported by the source text
+
+Be skeptical — if you are not confident this is correct, REJECT rather than guess. Output ONLY one JSON object: {"confirm": true, "reason": "..."} or {"confirm": false, "reason": "..."} — no prose.`;
+
+  const user = `Source text this was extracted from:
+"""
+${groundingText}
+"""
+
+Draft extraction to verify:
+${item.title}: ${item.summary}`;
+
+  try {
+    const content = await callModel(system, user);
+    const match = content.match(/\{[\s\S]*\}/);
+    const verdict = match ? JSON.parse(match[0]) : null;
+    return verdict || { confirm: true, reason: 'could not parse verdict — kept by default' };
+  } catch (err) {
+    console.warn(`  ! verification pass failed (${err.message}) — keeping candidate unverified rather than losing it`);
+    return { confirm: true, reason: 'verification call failed — kept by default' };
+  }
+}
+
 function extractJsonObject(text) {
   const match = text.match(/\{[\s\S]*\}/);
   if (!match) return null;
@@ -194,14 +227,15 @@ function parseCsv(text) {
 async function processSubmission({ name, tool, sourceLink, notes }, data) {
   const pageText = await fetchPageText(sourceLink);
 
-  const system = `You are a strict fact-checking research analyst for THE·TEAM. You receive a public, unauthenticated submission claiming a tool update/news item, plus (when available) the actual text of the source page the submitter linked. Your job: decide whether this describes ONE specific, concrete, named feature/capability that was actually released or changed — not just that a source mentions the tool — and if so, produce a clean structured record grounded in that concrete detail.
+  const system = `You are a strict fact-checking research analyst for THE·TEAM. You receive a public, unauthenticated submission claiming a tool update/news item, plus (when available) the actual text of the source page the submitter linked. Your job: decide whether this describes ONE specific, concrete, named feature/capability — either already released, or concretely announced for near-future release (e.g. "launching next month") — not just that a source mentions the tool — and if so, produce a clean structured record grounded in that concrete detail.
 
 REJECT (return {"reject": true, "reason": "..."}) if:
 - The submission is spam, promotional junk, or unrelated to tools/software
 - The fetched source page (when present) does not actually support the specific claim
 - The source is a newsletter/digest/roundup covering many unrelated items rather than one focal release — even if the tool is mentioned somewhere in it
 - It's an opinion/analysis piece, listicle, or general commentary with no single concrete release described
-- The claim is vague with no actual detail about what changed
+- The claim is vague with no actual detail about what the feature does, whether shipped or upcoming
+- It's an announcement of an upcoming conference, summit, or webinar — even with a specific date/location — unless it also describes a specific new product capability being launched there (in which case judge based on that capability, not the event logistics)
 
 If the source page could not be fetched, do not auto-reject just for that (fetches sometimes get bot-blocked even for real pages) — instead accept cautiously based on the submitter's note if it reads as a plausible, SPECIFIC, concrete claim (not a vague mention), and note the lack of verification in your summary. Never invent facts beyond what's given. Output ONLY one JSON object, no prose.`;
 
@@ -231,7 +265,15 @@ or:
 }`;
 
   const content = await callModel(system, user);
-  return extractJsonObject(content);
+  const draft = extractJsonObject(content);
+  if (!draft || draft.reject) return draft;
+  await sleep(1000);
+  const verdict = await verifyOne(pageText, draft, 'ONE specific, concrete, named feature or capability that was actually shipped or concretely announced for near-future release — not a roundup/digest, opinion piece, vague teaser, or event/conference announcement with no feature attached');
+  if (!verdict.confirm) {
+    console.log(`    ✗ verification rejected "${draft.title}" — ${verdict.reason}`);
+    return { reject: true, reason: `second-pass verification: ${verdict.reason}` };
+  }
+  return draft;
 }
 
 // ---------- search the web via Tavily for a text-only submission ----------
@@ -261,13 +303,14 @@ async function processSubmissionFromSearch({ name, notes, results }, data) {
     .map((r, i) => `[${i}] ${r.title}\nURL: ${r.url}\nContent: ${(r.content || '').slice(0, 800)}`)
     .join('\n\n');
 
-  const system = `You are a strict fact-checking research analyst for THE·TEAM. A public submitter described a tool update/news item in their own words, with no link. You've been given web search results that might corroborate it. Your job: decide whether any of these search results actually substantiate the submitter's claim about ONE specific, concrete, named feature/capability that was really released or changed — not just a result that happens to mention the tool — and if so, produce a clean structured record grounded in that one best-matching result.
+  const system = `You are a strict fact-checking research analyst for THE·TEAM. A public submitter described a tool update/news item in their own words, with no link. You've been given web search results that might corroborate it. Your job: decide whether any of these search results actually substantiate the submitter's claim about ONE specific, concrete, named feature/capability — either already released, or concretely announced for near-future release — not just a result that happens to mention the tool — and if so, produce a clean structured record grounded in that one best-matching result.
 
 REJECT (return {"reject": true, "reason": "..."}) if:
 - None of the results actually corroborate the specific claim
 - The claim itself is vague, spam, or unrelated to tools
 - The best-matching result is a newsletter/digest/roundup or opinion piece rather than a source describing one concrete release
 - The result only mentions the tool in passing without describing the specific change the submitter claimed
+- The result is an announcement of an upcoming conference/event rather than an actual product feature release
 
 Never invent facts beyond what the matched search result actually says. Output ONLY one JSON object, no prose.`;
 
@@ -302,6 +345,13 @@ or:
   if (!parsed || parsed.reject) return parsed;
   const matched = results[parsed.matchedIndex];
   if (!matched) return { reject: true, reason: 'model did not point to a valid search result' };
+
+  await sleep(1000);
+  const verdict = await verifyOne(matched.content || '', parsed, 'ONE specific, concrete, named feature or capability that was actually shipped or concretely announced for near-future release — not a roundup/digest, opinion piece, vague teaser, or event/conference announcement with no feature attached');
+  if (!verdict.confirm) {
+    console.log(`    ✗ verification rejected "${parsed.title}" — ${verdict.reason}`);
+    return { reject: true, reason: `second-pass verification: ${verdict.reason}` };
+  }
   return { ...parsed, sourceLink: matched.url };
 }
 function matchTeamMember(rawName, roster) {

@@ -185,6 +185,54 @@ async function callModel(system, user, attempt = 1) {
   return json.choices?.[0]?.message?.content ?? '';
 }
 
+// ---------- pass 2: adversarial second-opinion verification ----------
+// Pass 1 (above) drafts candidate items from a source. This is a genuinely
+// separate model call that re-examines each draft against the SAME source
+// text with a skeptical, critic-style prompt — catching cases where the
+// first pass was too generous, rather than trusting one single extraction
+// call. This is the core of the "multi-pass" sourcing improvement.
+async function verifyCandidates(groundingText, candidates, concept) {
+  if (!candidates.length) return [];
+  const label = c => c.title || c.name || '(untitled)';
+
+  const system = `You are a skeptical second-opinion reviewer at THE·TEAM, checking another analyst's draft extractions against the original source text. For EACH candidate, decide CONFIRM or REJECT.
+
+REJECT a candidate if:
+- It is not actually grounded in the source text (invented, inferred, or exaggerated beyond what the text actually says)
+- It does not describe ${concept}
+- The date is not supported by the source text
+- It duplicates another candidate in this same batch (keep only the better one, reject the rest)
+
+Be skeptical — if you are not confident a candidate is correct, REJECT it rather than guess. Output ONLY a JSON array with exactly one entry per candidate IN THE SAME ORDER, each shaped like {"confirm": true, "reason": "short reason"} or {"confirm": false, "reason": "short reason"} — no prose, no extra text, no markdown fences.`;
+
+  const user = `Source text these candidates were extracted from:
+"""
+${groundingText}
+"""
+
+Candidates to verify, in order:
+${candidates.map((c, i) => `[${i}] ${label(c)}: ${c.summary}`).join('\n')}`;
+
+  let verdicts = [];
+  try {
+    const content = await callModel(system, user);
+    const match = content.match(/\[[\s\S]*\]/);
+    verdicts = match ? JSON.parse(match[0]) : [];
+  } catch (err) {
+    console.warn(`  ! verification pass failed (${err.message}) — keeping all candidates from this source unverified rather than losing them`);
+    return candidates;
+  }
+
+  return candidates.filter((c, i) => {
+    const v = verdicts[i];
+    if (!v || v.confirm !== true) {
+      console.log(`    ✗ verification rejected "${label(c)}"${v?.reason ? ` — ${v.reason}` : ' (no verdict returned)'}`);
+      return false;
+    }
+    return true;
+  });
+}
+
 function extractJson(text) {
   const match = text.match(/\[[\s\S]*\]/); // first JSON array in the response
   if (!match) return [];
@@ -271,7 +319,10 @@ Return a JSON array of NEW items only, each with this exact shape:
 If nothing new, return [].`;
 
   const content = await callModel(system, user);
-  return extractJson(content);
+  const drafts = extractJson(content);
+  if (!drafts.length) return [];
+  await sleep(1000);
+  return verifyCandidates(pageText, drafts, 'ONE specific, concrete, named feature or capability that was actually shipped or concretely announced for near-future release — not a roundup/digest, opinion piece, vague teaser, or event/conference announcement with no feature attached');
 }
 
 // ---------- general trending extraction ----------
@@ -320,7 +371,10 @@ Return a JSON array of newsworthy items from the last ~30 days found in this tex
 If nothing relevant, return [].`;
 
   const content = await callModel(system, user);
-  return extractJson(content);
+  const drafts = extractJson(content);
+  if (!drafts.length) return [];
+  await sleep(1000);
+  return verifyCandidates(pageText, drafts, 'ONE specific, concrete, named feature or product that was actually released or concretely announced for near-future release — not a roundup/digest, opinion/analysis piece, listicle, funding/business news, or event/conference announcement with no feature attached');
 }
 
 // ---------- general issues/complaints extraction ----------
@@ -366,8 +420,11 @@ Return a JSON array of newsworthy PROBLEM/COMPLAINT items from the last ~30 days
 }
 If nothing relevant, return [].`;
 
-  const content = await callModel(system, user);
-  return extractJson(content);
+  const draftContent = await callModel(system, user);
+  const draftItems = extractJson(draftContent);
+  if (!draftItems.length) return [];
+  await sleep(1000);
+  return verifyCandidates(pageText, draftItems, 'ONE specific, concrete, dated incident or complaint about a named tool — not a roundup/digest, general opinion piece, vague unsubstantiated complaint, or event/conference announcement');
 }
 
 // ---------- keep only items from the last N days, deduped, newest first, ranked ----------
@@ -419,7 +476,7 @@ async function main() {
     for (const item of items) {
       newUpdates.push({ id: nextId++, tool: tool.name, category: tool.category, ...item });
     }
-    await sleep(1500);
+    await sleep(2500); // bumped up: sources with candidates now make 2 Groq calls (draft + verify), not 1
   }
 
   console.log(`Found ${newUpdates.length} new update(s).`);
@@ -443,7 +500,7 @@ async function main() {
     console.log(` - ${s.name} (${s.url})`);
     const items = await scanTrendingSource(s, existingNames);
     newTrending.push(...items);
-    await sleep(2000);
+    await sleep(2500); // bumped up: sources with candidates now make 2 Groq calls (draft + verify), not 1
   }
   console.log(`Found ${newTrending.length} new trending item(s).`);
 
@@ -475,7 +532,7 @@ async function main() {
       const monitored = data.TOOLS.some(t => t.name.toLowerCase() === String(item.tool).toLowerCase());
       newIssues.push({ ...item, monitored });
     }
-    await sleep(2000);
+    await sleep(2500); // bumped up: sources with candidates now make 2 Groq calls (draft + verify), not 1
   }
   console.log(`Found ${newIssues.length} new issue item(s).`);
 
