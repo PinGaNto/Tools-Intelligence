@@ -213,25 +213,18 @@ function extractJson(text) {
 }
 
 // ---------- per-tool update extraction ----------
-async function scanToolUpdates(tool, configuredUrl, data) {
-  let pageText = await fetchPageText(configuredUrl);
-  let url = configuredUrl;
-
-  if (!pageText && TAVILY_API_KEY) {
-    console.log(`  ! configured URL returned nothing usable for ${tool.name} — searching the web for their real update source instead`);
-    const results = await tavilySearch(`${tool.name} official product updates OR release notes OR changelog`);
-    for (const r of results) {
-      if (r.content && r.content.length > 200) {
-        pageText = r.content.slice(0, 4000);
-        url = r.url;
-        console.log(`  → found via search: ${url}`);
-        break;
-      }
+async function tavilyFallbackForTool(toolName) {
+  if (!TAVILY_API_KEY) return null;
+  const results = await tavilySearch(`${toolName} official product updates OR release notes OR changelog`);
+  for (const r of results) {
+    if (r.content && r.content.length > 200) {
+      return { pageText: r.content.slice(0, 4000), url: r.url };
     }
   }
+  return null;
+}
 
-  if (!pageText) return [];
-
+async function extractToolUpdateDrafts(tool, url, pageText, data) {
   const knownForTool = data.UPDATES
     .filter(u => u.tool === tool.name)
     .sort((a, b) => b.date.localeCompare(a.date))
@@ -256,6 +249,7 @@ Do NOT extract:
 - Re-shares or recaps of something already announced earlier
 - Marketing copy that describes the product in general terms without naming what's NEW about it
 - Announcements of an upcoming conference, summit, webinar, or event — even with a specific date, location, or attendee count. A scheduled event is not a feature release. Only extract it if the text also describes a specific new product capability being launched there, and then extract THAT capability, not the event itself
+- Corporate/organizational news with no product capability attached — leadership changes, division mergers or reorganizations, company restructuring, acquisitions. These are business news, not feature releases, even when announced on the same official page
 
 A real example of what to extract (already shipped): "GPT-6 Astra launches in ChatGPT, adding improvements to coding, research, and multi-step tasks" — one named feature, concrete description, dated.
 A real example of what to extract (upcoming, still valid): "Slack will launch an AI meeting-notes agent in November, which will auto-summarize calls and surface action items" — concrete capability description, even though not live yet.
@@ -292,7 +286,42 @@ Return a JSON array of NEW items only, each with this exact shape:
 If nothing new, return [].`;
 
   const content = await callModel(system, user);
-  const drafts = extractJson(content);
+  return extractJson(content);
+}
+
+async function scanToolUpdates(tool, configuredUrl, data) {
+  let pageText = await fetchPageText(configuredUrl);
+  let url = configuredUrl;
+  let triedSearch = false;
+
+  if (!pageText && TAVILY_API_KEY) {
+    console.log(`  ! configured URL returned nothing usable for ${tool.name} — searching the web for their real update source instead`);
+    triedSearch = true;
+    const found = await tavilyFallbackForTool(tool.name);
+    if (found) { pageText = found.pageText; url = found.url; console.log(`  → found via search: ${url}`); }
+  }
+
+  if (!pageText) return [];
+
+  let drafts = await extractToolUpdateDrafts(tool, url, pageText, data);
+
+  // The configured URL can also fail silently in a different way: it loads
+  // fine (so fetchPageText succeeds) but turns out to be an index/listing
+  // page with links to the real content rather than the content itself —
+  // CreatorIQ's and Brandwatch's "product updates hub" pages are exactly
+  // this shape. A technically-successful fetch with zero extracted items is
+  // just as much a sign something's wrong as an outright fetch failure, so
+  // retry via search here too, once, before giving up for this tool.
+  if (!drafts.length && !triedSearch && TAVILY_API_KEY) {
+    console.log(`  ! ${tool.name}'s page loaded but had nothing extractable (likely an index/listing page, not the actual content) — trying a search instead`);
+    const found = await tavilyFallbackForTool(tool.name);
+    if (found && found.url !== url) {
+      pageText = found.pageText; url = found.url;
+      console.log(`  → found via search: ${url}`);
+      drafts = await extractToolUpdateDrafts(tool, url, pageText, data);
+    }
+  }
+
   if (!drafts.length) return [];
   await sleep(1000);
   return verifyCandidates(pageText, drafts, 'ONE specific, concrete, named feature or capability that was actually shipped or concretely announced for near-future release — not a roundup/digest, opinion piece, vague teaser, or event/conference announcement with no feature attached');
@@ -311,7 +340,7 @@ Do NOT extract:
 - Weekly/monthly news roundups or digests that bundle many items together — if an article is itself a list covering several unrelated releases, skip the whole article rather than extracting individual items out of its list format
 - Opinion, analysis, or "state of the industry" think-pieces about trends
 - Listicles ("best AI tools for X", "top 10 features to try")
-- Funding, hiring, executive, or other business news with no product feature attached
+- Funding, hiring, executive, or other business news with no product feature attached — including leadership changes, division mergers/reorganizations, and acquisitions
 - Unsubstantiated rumors or leaks with no concrete detail about what the feature does — but a company's OWN concrete, detailed announcement of an upcoming feature is fine to include, that's not a rumor
 - Recycled coverage of something that's already old news
 - Announcements of an upcoming conference, summit, or webinar — even with a specific date, location, or attendee count. A scheduled event is not a feature release. Only extract it if the announcement also describes a specific new product capability being launched there, and then extract THAT capability, not the event logistics

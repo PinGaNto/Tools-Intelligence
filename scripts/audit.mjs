@@ -108,6 +108,7 @@ REMOVE an item if:
 - It's vague marketing copy or a teaser with NO concrete detail about what the feature actually does, whether shipped or upcoming ("something exciting is coming", "stay tuned")
 - The summary given doesn't actually describe a specific, real, dated event — just a general mention of the tool
 - It's an announcement of an upcoming conference, summit, or webinar — even with a specific date, location, or attendee count. A scheduled event is not a feature release. Example that should be REMOVED: "CreatorIQ Connect 2026 announced for October 13 in LA, with 1,000+ attendees expected" — specific details, but about an event being scheduled, not a product capability being released. Only keep it if it also describes a specific new product capability being launched there
+- It's corporate/organizational news with no product capability attached — leadership changes, division mergers or reorganizations, acquisitions. Example that should be REMOVED: "Statista Combines Product and Technology Divisions" — this is a business/org-structure change, not a feature release, even if announced on an official company page
 
 When in doubt between a borderline-concrete item and a clearly vague one, lean toward KEEP for the borderline case — this audit is meant to catch clear newsletter/roundup/opinion-piece/event-announcement contamination, not to second-guess every reasonably specific item.
 
