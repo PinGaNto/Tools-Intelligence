@@ -9,7 +9,7 @@
     { "tool": "CreatorIQ", "url": "https://www.creatoriq.com/whats-new-in-creatoriq/product-release-roundups", "verify": false },
     { "tool": "ListenFirst", "url": "https://www.listenfirstmedia.com/blog", "verify": true },
     { "tool": "Semrush", "url": "https://developer.semrush.com/api/v3/introduction/release-notes/", "verify": false },
-    { "tool": "Mintel", "url": "https://www.mintel.com/press-centre/mintel-in-the-media/", "verify": true },
+    { "tool": "Mintel", "url": "https://www.mintel.com/press-centre/mintel-in-the-media-september/", "verify": true },
     { "tool": "Julius", "url": "https://www.juliusworks.com/blog", "verify": true },
     { "tool": "Siftsy", "url": "https://signal.getsiftsy.com/", "verify": false },
     { "tool": "ChatGPT", "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes", "verify": false },
