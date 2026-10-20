@@ -239,9 +239,13 @@ async function scanToolUpdates(tool, configuredUrl, data) {
     .map(u => `- ${u.date}: ${u.title}`)
     .join('\n') || '(none recorded yet)';
 
-  const system = `You are a research analyst for THE·TEAM, extracting genuinely NEW product updates for one monitored tool from its own official page.
+  const todayStr = new Date().toISOString().slice(0, 10);
+
+  const system = `You are a research analyst for THE·TEAM, extracting genuinely NEW product updates for one monitored tool from its own official page. Today's date is ${todayStr}.
 
 Only extract an item if it describes ONE specific, concrete, named feature, capability, or product change — with enough detail that you could explain exactly what it does. This can be something the tool ALREADY shipped, OR something concretely announced for near-future release (e.g. "rolling out next month", "launching in Q4", "available starting November") — both count, as long as there's a real description of the capability itself, not just that something is coming. It needs a real date (the ship date if already live, or the announcement/expected-release date if upcoming).
+
+Prioritize items from the last 30 days (relative to today's date above) — that's the common case and what this page will usually contain. BUT if you find a genuinely concrete, dated item that's OLDER than 30 days and it is NOT in the "already known" list below, still include it — that usually means it was missed by an earlier run (e.g. a source URL that used to be broken), not that it isn't worth recording. Don't discard something real just because of its age; only the "already known" list should stop you from re-adding something.
 
 Note: this page is the tool's OWN official source, so it's normal and fine for it to bundle several of its OWN features into one monthly release-notes post (e.g. "September release roundup: feature A, feature B, feature C") — extract each distinct feature from a post like that as its own item. That is NOT the "newsletter/roundup" problem below; that problem is specifically about third-party content that bundles unrelated news from many different companies/tools together.
 
