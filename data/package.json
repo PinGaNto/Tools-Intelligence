@@ -1,0 +1,9 @@
+{
+  "name": "tools-intelligence-scripts",
+  "private": true,
+  "type": "module",
+  "description": "Node scripts that power the automated scan, inbox, and audit workflows — not part of the deployed static site itself.",
+  "dependencies": {
+    "playwright": "latest"
+  }
+}
