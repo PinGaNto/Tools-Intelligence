@@ -1089,7 +1089,7 @@ const SCAN_META = {
 
 const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
-  "lastRun": "2026-10-21T11:38:11.497Z"
+  "lastRun": "2026-10-21T17:05:45.595Z"
 };
 
 const NOTIFICATIONS = [
@@ -1536,101 +1536,5 @@ const NOTIFICATIONS = [
     },
     "source": "scan",
     "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-33",
-    "date": "2026-10-07T13:58:26.930Z",
-    "type": "update",
-    "text": "GWI: GWI insights, now in Slack",
-    "target": {
-      "page": "updates",
-      "id": 33
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "upd-34",
-    "date": "2026-10-07T13:58:26.930Z",
-    "type": "update",
-    "text": "GWI: Public dashboards are now live",
-    "target": {
-      "page": "updates",
-      "id": 34
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "upd-35",
-    "date": "2026-10-07T13:58:26.930Z",
-    "type": "update",
-    "text": "Mintel: Mintel partners with Dragonfly AI to add predictive attention intelligence and packaging performance scores to GNPD",
-    "target": {
-      "page": "updates",
-      "id": 35
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "upd-36",
-    "date": "2026-10-07T13:58:26.930Z",
-    "type": "update",
-    "text": "ChatGPT: GPT-6.1 Sol rollout in ChatGPT Work and Codex",
-    "target": {
-      "page": "updates",
-      "id": 36
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "trend-Expanded Cyber Verification Program-2026-10-07T13:58:26.930Z",
-    "date": "2026-10-07T13:58:26.930Z",
-    "type": "trending",
-    "text": "Expanded Cyber Verification Program",
-    "target": {
-      "page": "trending",
-      "name": "Expanded Cyber Verification Program"
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "trend-Hot Girl Hotline-2026-10-07T13:58:26.930Z",
-    "date": "2026-10-07T13:58:26.930Z",
-    "type": "trending",
-    "text": "Hot Girl Hotline",
-    "target": {
-      "page": "trending",
-      "name": "Hot Girl Hotline"
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "trend-Linkdaze Smart Calendar-2026-10-07T13:58:26.930Z",
-    "date": "2026-10-07T13:58:26.930Z",
-    "type": "trending",
-    "text": "Linkdaze Smart Calendar",
-    "target": {
-      "page": "trending",
-      "name": "Linkdaze Smart Calendar"
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "issue-OpenAI models-Disrupting a coordinated model-distillation campaign-2026-10-07T13:58:26.930Z",
-    "date": "2026-10-07T13:58:26.930Z",
-    "type": "issue",
-    "text": "OpenAI models: Disrupting a coordinated model-distillation campaign",
-    "target": {
-      "page": "issues",
-      "key": "OpenAI models|Disrupting a coordinated model-distillation campaign"
-    },
-    "source": "scan",
-    "runType": "Manual"
   }
 ]; // written by scripts/scan.mjs and scripts/inbox.mjs — do not edit by hand
