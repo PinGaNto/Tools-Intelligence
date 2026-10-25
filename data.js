@@ -1115,7 +1115,7 @@ const UPDATES = [
   }
 ];
 
-const TRENDING_REFRESHED_AT = "2026-10-25"; // updated by scripts/scan.mjs
+const TRENDING_REFRESHED_AT = "2026-10-25";
 const TRENDING = [
   {
     "name": "Block Voice Model",
@@ -1269,7 +1269,7 @@ const TRENDING = [
   }
 ];
 
-const ISSUES_REFRESHED_AT = "2026-10-25"; // manually curated — see README
+const ISSUES_REFRESHED_AT = "2026-10-25";
 const ISSUES = [
   {
     "tool": "Anthropic",
@@ -1384,12 +1384,12 @@ const ISSUES = [
 const SCAN_META = {
   "lastRun": "2026-10-25T03:33:02.497Z",
   "runType": "Automatic (weekly)"
-};
+}; // written by scripts/scan.mjs — untouched here
 
 const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
-  "lastRun": "2026-10-24T20:37:06.405Z"
-}; // written by scripts/inbox.mjs
+  "lastRun": "2026-10-25T04:26:41.111Z"
+};
 
 const NOTIFICATIONS = [
   {
@@ -1928,66 +1928,6 @@ const NOTIFICATIONS = [
     "target": {
       "page": "trending",
       "name": "Google Universal Cart shopping tool US launch"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-37",
-    "date": "2026-10-11T04:14:41.397Z",
-    "type": "update",
-    "text": "ChatGPT: Composer predictions in Codex (beta)",
-    "target": {
-      "page": "updates",
-      "id": 37
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-38",
-    "date": "2026-10-11T04:14:41.397Z",
-    "type": "update",
-    "text": "ChatGPT: GPT-6 with Intelligent UI rollout",
-    "target": {
-      "page": "updates",
-      "id": 38
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-39",
-    "date": "2026-10-11T04:14:41.397Z",
-    "type": "update",
-    "text": "ChatGPT: Audio uploads and transcription in ChatGPT",
-    "target": {
-      "page": "updates",
-      "id": 39
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-GPT-6 and Intelligent UI-2026-10-11T04:14:41.397Z",
-    "date": "2026-10-11T04:14:41.397Z",
-    "type": "trending",
-    "text": "GPT-6 and Intelligent UI",
-    "target": {
-      "page": "trending",
-      "name": "GPT-6 and Intelligent UI"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-GPT-6 Sol-2026-10-11T04:14:41.397Z",
-    "date": "2026-10-11T04:14:41.397Z",
-    "type": "trending",
-    "text": "GPT-6 Sol",
-    "target": {
-      "page": "trending",
-      "name": "GPT-6 Sol"
     },
     "source": "scan",
     "runType": "Automatic (weekly)"
