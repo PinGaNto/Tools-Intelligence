@@ -813,11 +813,390 @@ const UPDATES = [
     "source": "https://www.vwd.ai/pulse/discovery-launch",
     "sourceType": "Official source",
     "reliability": "Reliable"
+  },
+  {
+    "id": 48,
+    "tool": "GWI",
+    "category": "Audience",
+    "date": "2025-09-30",
+    "title": "GWI launches Spark API",
+    "summary": "GWI introduced the Spark API, enabling developers to integrate real human insight data directly into AI applications.",
+    "impact": "Allows marketing analytics teams to enrich AI models with authentic consumer insights, improving decision quality.",
+    "overlap": [
+      "API",
+      "Human Insight",
+      "AI Integration"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.gwi.com/press-center",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 49,
+    "tool": "GWI",
+    "category": "Audience",
+    "date": "2025-06-26",
+    "title": "GWI joins AgentExchange expansion with MCP servers",
+    "summary": "GWI announced participation in expanding AgentExchange by connecting its services to MCP servers, facilitating enterprise AI adoption.",
+    "impact": "Provides enterprises a streamlined path to embed GWI insights into AI agents via MCP infrastructure, enhancing analytics workflows.",
+    "overlap": [
+      "Enterprise AI",
+      "AgentExchange",
+      "MCP integration"
+    ],
+    "confidence": "Medium",
+    "priority": "Medium",
+    "source": "https://www.gwi.com/press-center",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 50,
+    "tool": "GWI",
+    "category": "Audience",
+    "date": "2025-11-03",
+    "title": "Claude can now run instant research with GWI",
+    "summary": "The Claude AI model now integrates with GWI, allowing it to perform real‑time research using GWI's audience datasets.",
+    "impact": "Enables analysts to query GWI data via Claude, accelerating insight generation without manual data extraction.",
+    "overlap": [
+      "Claude AI",
+      "Instant Research",
+      "Data Integration"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.gwi.com/press-center",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 51,
+    "tool": "GWI",
+    "category": "Audience",
+    "date": "2025-10-02",
+    "title": "GWI partners with Waldo for real‑time dashboards and strategy agents",
+    "summary": "GWI teamed up with Waldo to embed human insight into Waldo's real‑time dashboards and strategy agents.",
+    "impact": "Gives marketers live access to GWI's consumer insights within Waldo's tools, improving real‑time decision making.",
+    "overlap": [
+      "Partnership",
+      "Real-time Dashboards",
+      "Strategy Agents"
+    ],
+    "confidence": "Medium",
+    "priority": "Medium",
+    "source": "https://www.gwi.com/press-center",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 52,
+    "tool": "Semrush",
+    "category": "SEO / Search",
+    "date": "2026-06-03",
+    "title": "Enterprise Content Optimization Unifies SEO and AI Search",
+    "summary": "Semrush for Enterprise introduced unified content optimization workflows that combine traditional SEO and AI‑driven search, allowing teams to create and manage high‑performing content for both channels.",
+    "impact": "Marketing teams can streamline content creation across search and AI, improving visibility and efficiency.",
+    "overlap": [
+      "Content Optimization",
+      "Enterprise SEO",
+      "AI Search"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "http://www.semrush.com/news/releases/product-news",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 53,
+    "tool": "Semrush",
+    "category": "SEO / Search",
+    "date": "2026-05-27",
+    "title": "AI Visibility Database Expanded to 32 Countries",
+    "summary": "Semrush added 17 new regional markets, growing its AI Visibility Database to cover 32 countries and introduced a native integration that lets users access search and market intelligence directly within Claude.",
+    "impact": "Broader geographic coverage and Claude integration enable analysts to conduct AI‑powered market research in more locales without leaving the LLM.",
+    "overlap": [
+      "AI Visibility",
+      "Geographic Coverage",
+      "Claude Integration"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "http://www.semrush.com/news/releases/product-news",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 54,
+    "tool": "Semrush",
+    "category": "SEO / Search",
+    "date": "2026-08-11",
+    "title": "Adobe Brand Visibility and AI‑Powered Traffic Insights",
+    "summary": "Semrush launched Adobe Brand Visibility, a unified solution for the AI search era, and added AI‑driven Traffic Insights to Traffic Analytics that surface competitor traffic spikes, drops, and underlying drivers.",
+    "impact": "Brands can quickly detect and react to competitor traffic changes, enhancing competitive intelligence.",
+    "overlap": [
+      "Brand Visibility",
+      "Traffic Analytics",
+      "AI Insights"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "http://www.semrush.com/news/releases/product-news",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 55,
+    "tool": "Semrush",
+    "category": "SEO / Search",
+    "date": "2026-06-11",
+    "title": "MCP Connector for Perplexity",
+    "summary": "Semrush released a Model Context Protocol (MCP) connector for Perplexity, allowing Perplexity users to retrieve Semrush search intelligence natively inside the LLM platform.",
+    "impact": "Users can enrich Perplexity queries with real‑time SEO data, improving research accuracy.",
+    "overlap": [
+      "MCP Connector",
+      "Perplexity",
+      "Search Intelligence"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "http://www.semrush.com/news/releases/product-news",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 56,
+    "tool": "Siftsy",
+    "category": "Social Intelligence",
+    "date": "2026-10-01",
+    "title": "Sift Org Planning launches",
+    "summary": "Sift Org Planning is now live, allowing users to create scenarios with a drag‑and‑drop sandbox that mimics an organizational chart, enabling the building of custom org structures within the Sift experience.",
+    "impact": "Media and marketing teams can model and analyze target audiences by organization hierarchy, improving audience segmentation and campaign planning.",
+    "overlap": [
+      "Org Planning",
+      "Scenario Builder"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.justsift.com/en/articles/4824316-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 57,
+    "tool": "Siftsy",
+    "category": "Social Intelligence",
+    "date": "2026-10-01",
+    "title": "Real‑time upload assistance added to Sift data sync",
+    "summary": "The data sync process now includes real‑time upload assistance and an improved mapping experience, giving admins more streamlined, guided help when uploading People Data.",
+    "impact": "Faster, more accurate data ingestion helps analytics teams keep their audience and employee data up to date for timely insights.",
+    "overlap": [
+      "Data Sync",
+      "Upload Assistance"
+    ],
+    "confidence": "Medium",
+    "priority": "Medium",
+    "source": "https://help.justsift.com/en/articles/4824316-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 58,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-10-20",
+    "title": "Locked chats add private, PIN‑protected conversations",
+    "summary": "Locked chats let users keep selected conversations hidden from regular chat history, pinned chats, and search, requiring a 4‑digit account PIN or device authentication to open; retention and model‑improvement settings remain unchanged, and the feature is rolling out gradually to Free, Go, Plus, and Pro users across web, iOS, Android, and desktop apps.",
+    "impact": "Media and marketing teams can safeguard sensitive campaign discussions or client data while still leveraging ChatGPT, improving confidentiality and compliance for analytics workflows.",
+    "overlap": [
+      "Privacy",
+      "Conversation Management",
+      "Security"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 59,
+    "tool": "VwD",
+    "category": "Media Intelligence",
+    "date": "2026-10-01",
+    "title": "Unlimited creator searches with token purchase",
+    "summary": "VwD now lets users run unlimited searches across its 2.5M+ creator database; the first five searches are free and additional searches are available via a qualifying token purchase.",
+    "impact": "Teams can explore a much larger pool of creators without hitting search limits, accelerating sourcing workflows.",
+    "overlap": [
+      "Search",
+      "Creator sourcing",
+      "Token-based access"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.vwd.ai/pulse/discovery-launch",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 60,
+    "tool": "VwD",
+    "category": "Media Intelligence",
+    "date": "2026-10-01",
+    "title": "Exact Only toggle for precise matching",
+    "summary": "Creator Discovery includes an \"Exact Only\" option that, when enabled, returns results that match the entered search terms word‑for‑word.",
+    "impact": "Provides more precise creator results, reducing time spent filtering irrelevant matches.",
+    "overlap": [
+      "Exact match",
+      "Search filters"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.vwd.ai/pulse/discovery-launch",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 61,
+    "tool": "VwD",
+    "category": "Media Intelligence",
+    "date": "2026-10-01",
+    "title": "Preset searches for quick start",
+    "summary": "The platform offers preset searches—ready‑made example queries—that instantly populate filters, letting users launch a search without building criteria from scratch.",
+    "impact": "Speeds up onboarding and reduces friction for users new to creator sourcing.",
+    "overlap": [
+      "Preset",
+      "Search templates"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.vwd.ai/pulse/discovery-launch",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 62,
+    "tool": "VwD",
+    "category": "Media Intelligence",
+    "date": "2026-10-01",
+    "title": "Shortlist capacity of up to 100 creators",
+    "summary": "Within Creator Discovery, users can add up to 100 promising creators to a Shortlist before scanning them, functioning like a shopping cart for potential partners.",
+    "impact": "Enables batch organization and review of candidate creators, improving workflow efficiency.",
+    "overlap": [
+      "Shortlist",
+      "Batch review"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.vwd.ai/pulse/discovery-launch",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 63,
+    "tool": "VwD",
+    "category": "Media Intelligence",
+    "date": "2026-10-01",
+    "title": "Three scan levels (Lite, Medium, Comprehensive)",
+    "summary": "Creator Discovery provides three scan depth options: Lite (last 12 months of content), Medium (last 2 years), and Comprehensive (3+ years of public content).",
+    "impact": "Gives teams flexibility to balance analysis depth with time and resource constraints when evaluating creators.",
+    "overlap": [
+      "Scan depth",
+      "Content analysis",
+      "Creator evaluation"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.vwd.ai/pulse/discovery-launch",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
   }
 ];
 
-const TRENDING_REFRESHED_AT = "2026-10-20";
+const TRENDING_REFRESHED_AT = "2026-10-25"; // updated by scripts/scan.mjs
 const TRENDING = [
+  {
+    "name": "Block Voice Model",
+    "category": "AI",
+    "date": "2026-10-25",
+    "summary": "Block released a new voice model that generates speech sounding eerily human.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 1
+  },
+  {
+    "name": "1Password AI‑Powered Login",
+    "category": "AI",
+    "date": "2026-10-23",
+    "summary": "1Password launched a feature that lets AI agents log in on a user’s behalf without ever seeing the password.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 2
+  },
+  {
+    "name": "Canva Image Generation Model",
+    "category": "AI",
+    "date": "2026-10-23",
+    "summary": "Canva released its first proprietary image‑generation model for creating visuals directly within the platform.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 3
+  },
+  {
+    "name": "Microsoft 365 Insights Agent",
+    "category": "AI",
+    "date": "2026-10-22",
+    "summary": "Microsoft introduces the 365 Insights Agent, enabling admins to explore user‑submitted feedback within Copilot Chat and control how that feedback is shared.",
+    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
+    "sourceType": "Microsoft Copilot Blog",
+    "reliability": "Reliable",
+    "rank": 4
+  },
+  {
+    "name": "Claude Duet",
+    "category": "AI",
+    "date": "2026-10-22",
+    "summary": "Anthropic introduced Claude Duet, a new app focused on AI agents for conversational tasks.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 5
+  },
+  {
+    "name": "Flint Laptop Coding Model",
+    "category": "AI",
+    "date": "2026-10-22",
+    "summary": "Recursive launched Flint, a laptop‑optimized coding model that was largely built by AI.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 6
+  },
+  {
+    "name": "OpenAI models on Google Cloud",
+    "category": "AI",
+    "date": "2026-10-21",
+    "summary": "OpenAI announced that its flagship models will be available directly through Google Cloud, allowing enterprises to integrate OpenAI capabilities via the cloud provider’s platform.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 7
+  },
+  {
+    "name": "ChatGPT Ads expansion",
+    "category": "AI",
+    "date": "2026-10-21",
+    "summary": "OpenAI expanded its ChatGPT Ads product to 26 additional countries, making the ad‑generation feature accessible to a broader global user base.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 8
+  },
   {
     "name": "Interactive Slides in PowerPoint",
     "category": "Productivity",
@@ -826,7 +1205,7 @@ const TRENDING = [
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
-    "rank": 1
+    "rank": 9
   },
   {
     "name": "Meta open-weight AI model for Macs",
@@ -836,7 +1215,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 2
+    "rank": 10
   },
   {
     "name": "Bluesky Attie app expansion",
@@ -846,7 +1225,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 3
+    "rank": 11
   },
   {
     "name": "Rosalind Academic Plan",
@@ -856,7 +1235,7 @@ const TRENDING = [
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
-    "rank": 4
+    "rank": 12
   },
   {
     "name": "Microsoft Copilot for Legal",
@@ -866,7 +1245,7 @@ const TRENDING = [
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
-    "rank": 5
+    "rank": 13
   },
   {
     "name": "Amazon Bee personal AI devices",
@@ -876,7 +1255,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 6
+    "rank": 14
   },
   {
     "name": "Figma AI agent features",
@@ -886,91 +1265,11 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 7
-  },
-  {
-    "name": "Google Universal Cart shopping tool US launch",
-    "category": "AI",
-    "date": "2026-10-15",
-    "summary": "Google launched its Universal Cart shopping tool in the United States, an AI‑driven checkout experience that automatically fills cart details and streamlines purchases across sites.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 8
-  },
-  {
-    "name": "WhatsApp Invite Anyone to Call",
-    "category": "Social",
-    "date": "2026-10-14",
-    "summary": "WhatsApp introduced a feature that lets users invite anyone, even non‑WhatsApp users, to join a WhatsApp call.",
-    "source": "https://about.fb.com/news/",
-    "sourceType": "Meta Newsroom",
-    "reliability": "Reliable",
-    "rank": 9
-  },
-  {
-    "name": "Your Algorithm, Your Words: Feed Personalization Tools",
-    "category": "Social",
-    "date": "2026-10-13",
-    "summary": "Meta launched new AI-powered tools on Facebook that let users shape what appears in their Feed and Reels by entering interests in their own words.",
-    "source": "https://about.fb.com/news/",
-    "sourceType": "Meta Newsroom",
-    "reliability": "Reliable",
-    "rank": 10
-  },
-  {
-    "name": "Facebook AI‑powered Feed Personalization Tools",
-    "category": "Social",
-    "date": "2026-10-13",
-    "summary": "Facebook rolled out new AI‑driven tools that allow users to shape their Feed and Reels content by describing their interests in their own words.",
-    "source": "https://about.fb.com/news/",
-    "sourceType": "Meta Newsroom",
-    "reliability": "Reliable",
-    "rank": 11
-  },
-  {
-    "name": "Trust‑Aware Controls for AI",
-    "category": "AI",
-    "date": "2026-10-13",
-    "summary": "Microsoft introduced a new enforcement layer called Trust‑Aware Controls in Microsoft 365 Copilot, designed to isolate untrusted content, constrain its processing, and protect against indirect prompt‑injection attacks.",
-    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
-    "sourceType": "Microsoft Copilot Blog",
-    "reliability": "Reliable",
-    "rank": 12
-  },
-  {
-    "name": "Muse Wonder & Muse Wonder Full models",
-    "category": "AI",
-    "date": "2026-10-12",
-    "summary": "Meta announced its most capable AI models to date, Muse Wonder and Muse Wonder Full, designed for high‑performance personal and professional agentic tasks.",
-    "source": "https://about.fb.com/news/",
-    "sourceType": "Meta Newsroom",
-    "reliability": "Reliable",
-    "rank": 13
-  },
-  {
-    "name": "Copilot Notebooks updates",
-    "category": "Productivity",
-    "date": "2026-10-09",
-    "summary": "Microsoft announced new Copilot Notebooks capabilities, including delegating simple work to Copilot, editing Word, Excel, and PowerPoint files directly within notebooks, and creating interactive reports.",
-    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
-    "sourceType": "Microsoft Copilot Blog",
-    "reliability": "Reliable",
-    "rank": 14
-  },
-  {
-    "name": "Office in the new Microsoft Copilot app",
-    "category": "Productivity",
-    "date": "2026-10-09",
-    "summary": "Microsoft introduced the ability to create, edit, and collaborate on Word, Excel, and PowerPoint documents directly inside the new Microsoft Copilot mobile app.",
-    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
-    "sourceType": "Microsoft Copilot Blog",
-    "reliability": "Reliable",
     "rank": 15
   }
 ];
 
-const ISSUES_REFRESHED_AT = "2026-10-20";
+const ISSUES_REFRESHED_AT = "2026-10-25"; // manually curated — see README
 const ISSUES = [
   {
     "tool": "Anthropic",
@@ -1083,16 +1382,304 @@ const ISSUES = [
 ];
 
 const SCAN_META = {
-  "lastRun": "2026-10-20T14:54:52.747Z",
-  "runType": "Manual"
-}; // written by scripts/scan.mjs — untouched here
+  "lastRun": "2026-10-25T03:33:02.497Z",
+  "runType": "Automatic (weekly)"
+};
 
 const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
   "lastRun": "2026-10-24T20:37:06.405Z"
-};
+}; // written by scripts/inbox.mjs
 
 const NOTIFICATIONS = [
+  {
+    "id": "upd-48",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "update",
+    "text": "GWI: GWI launches Spark API",
+    "target": {
+      "page": "updates",
+      "id": 48
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-49",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "update",
+    "text": "GWI: GWI joins AgentExchange expansion with MCP servers",
+    "target": {
+      "page": "updates",
+      "id": 49
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-50",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "update",
+    "text": "GWI: Claude can now run instant research with GWI",
+    "target": {
+      "page": "updates",
+      "id": 50
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-51",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "update",
+    "text": "GWI: GWI partners with Waldo for real‑time dashboards and strategy agents",
+    "target": {
+      "page": "updates",
+      "id": 51
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-52",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "update",
+    "text": "Semrush: Enterprise Content Optimization Unifies SEO and AI Search",
+    "target": {
+      "page": "updates",
+      "id": 52
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-53",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "update",
+    "text": "Semrush: AI Visibility Database Expanded to 32 Countries",
+    "target": {
+      "page": "updates",
+      "id": 53
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-54",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "update",
+    "text": "Semrush: Adobe Brand Visibility and AI‑Powered Traffic Insights",
+    "target": {
+      "page": "updates",
+      "id": 54
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-55",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "update",
+    "text": "Semrush: MCP Connector for Perplexity",
+    "target": {
+      "page": "updates",
+      "id": 55
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-56",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "update",
+    "text": "Siftsy: Sift Org Planning launches",
+    "target": {
+      "page": "updates",
+      "id": 56
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-57",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "update",
+    "text": "Siftsy: Real‑time upload assistance added to Sift data sync",
+    "target": {
+      "page": "updates",
+      "id": 57
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-58",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "update",
+    "text": "ChatGPT: Locked chats add private, PIN‑protected conversations",
+    "target": {
+      "page": "updates",
+      "id": 58
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-59",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "update",
+    "text": "VwD: Unlimited creator searches with token purchase",
+    "target": {
+      "page": "updates",
+      "id": 59
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-60",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "update",
+    "text": "VwD: Exact Only toggle for precise matching",
+    "target": {
+      "page": "updates",
+      "id": 60
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-61",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "update",
+    "text": "VwD: Preset searches for quick start",
+    "target": {
+      "page": "updates",
+      "id": 61
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-62",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "update",
+    "text": "VwD: Shortlist capacity of up to 100 creators",
+    "target": {
+      "page": "updates",
+      "id": 62
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-63",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "update",
+    "text": "VwD: Three scan levels (Lite, Medium, Comprehensive)",
+    "target": {
+      "page": "updates",
+      "id": 63
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-OpenAI models on Google Cloud-2026-10-25T03:28:05.678Z",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "trending",
+    "text": "OpenAI models on Google Cloud",
+    "target": {
+      "page": "trending",
+      "name": "OpenAI models on Google Cloud"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-ChatGPT Ads expansion-2026-10-25T03:28:05.678Z",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "trending",
+    "text": "ChatGPT Ads expansion",
+    "target": {
+      "page": "trending",
+      "name": "ChatGPT Ads expansion"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Microsoft 365 Insights Agent-2026-10-25T03:28:05.678Z",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "trending",
+    "text": "Microsoft 365 Insights Agent",
+    "target": {
+      "page": "trending",
+      "name": "Microsoft 365 Insights Agent"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Block Voice Model-2026-10-25T03:28:05.678Z",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "trending",
+    "text": "Block Voice Model",
+    "target": {
+      "page": "trending",
+      "name": "Block Voice Model"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-1Password AI‑Powered Login-2026-10-25T03:28:05.678Z",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "trending",
+    "text": "1Password AI‑Powered Login",
+    "target": {
+      "page": "trending",
+      "name": "1Password AI‑Powered Login"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Canva Image Generation Model-2026-10-25T03:28:05.678Z",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "trending",
+    "text": "Canva Image Generation Model",
+    "target": {
+      "page": "trending",
+      "name": "Canva Image Generation Model"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Claude Duet-2026-10-25T03:28:05.678Z",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "trending",
+    "text": "Claude Duet",
+    "target": {
+      "page": "trending",
+      "name": "Claude Duet"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Flint Laptop Coding Model-2026-10-25T03:28:05.678Z",
+    "date": "2026-10-25T03:28:05.678Z",
+    "type": "trending",
+    "text": "Flint Laptop Coding Model",
+    "target": {
+      "page": "trending",
+      "name": "Flint Laptop Coding Model"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
   {
     "id": "upd-47",
     "date": "2026-10-20T14:50:43.422Z",
@@ -1401,138 +1988,6 @@ const NOTIFICATIONS = [
     "target": {
       "page": "trending",
       "name": "GPT-6 Sol"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-GPT-6 Luna-2026-10-11T04:14:41.397Z",
-    "date": "2026-10-11T04:14:41.397Z",
-    "type": "trending",
-    "text": "GPT-6 Luna",
-    "target": {
-      "page": "trending",
-      "name": "GPT-6 Luna"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Muse for Small Business-2026-10-11T04:14:41.397Z",
-    "date": "2026-10-11T04:14:41.397Z",
-    "type": "trending",
-    "text": "Muse for Small Business",
-    "target": {
-      "page": "trending",
-      "name": "Muse for Small Business"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Copilot Notebooks updates-2026-10-11T04:14:41.397Z",
-    "date": "2026-10-11T04:14:41.397Z",
-    "type": "trending",
-    "text": "Copilot Notebooks updates",
-    "target": {
-      "page": "trending",
-      "name": "Copilot Notebooks updates"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Office in the new Microsoft Copilot app-2026-10-11T04:14:41.397Z",
-    "date": "2026-10-11T04:14:41.397Z",
-    "type": "trending",
-    "text": "Office in the new Microsoft Copilot app",
-    "target": {
-      "page": "trending",
-      "name": "Office in the new Microsoft Copilot app"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Claude Haiku 5.5-2026-10-11T04:14:41.397Z",
-    "date": "2026-10-11T04:14:41.397Z",
-    "type": "trending",
-    "text": "Claude Haiku 5.5",
-    "target": {
-      "page": "trending",
-      "name": "Claude Haiku 5.5"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Agentic AI for Gemini (businesses)-2026-10-11T04:14:41.397Z",
-    "date": "2026-10-11T04:14:41.397Z",
-    "type": "trending",
-    "text": "Agentic AI for Gemini (businesses)",
-    "target": {
-      "page": "trending",
-      "name": "Agentic AI for Gemini (businesses)"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Natura $99 Smart Ring-2026-10-11T04:14:41.397Z",
-    "date": "2026-10-11T04:14:41.397Z",
-    "type": "trending",
-    "text": "Natura $99 Smart Ring",
-    "target": {
-      "page": "trending",
-      "name": "Natura $99 Smart Ring"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Goodfire Inside‑Out AI Monitors-2026-10-11T04:14:41.397Z",
-    "date": "2026-10-11T04:14:41.397Z",
-    "type": "trending",
-    "text": "Goodfire Inside‑Out AI Monitors",
-    "target": {
-      "page": "trending",
-      "name": "Goodfire Inside‑Out AI Monitors"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "issue-Anthropic-Anthropic AI model sent false homicide tip to Philadelphia police-2026-10-11T04:14:41.397Z",
-    "date": "2026-10-11T04:14:41.397Z",
-    "type": "issue",
-    "text": "Anthropic: Anthropic AI model sent false homicide tip to Philadelphia police",
-    "target": {
-      "page": "issues",
-      "key": "Anthropic|Anthropic AI model sent false homicide tip to Philadelphia police"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "issue-Anthropic-Anthropic cannot reliably control its AI agents, disables live‑internet evals-2026-10-11T04:14:41.397Z",
-    "date": "2026-10-11T04:14:41.397Z",
-    "type": "issue",
-    "text": "Anthropic: Anthropic cannot reliably control its AI agents, disables live‑internet evals",
-    "target": {
-      "page": "issues",
-      "key": "Anthropic|Anthropic cannot reliably control its AI agents, disables live‑internet evals"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "issue-OpenAI-OpenAI’s math‑solving models fall short of academic standards-2026-10-11T04:14:41.397Z",
-    "date": "2026-10-11T04:14:41.397Z",
-    "type": "issue",
-    "text": "OpenAI: OpenAI’s math‑solving models fall short of academic standards",
-    "target": {
-      "page": "issues",
-      "key": "OpenAI|OpenAI’s math‑solving models fall short of academic standards"
     },
     "source": "scan",
     "runType": "Automatic (weekly)"
