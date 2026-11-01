@@ -1112,11 +1112,546 @@ const UPDATES = [
     "source": "https://www.vwd.ai/pulse/discovery-launch",
     "sourceType": "Official source",
     "reliability": "Reliable"
+  },
+  {
+    "id": 64,
+    "tool": "GWI",
+    "category": "Audience",
+    "date": "2026-01-22",
+    "title": "GWI launches Agent Spark",
+    "summary": "Agent Spark, an AI agent that analyzes 35 billion data signals in seconds, delivers trusted human insights directly into large language models such as Claude and ChatGPT.",
+    "impact": "Provides media and marketing analysts with real‑time, AI‑augmented audience insights within their LLM workflows, speeding up research and decision‑making.",
+    "overlap": [
+      "Agent Spark",
+      "LLM integration",
+      "AI insights"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.gwi.com/press-releases",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 65,
+    "tool": "Brandwatch",
+    "category": "Social Listening",
+    "date": "2025-10-27",
+    "title": "Community is now open for Social Media Management users",
+    "summary": "Brandwatch opened its Community to Social Media Management users, allowing them to register with their Brandwatch account to access support, product learning, and exclusive events.",
+    "impact": "Provides a centralized place for teams to get help, share best practices, and stay informed, improving efficiency and adoption.",
+    "overlap": [
+      "Community",
+      "User Support",
+      "Collaboration"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://social-media-management-help.brandwatch.com/en/articles/17450301-product-updates-october-2025",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 66,
+    "tool": "Brandwatch",
+    "category": "Social Listening",
+    "date": "2025-10-27",
+    "title": "Measure adds Facebook Followers metric",
+    "summary": "Brandwatch Measure now supports the Facebook Followers metric, replacing the deprecated Fans/Page Likes metrics.",
+    "impact": "Gives analysts more accurate follower data for Facebook, aligning with platform terminology and improving reporting.",
+    "overlap": [
+      "Metrics",
+      "Facebook",
+      "Measure"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://social-media-management-help.brandwatch.com/en/articles/17450301-product-updates-october-2025",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 67,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-10-01",
+    "title": "Expanded Role Permissions for Klear admins",
+    "summary": "Klear administrators can now control two additional permissions—Activate Influencers and Manage Ecommerce—alongside existing Send Agreements and Send Payments, allowing granular access assignment per user.",
+    "impact": "Provides tighter governance over influencer outreach and ecommerce actions, reducing risk of unauthorized activity.",
+    "overlap": [
+      "Permissions",
+      "Klear",
+      "Admin Controls"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 68,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-10-01",
+    "title": "Redesigned \"What’s New\" and \"Monitor\" tabs in Meltwater mobile app",
+    "summary": "The mobile app’s What’s New and Monitor tabs have been refreshed to show coverage updates, volume changes for pinned searches, enable organization of saved searches and tags, and add sorting, filtering, and fewer taps to open coverage.",
+    "impact": "Improves on‑the‑go monitoring efficiency for analysts tracking brand mentions and trends.",
+    "overlap": [
+      "Mobile App",
+      "UI Refresh",
+      "Monitoring"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 69,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-10-01",
+    "title": "AI‑powered Media List Overview",
+    "summary": "Media List Overview now uses AI to automatically summarize each journalist’s beats, locations, tier, and reach, and provides linked journalist insights to help decide list suitability before outreach.",
+    "impact": "Speeds up list evaluation and improves targeting accuracy for PR campaigns.",
+    "overlap": [
+      "AI Summarization",
+      "Media List",
+      "Journalist Insights"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 70,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-10-01",
+    "title": "Track MCP credit usage directly in AI Assistant",
+    "summary": "A new credit‑usage tool lets any Meltwater MCP user view credit consumption (by month, tool, user, or conversation) inside the LLM interface without opening Meltwater or needing admin rights.",
+    "impact": "Gives teams real‑time visibility into credit spend, helping manage budgets and avoid unexpected overages.",
+    "overlap": [
+      "Credit Management",
+      "AI Assistant",
+      "MCP"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 71,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-10-01",
+    "title": "AI Brand Visibility template in Analyze",
+    "summary": "A ready‑made dashboard powered by GenAI Lens now tracks brand and competitor visibility, mentions, sentiment, and source influence across AI models, plus 13 new GenAI Lens widgets for any Analyze dashboard.",
+    "impact": "Enables faster, AI‑enhanced brand health monitoring and comparative analysis for marketing teams.",
+    "overlap": [
+      "Brand Visibility",
+      "GenAI",
+      "Dashboard"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 72,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-10-01",
+    "title": "Track Instagram Reels views across creator roster",
+    "summary": "Shows watch counts for each Instagram Reel for every creator in a Klear roster, using Instagram‑reported data (including paid, organic, and Facebook breakdowns) even for creators without a connected Instagram account.",
+    "impact": "Provides comprehensive performance metrics for influencer video content, aiding ROI assessment.",
+    "overlap": [
+      "Instagram",
+      "Reels",
+      "Influencer Analytics"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 73,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-10-01",
+    "title": "Searchable dashboard widget library in Analyze",
+    "summary": "Users can now search more than 200 dashboard widgets using keywords beyond widget titles, and each widget displays a one‑line description of its function before adding it.",
+    "impact": "Reduces time spent building dashboards and helps analysts discover relevant visualizations more easily.",
+    "overlap": [
+      "Dashboard",
+      "Widget Search",
+      "Analyze"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 74,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-10-01",
+    "title": "Personalized pitches and relationship history in Media Relations",
+    "summary": "Media Relations now lets users build a single pitch for a list, tailor each message and attachment per journalist, send in bulk, and track journalist relationship activity and history.",
+    "impact": "Improves outreach relevance and enables better relationship management for PR teams.",
+    "overlap": [
+      "Media Relations",
+      "Personalization",
+      "Relationship Tracking"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 75,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-10-01",
+    "title": "MCP Credit Dashboard for account admins",
+    "summary": "Account admins can now view a comprehensive MCP Usage page showing credits used/remaining, active users, spend by tool, usage trends, and live updates to manage costs and contract limits.",
+    "impact": "Facilitates proactive cost control and adoption tracking across the organization.",
+    "overlap": [
+      "MCP",
+      "Credit Dashboard",
+      "Admin Tools"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 76,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-10-01",
+    "title": "Meet the new Mira Companion AI assistant",
+    "summary": "Mira Companion can understand user context within Meltwater, help build searches, research articles and journalists, explain dashboards and results, take actions without page switches, and remembers chat history and preferences.",
+    "impact": "Streamlines workflow by providing an always‑on AI guide, reducing context‑switching for analysts.",
+    "overlap": [
+      "AI Assistant",
+      "Search",
+      "Mira Companion"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 77,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-10-01",
+    "title": "Share newsletters with AI briefings to Slack, Teams, and more",
+    "summary": "Users can share newsletters as links that include AI‑generated briefings summarizing top themes, key storylines, and media coverage, ready to paste into collaboration tools.",
+    "impact": "Accelerates internal communication of media insights, keeping teams aligned with minimal manual summarization.",
+    "overlap": [
+      "Newsletters",
+      "AI Briefings",
+      "Collaboration"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 78,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-10-30",
+    "title": "Account switching on iOS and Android",
+    "summary": "Users can stay signed into up to two ChatGPT accounts simultaneously on the iOS and Android apps and switch between them without signing out, with each account keeping its own chats, memory, settings, and subscriptions.",
+    "impact": "Allows marketers and analysts to manage multiple brand or client accounts from a single device, preserving context and reducing login friction.",
+    "overlap": [
+      "account management",
+      "mobile",
+      "multi‑account"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 79,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-10-29",
+    "title": "Increased Work and Codex usage limits for Pro and Business Premium plans",
+    "summary": "Pro 100, Pro 500, and Pro 200 plans now receive double their previous Work and Codex usage allowances, and the earlier reduction for Pro 200 has been cancelled.",
+    "impact": "Provides analytics and development teams with more compute budget for data processing and code generation without additional cost.",
+    "overlap": [
+      "plan limits",
+      "usage quota",
+      "Work & Codex"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 80,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-10-28",
+    "title": "Texting your dot (beta)",
+    "summary": "Pro users in the U.S. can enable a \"dot\" that can send and receive secure iMessage or RCS texts, proactively delivering updates and sharing the same memory and plugins as the dot in the ChatGPT app.",
+    "impact": "Gives marketers a native SMS channel for receiving AI‑generated insights and updates on the go.",
+    "overlap": [
+      "SMS integration",
+      "dot",
+      "beta"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 81,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-10-28",
+    "title": "Promotional API credits for eligible ChatGPT Pro and Business plans",
+    "summary": "Eligible Pro and Business subscribers can activate promotional API credits that apply to a linked API organization, separate from ChatGPT usage credits, to build apps and agents with the OpenAI API.",
+    "impact": "Lowers the barrier for teams to prototype and deploy custom analytics agents using OpenAI's API.",
+    "overlap": [
+      "API credits",
+      "promo",
+      "developer tools"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 82,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-10-27",
+    "title": "iCloud Mail and Calendar plugins in ChatGPT",
+    "summary": "iCloud users can connect their Mail and Calendar to ChatGPT, enabling the model to search emails, summarize inboxes, check schedules, and update calendar events across all plans on web, desktop, and iOS.",
+    "impact": "Streamlines content planning and scheduling for marketing teams by integrating personal email and calendar data directly into ChatGPT workflows.",
+    "overlap": [
+      "mail plugin",
+      "calendar plugin",
+      "iCloud integration"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 83,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-10-26",
+    "title": "GPT-6.1 Terra model rollout",
+    "summary": "The GPT-6.1 Terra model is rolling out in ChatGPT Work and Codex for Plus, Pro, Business, Enterprise, and Edu plans, supporting visual reasoning, computer use, and writing, selectable from the model list.",
+    "impact": "Adds advanced multimodal capabilities for generating visual insights and automating complex tasks in analytics and marketing workflows.",
+    "overlap": [
+      "GPT-6.1 Terra",
+      "visual reasoning",
+      "multimodal"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 84,
+    "tool": "VwD",
+    "category": "Media Intelligence",
+    "date": "2026-10-01",
+    "title": "Natural‑language query auto‑creates searchable filters",
+    "summary": "Creator Discovery can take a free‑text request (e.g., “skincare creators in the US”) and automatically translate it into a set of adjustable filters such as platform, industry, region, gender, and follower reach.",
+    "impact": "Marketers can launch creator searches faster without manually building filter criteria, accelerating the sourcing process.",
+    "overlap": [
+      "NLU search",
+      "filter generation",
+      "creator discovery"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.vwd.ai/pulse/discovery-launch",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 85,
+    "tool": "VwD",
+    "category": "Media Intelligence",
+    "date": "2026-10-01",
+    "title": "Scanned creators automatically added to organization’s Creators list",
+    "summary": "After a creator is scanned with any of the Lite, Medium, or Comprehensive scan levels, the creator is instantly added to the team’s central Creators list for ongoing brand‑safety, suitability, and compliance analysis.",
+    "impact": "This eliminates manual onboarding steps, keeping creator data centralized and ready for further campaign planning.",
+    "overlap": [
+      "creator onboarding",
+      "data integration",
+      "creator discovery"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.vwd.ai/pulse/discovery-launch",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 86,
+    "tool": "Sprinklr",
+    "category": "Social Management",
+    "date": "2026-10-24",
+    "title": "Media Support for Amazon Bedrock Models in AI+ Studio",
+    "summary": "The AI+ Studio module now supports Amazon Bedrock models for media, enabling workflows that can process visual content automatically and maintain parity with other model providers.",
+    "impact": "Marketing teams can automate image and video analysis within Sprinklr, speeding up content insights and reducing manual effort.",
+    "overlap": [
+      "AI",
+      "Media Processing",
+      "Amazon Bedrock"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.sprinklr.com/help/articles/264-release-27th-mar-26-onwards/sprinklr-unified-platform-integrations-and-cross-products-displaypresentations-264-release-notes/69ba6d5e1d80763efa4a628b",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 87,
+    "tool": "Sprinklr",
+    "category": "Social Management",
+    "date": "2026-10-24",
+    "title": "Google Vertex Text Embedding and Image Generation Support in AI+ Studio",
+    "summary": "AI+ Studio now integrates Google Vertex capabilities, allowing users to generate text embeddings and create images directly within their workflows.",
+    "impact": "Enables richer content creation and semantic analysis, helping analysts derive deeper insights from text and visual assets.",
+    "overlap": [
+      "AI",
+      "Google Vertex",
+      "Embedding"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.sprinklr.com/help/articles/264-release-27th-mar-26-onwards/sprinklr-unified-platform-integrations-and-cross-products-displaypresentations-264-release-notes/69ba6d5e1d80763efa4a628b",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 88,
+    "tool": "Sprinklr",
+    "category": "Social Management",
+    "date": "2026-10-24",
+    "title": "Bulk Testing for AI Use Case Pipelines",
+    "summary": "A new bulk testing capability lets users run large‑scale tests on AI use case pipelines, streamlining validation and performance evaluation.",
+    "impact": "Allows marketing analytics teams to efficiently validate AI models across many scenarios, improving reliability before deployment.",
+    "overlap": [
+      "AI",
+      "Testing",
+      "Pipelines"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.sprinklr.com/help/articles/264-release-27th-mar-26-onwards/sprinklr-unified-platform-integrations-and-cross-products-displaypresentations-264-release-notes/69ba6d5e1d80763efa4a628b",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
   }
 ];
 
-const TRENDING_REFRESHED_AT = "2026-10-25";
+const TRENDING_REFRESHED_AT = "2026-11-01"; // updated by scripts/scan.mjs
 const TRENDING = [
+  {
+    "name": "Claude Opus 5.5",
+    "category": "AI",
+    "date": "2026-11-01",
+    "summary": "Anthropic announced the Claude Opus 5.5 model, optimized for agentic coding and knowledge work, offering about 40% lower operating costs compared to Opus 5 on typical workloads.",
+    "source": "https://www.anthropic.com/news",
+    "sourceType": "Anthropic News",
+    "reliability": "Reliable",
+    "rank": 1
+  },
+  {
+    "name": "Zest restaurant‑reservation AI agent",
+    "category": "AI",
+    "date": "2026-10-31",
+    "summary": "Zest introduced a new AI agent that can find restaurants and book reservations via text messaging.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 2
+  },
+  {
+    "name": "Style Sketch",
+    "category": "AI",
+    "date": "2026-10-30",
+    "summary": "Meta quietly launched an AI‑powered fashion app called Style Sketch, allowing users to generate clothing designs with artificial intelligence.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 3
+  },
+  {
+    "name": "Mistral trillion‑parameter model weights",
+    "category": "AI",
+    "date": "2026-10-30",
+    "summary": "Mistral released the weights for its trillion‑parameter AI model, positioning it for cybersecurity applications.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 4
+  },
+  {
+    "name": "Muse Wonder and Muse Wonder Full models",
+    "category": "AI",
+    "date": "2026-10-28",
+    "summary": "Meta announced Muse Wonder and Muse Wonder Full, its most capable frontier AI models designed to improve performance on personal and professional agentic tasks.",
+    "source": "https://about.fb.com/news/",
+    "sourceType": "Meta Newsroom",
+    "reliability": "Reliable",
+    "rank": 5
+  },
+  {
+    "name": "Frontier expands to more Microsoft 365 public previews",
+    "category": "Productivity",
+    "date": "2026-10-26",
+    "summary": "Microsoft announced that its Frontier tool is being extended to additional Microsoft 365 public preview programs, allowing more customers to test upcoming features early.",
+    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
+    "sourceType": "Microsoft Copilot Blog",
+    "reliability": "Reliable",
+    "rank": 6
+  },
   {
     "name": "Block Voice Model",
     "category": "AI",
@@ -1125,7 +1660,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 1
+    "rank": 7
   },
   {
     "name": "1Password AI‑Powered Login",
@@ -1135,7 +1670,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 2
+    "rank": 8
   },
   {
     "name": "Canva Image Generation Model",
@@ -1145,7 +1680,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 3
+    "rank": 9
   },
   {
     "name": "Microsoft 365 Insights Agent",
@@ -1155,7 +1690,7 @@ const TRENDING = [
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
-    "rank": 4
+    "rank": 10
   },
   {
     "name": "Claude Duet",
@@ -1165,7 +1700,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 5
+    "rank": 11
   },
   {
     "name": "Flint Laptop Coding Model",
@@ -1175,7 +1710,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 6
+    "rank": 12
   },
   {
     "name": "OpenAI models on Google Cloud",
@@ -1185,7 +1720,7 @@ const TRENDING = [
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
-    "rank": 7
+    "rank": 13
   },
   {
     "name": "ChatGPT Ads expansion",
@@ -1195,7 +1730,7 @@ const TRENDING = [
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
-    "rank": 8
+    "rank": 14
   },
   {
     "name": "Interactive Slides in PowerPoint",
@@ -1205,71 +1740,11 @@ const TRENDING = [
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
-    "rank": 9
-  },
-  {
-    "name": "Meta open-weight AI model for Macs",
-    "category": "AI",
-    "date": "2026-10-16",
-    "summary": "Meta released an open‑weight large language model that can run locally on macOS devices, enabling on‑device AI processing without cloud dependence.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 10
-  },
-  {
-    "name": "Bluesky Attie app expansion",
-    "category": "Social",
-    "date": "2026-10-16",
-    "summary": "Bluesky expanded its AI‑powered Attie app, allowing users to create websites, games, and other interactive content directly within the platform.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 11
-  },
-  {
-    "name": "Rosalind Academic Plan",
-    "category": "AI",
-    "date": "2026-10-15",
-    "summary": "OpenAI announced the Rosalind Academic Plan, a subscription offering that gives students and educators access to OpenAI models and tools for learning through question‑driven curricula.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
-    "reliability": "Reliable",
-    "rank": 12
-  },
-  {
-    "name": "Microsoft Copilot for Legal",
-    "category": "AI",
-    "date": "2026-10-15",
-    "summary": "Microsoft announced the general availability of Microsoft Copilot for Legal, adding more than 20 purpose‑built legal skills and partner‑built plugins that embed legal‑specific capabilities and trusted sources directly into Microsoft 365 applications.",
-    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
-    "sourceType": "Microsoft Copilot Blog",
-    "reliability": "Reliable",
-    "rank": 13
-  },
-  {
-    "name": "Amazon Bee personal AI devices",
-    "category": "AI",
-    "date": "2026-10-15",
-    "summary": "Amazon introduced two new Bee‑branded personal AI devices priced from $75, offering voice‑activated assistants and on‑device AI capabilities.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 14
-  },
-  {
-    "name": "Figma AI agent features",
-    "category": "Productivity",
-    "date": "2026-10-15",
-    "summary": "Figma announced new features that define how AI agents operate on its design platform, giving designers programmable AI assistance for tasks like layout and asset generation.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
     "rank": 15
   }
 ];
 
-const ISSUES_REFRESHED_AT = "2026-10-25";
+const ISSUES_REFRESHED_AT = "2026-11-01"; // manually curated — see README
 const ISSUES = [
   {
     "tool": "Anthropic",
@@ -1342,56 +1817,392 @@ const ISSUES = [
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
     "rank": 6
-  },
-  {
-    "tool": "OpenAI",
-    "monitored": false,
-    "category": "AI",
-    "date": "2026-10-02",
-    "title": "OpenAI cuts ties with three safety researchers",
-    "summary": "OpenAI ended relationships with three AI safety researchers, prompting criticism about its commitment to AI safety and transparency.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 7
-  },
-  {
-    "tool": "Grok (xAI)",
-    "monitored": false,
-    "category": "AI",
-    "date": "2026-10-02",
-    "title": "Grok chatbot allegedly urged Trump to capture Venezuela's president",
-    "summary": "Reports claim the AI chatbot Grok suggested that former President Donald Trump should capture the Venezuelan president, sparking political controversy and criticism of the model's outputs.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 8
-  },
-  {
-    "tool": "OpenAI models",
-    "monitored": false,
-    "category": "AI",
-    "date": "2026-09-30",
-    "title": "Disrupting a coordinated model-distillation campaign",
-    "summary": "OpenAI disclosed that it detected and stopped a coordinated effort to distill its proprietary models, averting unauthorized replication of its AI technology.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
-    "reliability": "Reliable",
-    "rank": 9
   }
 ];
 
 const SCAN_META = {
-  "lastRun": "2026-10-25T03:33:02.497Z",
+  "lastRun": "2026-11-01T04:46:12.722Z",
   "runType": "Automatic (weekly)"
-}; // written by scripts/scan.mjs — untouched here
+};
 
 const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
   "lastRun": "2026-10-31T21:23:17.103Z"
-};
+}; // written by scripts/inbox.mjs
 
 const NOTIFICATIONS = [
+  {
+    "id": "upd-64",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "GWI: GWI launches Agent Spark",
+    "target": {
+      "page": "updates",
+      "id": 64
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-65",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "Brandwatch: Community is now open for Social Media Management users",
+    "target": {
+      "page": "updates",
+      "id": 65
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-66",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "Brandwatch: Measure adds Facebook Followers metric",
+    "target": {
+      "page": "updates",
+      "id": 66
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-67",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "Meltwater: Expanded Role Permissions for Klear admins",
+    "target": {
+      "page": "updates",
+      "id": 67
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-68",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "Meltwater: Redesigned \"What’s New\" and \"Monitor\" tabs in Meltwater mobile app",
+    "target": {
+      "page": "updates",
+      "id": 68
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-69",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "Meltwater: AI‑powered Media List Overview",
+    "target": {
+      "page": "updates",
+      "id": 69
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-70",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "Meltwater: Track MCP credit usage directly in AI Assistant",
+    "target": {
+      "page": "updates",
+      "id": 70
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-71",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "Meltwater: AI Brand Visibility template in Analyze",
+    "target": {
+      "page": "updates",
+      "id": 71
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-72",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "Meltwater: Track Instagram Reels views across creator roster",
+    "target": {
+      "page": "updates",
+      "id": 72
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-73",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "Meltwater: Searchable dashboard widget library in Analyze",
+    "target": {
+      "page": "updates",
+      "id": 73
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-74",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "Meltwater: Personalized pitches and relationship history in Media Relations",
+    "target": {
+      "page": "updates",
+      "id": 74
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-75",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "Meltwater: MCP Credit Dashboard for account admins",
+    "target": {
+      "page": "updates",
+      "id": 75
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-76",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "Meltwater: Meet the new Mira Companion AI assistant",
+    "target": {
+      "page": "updates",
+      "id": 76
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-77",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "Meltwater: Share newsletters with AI briefings to Slack, Teams, and more",
+    "target": {
+      "page": "updates",
+      "id": 77
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-78",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "ChatGPT: Account switching on iOS and Android",
+    "target": {
+      "page": "updates",
+      "id": 78
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-79",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "ChatGPT: Increased Work and Codex usage limits for Pro and Business Premium plans",
+    "target": {
+      "page": "updates",
+      "id": 79
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-80",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "ChatGPT: Texting your dot (beta)",
+    "target": {
+      "page": "updates",
+      "id": 80
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-81",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "ChatGPT: Promotional API credits for eligible ChatGPT Pro and Business plans",
+    "target": {
+      "page": "updates",
+      "id": 81
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-82",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "ChatGPT: iCloud Mail and Calendar plugins in ChatGPT",
+    "target": {
+      "page": "updates",
+      "id": 82
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-83",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "ChatGPT: GPT-6.1 Terra model rollout",
+    "target": {
+      "page": "updates",
+      "id": 83
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-84",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "VwD: Natural‑language query auto‑creates searchable filters",
+    "target": {
+      "page": "updates",
+      "id": 84
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-85",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "VwD: Scanned creators automatically added to organization’s Creators list",
+    "target": {
+      "page": "updates",
+      "id": 85
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-86",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "Sprinklr: Media Support for Amazon Bedrock Models in AI+ Studio",
+    "target": {
+      "page": "updates",
+      "id": 86
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-87",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "Sprinklr: Google Vertex Text Embedding and Image Generation Support in AI+ Studio",
+    "target": {
+      "page": "updates",
+      "id": 87
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-88",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "update",
+    "text": "Sprinklr: Bulk Testing for AI Use Case Pipelines",
+    "target": {
+      "page": "updates",
+      "id": 88
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Muse Wonder and Muse Wonder Full models-2026-11-01T04:41:40.975Z",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "trending",
+    "text": "Muse Wonder and Muse Wonder Full models",
+    "target": {
+      "page": "trending",
+      "name": "Muse Wonder and Muse Wonder Full models"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Frontier expands to more Microsoft 365 public previews-2026-11-01T04:41:40.975Z",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "trending",
+    "text": "Frontier expands to more Microsoft 365 public previews",
+    "target": {
+      "page": "trending",
+      "name": "Frontier expands to more Microsoft 365 public previews"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Claude Opus 5.5-2026-11-01T04:41:40.975Z",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "trending",
+    "text": "Claude Opus 5.5",
+    "target": {
+      "page": "trending",
+      "name": "Claude Opus 5.5"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Style Sketch-2026-11-01T04:41:40.975Z",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "trending",
+    "text": "Style Sketch",
+    "target": {
+      "page": "trending",
+      "name": "Style Sketch"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Mistral trillion‑parameter model weights-2026-11-01T04:41:40.975Z",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "trending",
+    "text": "Mistral trillion‑parameter model weights",
+    "target": {
+      "page": "trending",
+      "name": "Mistral trillion‑parameter model weights"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Zest restaurant‑reservation AI agent-2026-11-01T04:41:40.975Z",
+    "date": "2026-11-01T04:41:40.975Z",
+    "type": "trending",
+    "text": "Zest restaurant‑reservation AI agent",
+    "target": {
+      "page": "trending",
+      "name": "Zest restaurant‑reservation AI agent"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
   {
     "id": "upd-48",
     "date": "2026-10-25T03:28:05.678Z",
@@ -1616,318 +2427,6 @@ const NOTIFICATIONS = [
     "target": {
       "page": "trending",
       "name": "Microsoft 365 Insights Agent"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Block Voice Model-2026-10-25T03:28:05.678Z",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "trending",
-    "text": "Block Voice Model",
-    "target": {
-      "page": "trending",
-      "name": "Block Voice Model"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-1Password AI‑Powered Login-2026-10-25T03:28:05.678Z",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "trending",
-    "text": "1Password AI‑Powered Login",
-    "target": {
-      "page": "trending",
-      "name": "1Password AI‑Powered Login"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Canva Image Generation Model-2026-10-25T03:28:05.678Z",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "trending",
-    "text": "Canva Image Generation Model",
-    "target": {
-      "page": "trending",
-      "name": "Canva Image Generation Model"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Claude Duet-2026-10-25T03:28:05.678Z",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "trending",
-    "text": "Claude Duet",
-    "target": {
-      "page": "trending",
-      "name": "Claude Duet"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Flint Laptop Coding Model-2026-10-25T03:28:05.678Z",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "trending",
-    "text": "Flint Laptop Coding Model",
-    "target": {
-      "page": "trending",
-      "name": "Flint Laptop Coding Model"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-47",
-    "date": "2026-10-20T14:50:43.422Z",
-    "type": "update",
-    "text": "VwD: Creator Discovery launches in VwD",
-    "target": {
-      "page": "updates",
-      "id": 47
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "trend-Your Algorithm, Your Words: Feed Personalization Tools-2026-10-20T14:50:43.422Z",
-    "date": "2026-10-20T14:50:43.422Z",
-    "type": "trending",
-    "text": "Your Algorithm, Your Words: Feed Personalization Tools",
-    "target": {
-      "page": "trending",
-      "name": "Your Algorithm, Your Words: Feed Personalization Tools"
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "trend-Interactive Slides in PowerPoint-2026-10-20T14:50:43.422Z",
-    "date": "2026-10-20T14:50:43.422Z",
-    "type": "trending",
-    "text": "Interactive Slides in PowerPoint",
-    "target": {
-      "page": "trending",
-      "name": "Interactive Slides in PowerPoint"
-    },
-    "source": "scan",
-    "runType": "Manual"
-  },
-  {
-    "id": "upd-40",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "update",
-    "text": "Julius: Touch Support added",
-    "target": {
-      "page": "updates",
-      "id": 40
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-41",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "update",
-    "text": "Julius: MP3 Support added",
-    "target": {
-      "page": "updates",
-      "id": 41
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-42",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "update",
-    "text": "ChatGPT: ChatGPT Slides lets you create and collaborate on presentations",
-    "target": {
-      "page": "updates",
-      "id": 42
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-43",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "update",
-    "text": "ChatGPT: GPT-6 Pro model adds faster responses, better plugins, and parallel agents",
-    "target": {
-      "page": "updates",
-      "id": 43
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-44",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "update",
-    "text": "ChatGPT: GPT‑Live‑1.1 and new multilingual voices released in ChatGPT Voice",
-    "target": {
-      "page": "updates",
-      "id": 44
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-45",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "update",
-    "text": "ChatGPT: Rosalind Academic Plan opens applications for free Business Standard seats",
-    "target": {
-      "page": "updates",
-      "id": 45
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-46",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "update",
-    "text": "ChatGPT: Removal of fixed Site limits for Plus and Pro plans",
-    "target": {
-      "page": "updates",
-      "id": 46
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Rosalind Academic Plan-2026-10-18T03:13:05.588Z",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "trending",
-    "text": "Rosalind Academic Plan",
-    "target": {
-      "page": "trending",
-      "name": "Rosalind Academic Plan"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Muse Wonder & Muse Wonder Full models-2026-10-18T03:13:05.588Z",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "trending",
-    "text": "Muse Wonder & Muse Wonder Full models",
-    "target": {
-      "page": "trending",
-      "name": "Muse Wonder & Muse Wonder Full models"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-WhatsApp Invite Anyone to Call-2026-10-18T03:13:05.588Z",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "trending",
-    "text": "WhatsApp Invite Anyone to Call",
-    "target": {
-      "page": "trending",
-      "name": "WhatsApp Invite Anyone to Call"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Facebook AI‑powered Feed Personalization Tools-2026-10-18T03:13:05.588Z",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "trending",
-    "text": "Facebook AI‑powered Feed Personalization Tools",
-    "target": {
-      "page": "trending",
-      "name": "Facebook AI‑powered Feed Personalization Tools"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Microsoft Copilot for Legal-2026-10-18T03:13:05.588Z",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "trending",
-    "text": "Microsoft Copilot for Legal",
-    "target": {
-      "page": "trending",
-      "name": "Microsoft Copilot for Legal"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Trust‑Aware Controls for AI-2026-10-18T03:13:05.588Z",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "trending",
-    "text": "Trust‑Aware Controls for AI",
-    "target": {
-      "page": "trending",
-      "name": "Trust‑Aware Controls for AI"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Meta open-weight AI model for Macs-2026-10-18T03:13:05.588Z",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "trending",
-    "text": "Meta open-weight AI model for Macs",
-    "target": {
-      "page": "trending",
-      "name": "Meta open-weight AI model for Macs"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Amazon Bee personal AI devices-2026-10-18T03:13:05.588Z",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "trending",
-    "text": "Amazon Bee personal AI devices",
-    "target": {
-      "page": "trending",
-      "name": "Amazon Bee personal AI devices"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Bluesky Attie app expansion-2026-10-18T03:13:05.588Z",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "trending",
-    "text": "Bluesky Attie app expansion",
-    "target": {
-      "page": "trending",
-      "name": "Bluesky Attie app expansion"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Figma AI agent features-2026-10-18T03:13:05.588Z",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "trending",
-    "text": "Figma AI agent features",
-    "target": {
-      "page": "trending",
-      "name": "Figma AI agent features"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Google Universal Cart shopping tool US launch-2026-10-18T03:13:05.588Z",
-    "date": "2026-10-18T03:13:05.588Z",
-    "type": "trending",
-    "text": "Google Universal Cart shopping tool US launch",
-    "target": {
-      "page": "trending",
-      "name": "Google Universal Cart shopping tool US launch"
     },
     "source": "scan",
     "runType": "Automatic (weekly)"
