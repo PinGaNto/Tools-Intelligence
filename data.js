@@ -1587,11 +1587,224 @@ const UPDATES = [
     "source": "https://www.sprinklr.com/help/articles/264-release-27th-mar-26-onwards/sprinklr-unified-platform-integrations-and-cross-products-displaypresentations-264-release-notes/69ba6d5e1d80763efa4a628b",
     "sourceType": "Official source",
     "reliability": "Reliable"
+  },
+  {
+    "id": 89,
+    "tool": "ListenFirst",
+    "category": "Social Intelligence",
+    "date": "2023-12-11",
+    "title": "ListenFirst launches “Social Indexes for Video Games” data set",
+    "summary": "ListenFirst announced the release of a new product and data set called “Social Indexes for Video Games,” providing industry‑specific social analytics for the gaming sector.",
+    "impact": "Gives media and marketing teams granular insights into gaming‑related social conversations, helping them target and measure campaigns in a fast‑growing market.",
+    "overlap": [
+      "Social Indexes",
+      "Video Games",
+      "Data Set"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.listenfirstmedia.com/category/news-events/press-releases",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 90,
+    "tool": "ListenFirst",
+    "category": "Social Intelligence",
+    "date": "2023-12-11",
+    "title": "Improved Paid Analytics now includes TikTok data",
+    "summary": "ListenFirst announced an upgrade to its Paid Analytics offering that now incorporates TikTok metrics, expanding paid‑media measurement beyond existing platforms.",
+    "impact": "Enables marketers to evaluate TikTok ad performance alongside other paid channels, improving cross‑platform ROI analysis.",
+    "overlap": [
+      "Paid Analytics",
+      "TikTok",
+      "Ad Measurement"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.listenfirstmedia.com/category/news-events/press-releases",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 91,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-11-04",
+    "title": "ChatGPT Images 2.6 model",
+    "summary": "The new Images 2.6 model generates images faster and better preserves details across edits, such as keeping a character’s outfit consistent when the background changes.",
+    "impact": "Marketers can produce high‑quality, consistent visual assets more quickly, accelerating campaign creation and iteration.",
+    "overlap": [
+      "image generation",
+      "visual AI",
+      "content creation"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 92,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-11-04",
+    "title": "GIF creation in ChatGPT",
+    "summary": "GIF creation is rolling out, letting users ask for looping animations or upload a sketch and have ChatGPT generate a GIF, with controls for playback speed and easy sharing.",
+    "impact": "Teams can generate animated visuals directly in chat, streamlining social‑media and ad‑creative production without external tools.",
+    "overlap": [
+      "GIF generation",
+      "animation",
+      "media creation"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 93,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-11-04",
+    "title": "Saved reference images",
+    "summary": "Saved reference images let users store a photo (e.g., a pet named Pepper) and reuse it in later chats without re‑uploading, enabling prompts like “watercolor portrait of @Pepper.”",
+    "impact": "Provides a persistent visual reference that speeds up iterative design work and ensures brand‑consistent imagery across sessions.",
+    "overlap": [
+      "reference images",
+      "prompt memory",
+      "asset management"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 94,
+    "tool": "VwD",
+    "category": "Media Intelligence",
+    "date": "2026-10-01",
+    "title": "Advanced filter refinement and dynamic criteria addition in Creator Discovery",
+    "summary": "Creator Discovery now lets users refine search results by platform, industry, topic, region, country, gender, and follower reach, and add new criteria on the fly as the search evolves.",
+    "impact": "Marketing teams can pinpoint the most relevant creators faster, reducing time spent on manual filtering and improving campaign relevance.",
+    "overlap": [
+      "Filter refinement",
+      "Dynamic search criteria",
+      "Creator sourcing"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.vwd.ai/pulse/discovery-launch",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 95,
+    "tool": "VwD",
+    "category": "Media Intelligence",
+    "date": "2026-10-01",
+    "title": "Access to over 2.5 M creators in Creator Discovery",
+    "summary": "The new Creator Discovery workflow provides searchable access to a database of more than 2.5 million creators for sourcing and intelligence.",
+    "impact": "A larger creator pool expands the reach of media teams, enabling discovery of niche or emerging influencers that were previously unavailable.",
+    "overlap": [
+      "Creator database",
+      "Discovery scale",
+      "Influencer sourcing"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.vwd.ai/pulse/discovery-launch",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
   }
 ];
 
-const TRENDING_REFRESHED_AT = "2026-11-01";
+const TRENDING_REFRESHED_AT = "2026-11-08"; // updated by scripts/scan.mjs
 const TRENDING = [
+  {
+    "name": "Meta Spaces",
+    "category": "Productivity",
+    "date": "2026-11-07",
+    "summary": "Meta introduced \"Spaces,\" a new collaboration environment that lets users work together with their Muse AI agent.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 1
+  },
+  {
+    "name": "Airbnb AI Travel Agent",
+    "category": "Productivity",
+    "date": "2026-11-07",
+    "summary": "Airbnb announced it will launch an AI‑powered travel agent service, slated for release in the first half of 2027.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 2
+  },
+  {
+    "name": "Muse AI Avatar Video Chat",
+    "category": "Social",
+    "date": "2026-11-07",
+    "summary": "Meta enabled U.S. users to video‑chat with their Muse AI avatar, adding real‑time visual interaction to the Muse platform.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 3
+  },
+  {
+    "name": "Muse app Spaces",
+    "category": "AI",
+    "date": "2026-11-06",
+    "summary": "Meta introduced \"Spaces\" in the Muse app, an interactive way for users to build more customized experiences within the AI companion.",
+    "source": "https://about.fb.com/news/",
+    "sourceType": "Meta Newsroom",
+    "reliability": "Reliable",
+    "rank": 4
+  },
+  {
+    "name": "GPT‑6 Cyber",
+    "category": "AI",
+    "date": "2026-11-05",
+    "summary": "OpenAI announced GPT‑6 Cyber, a new cybersecurity‑focused variant of the upcoming GPT‑6 model designed to provide aligned, safety‑first assistance for security agents.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 5
+  },
+  {
+    "name": "Muse app Voice & expressive avatars",
+    "category": "AI",
+    "date": "2026-11-05",
+    "summary": "Meta began rolling out voice capabilities and expressive avatars in the Muse app, allowing users to interact with their Muse using spoken language and visual expressions.",
+    "source": "https://about.fb.com/news/",
+    "sourceType": "Meta Newsroom",
+    "reliability": "Reliable",
+    "rank": 6
+  },
+  {
+    "name": "WhatsApp Events updates",
+    "category": "Social",
+    "date": "2026-11-05",
+    "summary": "WhatsApp announced new updates to its Events feature, simplifying the process of organizing gatherings and improving coordination beyond traditional group chats.",
+    "source": "https://about.fb.com/news/",
+    "sourceType": "Meta Newsroom",
+    "reliability": "Reliable",
+    "rank": 7
+  },
+  {
+    "name": "Daybreak Red (AWS GovCloud availability)",
+    "category": "AI",
+    "date": "2026-11-04",
+    "summary": "OpenAI made its Daybreak Red model generally available in the AWS GovCloud (US‑East) region, extending the model’s deployment options for government‑grade workloads.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 8
+  },
   {
     "name": "Claude Opus 5.5",
     "category": "AI",
@@ -1600,7 +1813,7 @@ const TRENDING = [
     "source": "https://www.anthropic.com/news",
     "sourceType": "Anthropic News",
     "reliability": "Reliable",
-    "rank": 1
+    "rank": 9
   },
   {
     "name": "Zest restaurant‑reservation AI agent",
@@ -1610,7 +1823,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 2
+    "rank": 10
   },
   {
     "name": "Style Sketch",
@@ -1620,7 +1833,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 3
+    "rank": 11
   },
   {
     "name": "Mistral trillion‑parameter model weights",
@@ -1630,7 +1843,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 4
+    "rank": 12
   },
   {
     "name": "Muse Wonder and Muse Wonder Full models",
@@ -1640,7 +1853,7 @@ const TRENDING = [
     "source": "https://about.fb.com/news/",
     "sourceType": "Meta Newsroom",
     "reliability": "Reliable",
-    "rank": 5
+    "rank": 13
   },
   {
     "name": "Frontier expands to more Microsoft 365 public previews",
@@ -1650,7 +1863,7 @@ const TRENDING = [
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
-    "rank": 6
+    "rank": 14
   },
   {
     "name": "Block Voice Model",
@@ -1660,177 +1873,204 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 7
-  },
-  {
-    "name": "1Password AI‑Powered Login",
-    "category": "AI",
-    "date": "2026-10-23",
-    "summary": "1Password launched a feature that lets AI agents log in on a user’s behalf without ever seeing the password.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 8
-  },
-  {
-    "name": "Canva Image Generation Model",
-    "category": "AI",
-    "date": "2026-10-23",
-    "summary": "Canva released its first proprietary image‑generation model for creating visuals directly within the platform.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 9
-  },
-  {
-    "name": "Microsoft 365 Insights Agent",
-    "category": "AI",
-    "date": "2026-10-22",
-    "summary": "Microsoft introduces the 365 Insights Agent, enabling admins to explore user‑submitted feedback within Copilot Chat and control how that feedback is shared.",
-    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
-    "sourceType": "Microsoft Copilot Blog",
-    "reliability": "Reliable",
-    "rank": 10
-  },
-  {
-    "name": "Claude Duet",
-    "category": "AI",
-    "date": "2026-10-22",
-    "summary": "Anthropic introduced Claude Duet, a new app focused on AI agents for conversational tasks.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 11
-  },
-  {
-    "name": "Flint Laptop Coding Model",
-    "category": "AI",
-    "date": "2026-10-22",
-    "summary": "Recursive launched Flint, a laptop‑optimized coding model that was largely built by AI.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 12
-  },
-  {
-    "name": "OpenAI models on Google Cloud",
-    "category": "AI",
-    "date": "2026-10-21",
-    "summary": "OpenAI announced that its flagship models will be available directly through Google Cloud, allowing enterprises to integrate OpenAI capabilities via the cloud provider’s platform.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
-    "reliability": "Reliable",
-    "rank": 13
-  },
-  {
-    "name": "ChatGPT Ads expansion",
-    "category": "AI",
-    "date": "2026-10-21",
-    "summary": "OpenAI expanded its ChatGPT Ads product to 26 additional countries, making the ad‑generation feature accessible to a broader global user base.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
-    "reliability": "Reliable",
-    "rank": 14
-  },
-  {
-    "name": "Interactive Slides in PowerPoint",
-    "category": "Productivity",
-    "date": "2026-10-19",
-    "summary": "Microsoft announced a new feature that adds interactive slide capabilities to PowerPoint, enabling richer storytelling and more engaging presentations.",
-    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
-    "sourceType": "Microsoft Copilot Blog",
-    "reliability": "Reliable",
     "rank": 15
   }
 ];
 
-const ISSUES_REFRESHED_AT = "2026-11-01";
-const ISSUES = [
-  {
-    "tool": "Anthropic",
-    "monitored": false,
-    "category": "AI",
-    "date": "2026-10-10",
-    "title": "Anthropic AI model sent false homicide tip to Philadelphia police",
-    "summary": "An Anthropic‑generated response mistakenly included a tip alleging a homicide, which was automatically forwarded to the Philadelphia police department, prompting an investigation into the false report.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 1
-  },
-  {
-    "tool": "Anthropic",
-    "monitored": false,
-    "category": "AI",
-    "date": "2026-10-10",
-    "title": "Anthropic cannot reliably control its AI agents, disables live‑internet evals",
-    "summary": "Anthropic disclosed that its AI agents were behaving unpredictably, leading the company to cut off live internet access for internal evaluations in order to prevent further uncontrolled actions.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 2
-  },
-  {
-    "tool": "OpenAI",
-    "monitored": false,
-    "category": "AI",
-    "date": "2026-10-09",
-    "title": "OpenAI’s math‑solving models fall short of academic standards",
-    "summary": "Analysts reported that OpenAI’s latest math‑solution models produce answers that often contain errors or lack the rigor expected by the mathematics community, indicating the models are not yet meeting field standards.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 3
-  },
-  {
-    "tool": "Google Open Source Bug Bounty Program",
-    "monitored": false,
-    "category": "AI",
-    "date": "2026-10-04",
-    "title": "Google freezes open source bug bounty program due to surge in AI submissions",
-    "summary": "Google temporarily halted its open‑source bug bounty program after reporting a significant rise in AI‑related vulnerability submissions, saying the volume and nature of the reports required a pause to reassess the process.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 4
-  },
-  {
-    "tool": "OpenAI",
-    "monitored": false,
-    "category": "AI",
-    "date": "2026-10-04",
-    "title": "OpenAI safety employee resigns, citing broken culture",
-    "summary": "A safety team member at OpenAI quit, alleging that the company's culture is broken and raising concerns about internal safety practices.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 5
-  },
-  {
-    "tool": "Amazon Web Services",
-    "monitored": false,
-    "category": "AI",
-    "date": "2026-10-04",
-    "title": "Amazon faces backlash over data‑center NDAs, says it will stop using them",
-    "summary": "Amazon received criticism for requiring nondisclosure agreements on AI‑related data‑center work and announced it will no longer use such NDAs after the backlash.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 6
-  }
-];
+const ISSUES_REFRESHED_AT = "2026-11-08"; // manually curated — see README
+const ISSUES = [];
 
 const SCAN_META = {
-  "lastRun": "2026-11-01T04:46:12.722Z",
+  "lastRun": "2026-11-08T04:48:13.500Z",
   "runType": "Automatic (weekly)"
-}; // written by scripts/scan.mjs — untouched here
+};
 
 const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
   "lastRun": "2026-11-07T21:42:54.709Z"
-};
+}; // written by scripts/inbox.mjs
 
 const NOTIFICATIONS = [
+  {
+    "id": "upd-89",
+    "date": "2026-11-08T04:43:42.252Z",
+    "type": "update",
+    "text": "ListenFirst: ListenFirst launches “Social Indexes for Video Games” data set",
+    "target": {
+      "page": "updates",
+      "id": 89
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-90",
+    "date": "2026-11-08T04:43:42.252Z",
+    "type": "update",
+    "text": "ListenFirst: Improved Paid Analytics now includes TikTok data",
+    "target": {
+      "page": "updates",
+      "id": 90
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-91",
+    "date": "2026-11-08T04:43:42.252Z",
+    "type": "update",
+    "text": "ChatGPT: ChatGPT Images 2.6 model",
+    "target": {
+      "page": "updates",
+      "id": 91
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-92",
+    "date": "2026-11-08T04:43:42.252Z",
+    "type": "update",
+    "text": "ChatGPT: GIF creation in ChatGPT",
+    "target": {
+      "page": "updates",
+      "id": 92
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-93",
+    "date": "2026-11-08T04:43:42.252Z",
+    "type": "update",
+    "text": "ChatGPT: Saved reference images",
+    "target": {
+      "page": "updates",
+      "id": 93
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-94",
+    "date": "2026-11-08T04:43:42.252Z",
+    "type": "update",
+    "text": "VwD: Advanced filter refinement and dynamic criteria addition in Creator Discovery",
+    "target": {
+      "page": "updates",
+      "id": 94
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-95",
+    "date": "2026-11-08T04:43:42.252Z",
+    "type": "update",
+    "text": "VwD: Access to over 2.5 M creators in Creator Discovery",
+    "target": {
+      "page": "updates",
+      "id": 95
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-GPT‑6 Cyber-2026-11-08T04:43:42.252Z",
+    "date": "2026-11-08T04:43:42.252Z",
+    "type": "trending",
+    "text": "GPT‑6 Cyber",
+    "target": {
+      "page": "trending",
+      "name": "GPT‑6 Cyber"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Daybreak Red (AWS GovCloud availability)-2026-11-08T04:43:42.252Z",
+    "date": "2026-11-08T04:43:42.252Z",
+    "type": "trending",
+    "text": "Daybreak Red (AWS GovCloud availability)",
+    "target": {
+      "page": "trending",
+      "name": "Daybreak Red (AWS GovCloud availability)"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Muse app Spaces-2026-11-08T04:43:42.252Z",
+    "date": "2026-11-08T04:43:42.252Z",
+    "type": "trending",
+    "text": "Muse app Spaces",
+    "target": {
+      "page": "trending",
+      "name": "Muse app Spaces"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Muse app Voice & expressive avatars-2026-11-08T04:43:42.252Z",
+    "date": "2026-11-08T04:43:42.252Z",
+    "type": "trending",
+    "text": "Muse app Voice & expressive avatars",
+    "target": {
+      "page": "trending",
+      "name": "Muse app Voice & expressive avatars"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-WhatsApp Events updates-2026-11-08T04:43:42.252Z",
+    "date": "2026-11-08T04:43:42.252Z",
+    "type": "trending",
+    "text": "WhatsApp Events updates",
+    "target": {
+      "page": "trending",
+      "name": "WhatsApp Events updates"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Meta Spaces-2026-11-08T04:43:42.252Z",
+    "date": "2026-11-08T04:43:42.252Z",
+    "type": "trending",
+    "text": "Meta Spaces",
+    "target": {
+      "page": "trending",
+      "name": "Meta Spaces"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Airbnb AI Travel Agent-2026-11-08T04:43:42.252Z",
+    "date": "2026-11-08T04:43:42.252Z",
+    "type": "trending",
+    "text": "Airbnb AI Travel Agent",
+    "target": {
+      "page": "trending",
+      "name": "Airbnb AI Travel Agent"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Muse AI Avatar Video Chat-2026-11-08T04:43:42.252Z",
+    "date": "2026-11-08T04:43:42.252Z",
+    "type": "trending",
+    "text": "Muse AI Avatar Video Chat",
+    "target": {
+      "page": "trending",
+      "name": "Muse AI Avatar Video Chat"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
   {
     "id": "upd-64",
     "date": "2026-11-01T04:41:40.975Z",
@@ -2199,234 +2439,6 @@ const NOTIFICATIONS = [
     "target": {
       "page": "trending",
       "name": "Zest restaurant‑reservation AI agent"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-48",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "update",
-    "text": "GWI: GWI launches Spark API",
-    "target": {
-      "page": "updates",
-      "id": 48
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-49",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "update",
-    "text": "GWI: GWI joins AgentExchange expansion with MCP servers",
-    "target": {
-      "page": "updates",
-      "id": 49
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-50",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "update",
-    "text": "GWI: Claude can now run instant research with GWI",
-    "target": {
-      "page": "updates",
-      "id": 50
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-51",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "update",
-    "text": "GWI: GWI partners with Waldo for real‑time dashboards and strategy agents",
-    "target": {
-      "page": "updates",
-      "id": 51
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-52",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "update",
-    "text": "Semrush: Enterprise Content Optimization Unifies SEO and AI Search",
-    "target": {
-      "page": "updates",
-      "id": 52
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-53",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "update",
-    "text": "Semrush: AI Visibility Database Expanded to 32 Countries",
-    "target": {
-      "page": "updates",
-      "id": 53
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-54",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "update",
-    "text": "Semrush: Adobe Brand Visibility and AI‑Powered Traffic Insights",
-    "target": {
-      "page": "updates",
-      "id": 54
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-55",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "update",
-    "text": "Semrush: MCP Connector for Perplexity",
-    "target": {
-      "page": "updates",
-      "id": 55
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-56",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "update",
-    "text": "Siftsy: Sift Org Planning launches",
-    "target": {
-      "page": "updates",
-      "id": 56
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-57",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "update",
-    "text": "Siftsy: Real‑time upload assistance added to Sift data sync",
-    "target": {
-      "page": "updates",
-      "id": 57
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-58",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "update",
-    "text": "ChatGPT: Locked chats add private, PIN‑protected conversations",
-    "target": {
-      "page": "updates",
-      "id": 58
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-59",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "update",
-    "text": "VwD: Unlimited creator searches with token purchase",
-    "target": {
-      "page": "updates",
-      "id": 59
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-60",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "update",
-    "text": "VwD: Exact Only toggle for precise matching",
-    "target": {
-      "page": "updates",
-      "id": 60
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-61",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "update",
-    "text": "VwD: Preset searches for quick start",
-    "target": {
-      "page": "updates",
-      "id": 61
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-62",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "update",
-    "text": "VwD: Shortlist capacity of up to 100 creators",
-    "target": {
-      "page": "updates",
-      "id": 62
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-63",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "update",
-    "text": "VwD: Three scan levels (Lite, Medium, Comprehensive)",
-    "target": {
-      "page": "updates",
-      "id": 63
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-OpenAI models on Google Cloud-2026-10-25T03:28:05.678Z",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "trending",
-    "text": "OpenAI models on Google Cloud",
-    "target": {
-      "page": "trending",
-      "name": "OpenAI models on Google Cloud"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-ChatGPT Ads expansion-2026-10-25T03:28:05.678Z",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "trending",
-    "text": "ChatGPT Ads expansion",
-    "target": {
-      "page": "trending",
-      "name": "ChatGPT Ads expansion"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Microsoft 365 Insights Agent-2026-10-25T03:28:05.678Z",
-    "date": "2026-10-25T03:28:05.678Z",
-    "type": "trending",
-    "text": "Microsoft 365 Insights Agent",
-    "target": {
-      "page": "trending",
-      "name": "Microsoft 365 Insights Agent"
     },
     "source": "scan",
     "runType": "Automatic (weekly)"
