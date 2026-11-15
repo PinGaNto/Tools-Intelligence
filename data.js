@@ -1720,11 +1720,374 @@ const UPDATES = [
     "source": "https://www.vwd.ai/pulse/discovery-launch",
     "sourceType": "Official source",
     "reliability": "Reliable"
+  },
+  {
+    "id": 96,
+    "tool": "Statista",
+    "category": "Market Intelligence",
+    "date": "2026-06-02",
+    "title": "Market Insights REST API released",
+    "summary": "Statista launched the Market Insights REST API, providing search and data lookup endpoints for programmatic access to market data.",
+    "impact": "Enables media and marketing analytics teams to automate data retrieval and integrate market insights directly into dashboards and workflows.",
+    "overlap": [
+      "REST API",
+      "Market Insights",
+      "Data Lookup"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://docs.platform.statista.ai/changelogs/updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 97,
+    "tool": "Statista",
+    "category": "Market Intelligence",
+    "date": "2026-06-16",
+    "title": "Consumer Insights REST API released",
+    "summary": "Statista introduced the Consumer Insights REST API, offering search and data lookup endpoints for consumer‑focused datasets.",
+    "impact": "Allows marketing analysts to programmatically pull consumer trend data, speeding up insight generation and reducing manual effort.",
+    "overlap": [
+      "REST API",
+      "Consumer Insights",
+      "Search"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://docs.platform.statista.ai/changelogs/updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 98,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-11-01",
+    "title": "Add Meta Muse as a GenAI Lens source",
+    "summary": "Meta Muse is offered as an add‑on source in GenAI Lens, allowing users to monitor brand, competitor and topic mentions, sentiment and cited sources, and compare Muse’s answers with 11 other AI sources.",
+    "impact": "Provides a broader AI‑driven view of brand perception across Meta’s platform, helping teams spot differences in how the brand is described and act on sentiment trends.",
+    "overlap": [
+      "AI source integration",
+      "Brand monitoring",
+      "Social listening"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 99,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-11-01",
+    "title": "Reputation Intelligence AI‑powered add‑on",
+    "summary": "Reputation Intelligence is a paid AI add‑on that automatically categorises news and social coverage into 38 reputation categories across eight strategic pillars, includes a pre‑built Analyse dashboard, reputation‑focused digests and a beta Reputation Risk Score.",
+    "impact": "Enables marketers to quickly assess brand health, surface emerging reputation risks and track changes over time without manual tagging.",
+    "overlap": [
+      "Reputation analytics",
+      "AI categorisation",
+      "Risk scoring"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 100,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-11-01",
+    "title": "Mira Studio for multi‑step workflow automation",
+    "summary": "Mira Studio lets users describe a goal in natural language; Mira then asks clarifying questions, orchestrates Meltwater tools, and returns results as reports, tables, PowerPoint files or other shareable formats, all within a single conversational thread.",
+    "impact": "Reduces the time needed to build complex analytics workflows, letting teams generate deliverables without switching between multiple interfaces.",
+    "overlap": [
+      "Workflow automation",
+      "Conversational AI",
+      "Reporting"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 101,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-11-01",
+    "title": "Accuracy scoring for AI brand answers",
+    "summary": "GenAI Lens now compares AI‑generated brand answers with approved Brand Facts, assigning an Accuracy Score and labelling each claim as Accurate, Inaccurate, Disputed, Outdated or Missing Context, with severity and source details for prioritisation.",
+    "impact": "Helps teams ensure AI‑driven insights stay aligned with verified brand information, reducing the risk of misinformation in reporting.",
+    "overlap": [
+      "Answer verification",
+      "Accuracy scoring",
+      "Brand fact matching"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 102,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-11-01",
+    "title": "Personas for AI answer comparison",
+    "summary": "Users can create up to 10 personas in GenAI Lens and assign them to prompts, allowing comparison of AI model outputs by audience, including visibility, sentiment and citation metrics, with optional custom intents.",
+    "impact": "Provides insight into how different audience segments may perceive the brand, supporting more targeted messaging strategies.",
+    "overlap": [
+      "Audience personas",
+      "AI response comparison",
+      "Sentiment analysis"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 103,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-11-01",
+    "title": "Source attribution details for AI answers",
+    "summary": "GenAI Lens now surfaces detailed source information behind AI answers, including domain mentions, Citation Peaks, specific YouTube channels, subreddits and the longevity of page citations.",
+    "impact": "Improves transparency of AI‑generated insights, enabling analysts to trace back to original sources and assess credibility.",
+    "overlap": [
+      "Citation analysis",
+      "Source transparency",
+      "AI explainability"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 104,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-11-01",
+    "title": "Trackable AI Recommendations with impact badge",
+    "summary": "Weekly AI Recommendations now include an impact badge, concrete action steps and status labels (In progress, Implemented, Impact measured); users can also switch to a kanban board to drag recommendations between status columns.",
+    "impact": "Turns AI suggestions into actionable tasks that can be monitored and reported on, increasing adoption and measurable outcomes.",
+    "overlap": [
+      "Recommendation tracking",
+      "Kanban board",
+      "Action management"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 105,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-11-01",
+    "title": "Account‑wide Meltwater MCP access control",
+    "summary": "Account admins can now toggle Meltwater MCP access for the entire organisation with a single setting and create user‑specific exceptions, with changes applied instantly across AI assistants such as Claude, ChatGPT and custom agents.",
+    "impact": "Simplifies governance of AI tool usage, ensuring compliance and consistent access policies across large teams.",
+    "overlap": [
+      "Access management",
+      "MCP permissions",
+      "Admin controls"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 106,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-11-01",
+    "title": "New Instagram engagement metrics in Klear",
+    "summary": "Klear now captures Instagram Reposts, Shares, Replies and Swipe Forward metrics for eligible public creators’ image posts, expanding the view of how audiences interact with creator content.",
+    "impact": "Gives marketers richer engagement data on Instagram, enabling more precise measurement of content performance and influencer ROI.",
+    "overlap": [
+      "Instagram metrics",
+      "Creator engagement",
+      "Social analytics"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 107,
+    "tool": "Semrush",
+    "category": "SEO / Search",
+    "date": "2025-12-17",
+    "title": "Semrush launches official app in ChatGPT",
+    "summary": "Semrush released an official app inside ChatGPT that lets users query Semrush APIs, automate reporting, and build AI‑driven workflows directly within the chat interface, eliminating the need for custom scripts or manual API integration.",
+    "impact": "Marketing and SEO teams can access live Semrush data and insights without leaving ChatGPT, speeding up analysis and reducing tool‑switching overhead.",
+    "overlap": [
+      "ChatGPT integration",
+      "API querying",
+      "AI workflow automation"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://ca.finance.yahoo.com/news/semrush-launches-official-app-chatgpt-220100371.html",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 108,
+    "tool": "Mintel",
+    "category": "Market Intelligence",
+    "date": "2026-10-05",
+    "title": "2027 Global Predictions report launched",
+    "summary": "Mintel released the 2027 Global Predictions report, a predictive‑intelligence offering that helps brands understand emerging consumer trends shaping the next year.",
+    "impact": "Gives media and marketing analytics teams forward‑looking data to inform strategy and anticipate market shifts before competitors.",
+    "overlap": [
+      "Predictive intelligence",
+      "Trend forecasting",
+      "Report"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.mintel.com/press-centre/mintel-in-the-media-september/",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 109,
+    "tool": "Siftsy",
+    "category": "Social Intelligence",
+    "date": "2026-04-21",
+    "title": "Profile attribute visibility controls added",
+    "summary": "Sift now lets any profile attribute be marked as public (visible to all users) or restricted (requires special permissions), and introduces Edit Profile and View/Edit Restricted Attributes capabilities, including access to sensitive data such as salary information.",
+    "impact": "Allows media and marketing analytics teams to manage who can see sensitive employee data, improving data governance and compliance while still enabling necessary insights.",
+    "overlap": [
+      "Data privacy",
+      "User permissions",
+      "Profile management"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.justsift.com/en/articles/4824316-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 110,
+    "tool": "Siftsy",
+    "category": "Social Intelligence",
+    "date": "2024-06-13",
+    "title": "Open Roles feature released",
+    "summary": "Sift now supports adding Open Roles to an organization, enabling users to create and display job openings directly within the platform.",
+    "impact": "Provides marketing and media teams with up‑to‑date talent pipeline data, helping them align hiring trends with campaign planning and audience targeting.",
+    "overlap": [
+      "Talent analytics",
+      "Job posting",
+      "Org data"
+    ],
+    "confidence": "High",
+    "priority": "Low",
+    "source": "https://help.justsift.com/en/articles/4824316-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 111,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-11-13",
+    "title": "ChatGPT Wallet launches",
+    "summary": "ChatGPT Wallet lets users save an eligible payment card, approve purchases with biometrics, and have the dot complete checkout without exposing card details, rolling out to Pro subscribers in the United States.",
+    "impact": "Enables automated e‑commerce interactions within ChatGPT, giving marketers a new channel to drive sales and capture purchase attribution data.",
+    "overlap": [
+      "payments",
+      "e‑commerce",
+      "wallet"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 112,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-11-10",
+    "title": "Retiring Advanced and Standard Voice models",
+    "summary": "Advanced and Standard voice are being retired on December 11, 2026, with all voice interactions shifting to the newer GPT‑Live model, while Advanced voice will continue to power live video and screen‑sharing until GPT‑Live gains that capability.",
+    "impact": "Analytics teams must adjust voice‑usage tracking to focus on GPT‑Live metrics and may see changes in engagement patterns as older voice models are removed.",
+    "overlap": [
+      "voice",
+      "audio",
+      "GPT‑Live"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
   }
 ];
 
-const TRENDING_REFRESHED_AT = "2026-11-08";
+const TRENDING_REFRESHED_AT = "2026-11-15"; // updated by scripts/scan.mjs
 const TRENDING = [
+  {
+    "name": "ChatGPT Wallet",
+    "category": "AI",
+    "date": "2026-11-13",
+    "summary": "OpenAI announced the ChatGPT Wallet, a new feature that enables AI agents to shop and complete checkout transactions on behalf of users.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 1
+  },
+  {
+    "name": "Copilot Studio agent user accounts",
+    "category": "AI",
+    "date": "2026-11-12",
+    "summary": "Microsoft announced that Copilot Studio agents can now be assigned dedicated Microsoft 365 user accounts, allowing agents to act more autonomously and be governed through standard account controls.",
+    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
+    "sourceType": "Microsoft Copilot Blog",
+    "reliability": "Reliable",
+    "rank": 2
+  },
+  {
+    "name": "ChatGPT Enterprise in AWS Marketplace",
+    "category": "Productivity",
+    "date": "2026-11-09",
+    "summary": "OpenAI made its ChatGPT Enterprise plan available for purchase through the AWS Marketplace, allowing enterprises to provision the service via AWS, announced on Nov 9, 2026.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 3
+  },
+  {
+    "name": "Claude Fable 5.2 and Claude Mythos 5.2",
+    "category": "AI",
+    "date": "2026-11-09",
+    "summary": "Anthropic introduced two new large language models, Claude Fable 5.2 and Claude Mythos 5.2, designed to excel at demanding technical tasks in coding, finance, and scientific research.",
+    "source": "https://www.anthropic.com/news",
+    "sourceType": "Anthropic News",
+    "reliability": "Reliable",
+    "rank": 4
+  },
   {
     "name": "Meta Spaces",
     "category": "Productivity",
@@ -1733,7 +2096,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 1
+    "rank": 5
   },
   {
     "name": "Airbnb AI Travel Agent",
@@ -1743,7 +2106,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 2
+    "rank": 6
   },
   {
     "name": "Muse AI Avatar Video Chat",
@@ -1753,7 +2116,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 3
+    "rank": 7
   },
   {
     "name": "Muse app Spaces",
@@ -1763,7 +2126,7 @@ const TRENDING = [
     "source": "https://about.fb.com/news/",
     "sourceType": "Meta Newsroom",
     "reliability": "Reliable",
-    "rank": 4
+    "rank": 8
   },
   {
     "name": "GPT‑6 Cyber",
@@ -1773,7 +2136,7 @@ const TRENDING = [
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
-    "rank": 5
+    "rank": 9
   },
   {
     "name": "Muse app Voice & expressive avatars",
@@ -1783,7 +2146,7 @@ const TRENDING = [
     "source": "https://about.fb.com/news/",
     "sourceType": "Meta Newsroom",
     "reliability": "Reliable",
-    "rank": 6
+    "rank": 10
   },
   {
     "name": "WhatsApp Events updates",
@@ -1793,7 +2156,7 @@ const TRENDING = [
     "source": "https://about.fb.com/news/",
     "sourceType": "Meta Newsroom",
     "reliability": "Reliable",
-    "rank": 7
+    "rank": 11
   },
   {
     "name": "Daybreak Red (AWS GovCloud availability)",
@@ -1803,7 +2166,7 @@ const TRENDING = [
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
-    "rank": 8
+    "rank": 12
   },
   {
     "name": "Claude Opus 5.5",
@@ -1813,7 +2176,7 @@ const TRENDING = [
     "source": "https://www.anthropic.com/news",
     "sourceType": "Anthropic News",
     "reliability": "Reliable",
-    "rank": 9
+    "rank": 13
   },
   {
     "name": "Zest restaurant‑reservation AI agent",
@@ -1823,7 +2186,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 10
+    "rank": 14
   },
   {
     "name": "Style Sketch",
@@ -1833,64 +2196,276 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 11
-  },
-  {
-    "name": "Mistral trillion‑parameter model weights",
-    "category": "AI",
-    "date": "2026-10-30",
-    "summary": "Mistral released the weights for its trillion‑parameter AI model, positioning it for cybersecurity applications.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 12
-  },
-  {
-    "name": "Muse Wonder and Muse Wonder Full models",
-    "category": "AI",
-    "date": "2026-10-28",
-    "summary": "Meta announced Muse Wonder and Muse Wonder Full, its most capable frontier AI models designed to improve performance on personal and professional agentic tasks.",
-    "source": "https://about.fb.com/news/",
-    "sourceType": "Meta Newsroom",
-    "reliability": "Reliable",
-    "rank": 13
-  },
-  {
-    "name": "Frontier expands to more Microsoft 365 public previews",
-    "category": "Productivity",
-    "date": "2026-10-26",
-    "summary": "Microsoft announced that its Frontier tool is being extended to additional Microsoft 365 public preview programs, allowing more customers to test upcoming features early.",
-    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
-    "sourceType": "Microsoft Copilot Blog",
-    "reliability": "Reliable",
-    "rank": 14
-  },
-  {
-    "name": "Block Voice Model",
-    "category": "AI",
-    "date": "2026-10-25",
-    "summary": "Block released a new voice model that generates speech sounding eerily human.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
     "rank": 15
   }
 ];
 
-const ISSUES_REFRESHED_AT = "2026-11-08";
+const ISSUES_REFRESHED_AT = "2026-11-15"; // manually curated — see README
 const ISSUES = [];
 
 const SCAN_META = {
-  "lastRun": "2026-11-08T04:48:13.500Z",
+  "lastRun": "2026-11-15T05:08:00.915Z",
   "runType": "Automatic (weekly)"
-}; // written by scripts/scan.mjs — untouched here
+};
 
 const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
   "lastRun": "2026-11-14T22:15:56.632Z"
-};
+}; // written by scripts/inbox.mjs
 
 const NOTIFICATIONS = [
+  {
+    "id": "upd-96",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "update",
+    "text": "Statista: Market Insights REST API released",
+    "target": {
+      "page": "updates",
+      "id": 96
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-97",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "update",
+    "text": "Statista: Consumer Insights REST API released",
+    "target": {
+      "page": "updates",
+      "id": 97
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-98",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "update",
+    "text": "Meltwater: Add Meta Muse as a GenAI Lens source",
+    "target": {
+      "page": "updates",
+      "id": 98
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-99",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "update",
+    "text": "Meltwater: Reputation Intelligence AI‑powered add‑on",
+    "target": {
+      "page": "updates",
+      "id": 99
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-100",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "update",
+    "text": "Meltwater: Mira Studio for multi‑step workflow automation",
+    "target": {
+      "page": "updates",
+      "id": 100
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-101",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "update",
+    "text": "Meltwater: Accuracy scoring for AI brand answers",
+    "target": {
+      "page": "updates",
+      "id": 101
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-102",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "update",
+    "text": "Meltwater: Personas for AI answer comparison",
+    "target": {
+      "page": "updates",
+      "id": 102
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-103",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "update",
+    "text": "Meltwater: Source attribution details for AI answers",
+    "target": {
+      "page": "updates",
+      "id": 103
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-104",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "update",
+    "text": "Meltwater: Trackable AI Recommendations with impact badge",
+    "target": {
+      "page": "updates",
+      "id": 104
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-105",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "update",
+    "text": "Meltwater: Account‑wide Meltwater MCP access control",
+    "target": {
+      "page": "updates",
+      "id": 105
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-106",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "update",
+    "text": "Meltwater: New Instagram engagement metrics in Klear",
+    "target": {
+      "page": "updates",
+      "id": 106
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-107",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "update",
+    "text": "Semrush: Semrush launches official app in ChatGPT",
+    "target": {
+      "page": "updates",
+      "id": 107
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-108",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "update",
+    "text": "Mintel: 2027 Global Predictions report launched",
+    "target": {
+      "page": "updates",
+      "id": 108
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-109",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "update",
+    "text": "Siftsy: Profile attribute visibility controls added",
+    "target": {
+      "page": "updates",
+      "id": 109
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-110",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "update",
+    "text": "Siftsy: Open Roles feature released",
+    "target": {
+      "page": "updates",
+      "id": 110
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-111",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "update",
+    "text": "ChatGPT: ChatGPT Wallet launches",
+    "target": {
+      "page": "updates",
+      "id": 111
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-112",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "update",
+    "text": "ChatGPT: Retiring Advanced and Standard Voice models",
+    "target": {
+      "page": "updates",
+      "id": 112
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-ChatGPT Enterprise in AWS Marketplace-2026-11-15T05:03:56.567Z",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "trending",
+    "text": "ChatGPT Enterprise in AWS Marketplace",
+    "target": {
+      "page": "trending",
+      "name": "ChatGPT Enterprise in AWS Marketplace"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Copilot Studio agent user accounts-2026-11-15T05:03:56.567Z",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "trending",
+    "text": "Copilot Studio agent user accounts",
+    "target": {
+      "page": "trending",
+      "name": "Copilot Studio agent user accounts"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Claude Fable 5.2 and Claude Mythos 5.2-2026-11-15T05:03:56.567Z",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "trending",
+    "text": "Claude Fable 5.2 and Claude Mythos 5.2",
+    "target": {
+      "page": "trending",
+      "name": "Claude Fable 5.2 and Claude Mythos 5.2"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-ChatGPT Wallet-2026-11-15T05:03:56.567Z",
+    "date": "2026-11-15T05:03:56.567Z",
+    "type": "trending",
+    "text": "ChatGPT Wallet",
+    "target": {
+      "page": "trending",
+      "name": "ChatGPT Wallet"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
   {
     "id": "upd-89",
     "date": "2026-11-08T04:43:42.252Z",
@@ -2067,378 +2642,6 @@ const NOTIFICATIONS = [
     "target": {
       "page": "trending",
       "name": "Muse AI Avatar Video Chat"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-64",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "GWI: GWI launches Agent Spark",
-    "target": {
-      "page": "updates",
-      "id": 64
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-65",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "Brandwatch: Community is now open for Social Media Management users",
-    "target": {
-      "page": "updates",
-      "id": 65
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-66",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "Brandwatch: Measure adds Facebook Followers metric",
-    "target": {
-      "page": "updates",
-      "id": 66
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-67",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "Meltwater: Expanded Role Permissions for Klear admins",
-    "target": {
-      "page": "updates",
-      "id": 67
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-68",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "Meltwater: Redesigned \"What’s New\" and \"Monitor\" tabs in Meltwater mobile app",
-    "target": {
-      "page": "updates",
-      "id": 68
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-69",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "Meltwater: AI‑powered Media List Overview",
-    "target": {
-      "page": "updates",
-      "id": 69
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-70",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "Meltwater: Track MCP credit usage directly in AI Assistant",
-    "target": {
-      "page": "updates",
-      "id": 70
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-71",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "Meltwater: AI Brand Visibility template in Analyze",
-    "target": {
-      "page": "updates",
-      "id": 71
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-72",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "Meltwater: Track Instagram Reels views across creator roster",
-    "target": {
-      "page": "updates",
-      "id": 72
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-73",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "Meltwater: Searchable dashboard widget library in Analyze",
-    "target": {
-      "page": "updates",
-      "id": 73
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-74",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "Meltwater: Personalized pitches and relationship history in Media Relations",
-    "target": {
-      "page": "updates",
-      "id": 74
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-75",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "Meltwater: MCP Credit Dashboard for account admins",
-    "target": {
-      "page": "updates",
-      "id": 75
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-76",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "Meltwater: Meet the new Mira Companion AI assistant",
-    "target": {
-      "page": "updates",
-      "id": 76
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-77",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "Meltwater: Share newsletters with AI briefings to Slack, Teams, and more",
-    "target": {
-      "page": "updates",
-      "id": 77
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-78",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "ChatGPT: Account switching on iOS and Android",
-    "target": {
-      "page": "updates",
-      "id": 78
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-79",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "ChatGPT: Increased Work and Codex usage limits for Pro and Business Premium plans",
-    "target": {
-      "page": "updates",
-      "id": 79
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-80",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "ChatGPT: Texting your dot (beta)",
-    "target": {
-      "page": "updates",
-      "id": 80
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-81",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "ChatGPT: Promotional API credits for eligible ChatGPT Pro and Business plans",
-    "target": {
-      "page": "updates",
-      "id": 81
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-82",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "ChatGPT: iCloud Mail and Calendar plugins in ChatGPT",
-    "target": {
-      "page": "updates",
-      "id": 82
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-83",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "ChatGPT: GPT-6.1 Terra model rollout",
-    "target": {
-      "page": "updates",
-      "id": 83
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-84",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "VwD: Natural‑language query auto‑creates searchable filters",
-    "target": {
-      "page": "updates",
-      "id": 84
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-85",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "VwD: Scanned creators automatically added to organization’s Creators list",
-    "target": {
-      "page": "updates",
-      "id": 85
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-86",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "Sprinklr: Media Support for Amazon Bedrock Models in AI+ Studio",
-    "target": {
-      "page": "updates",
-      "id": 86
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-87",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "Sprinklr: Google Vertex Text Embedding and Image Generation Support in AI+ Studio",
-    "target": {
-      "page": "updates",
-      "id": 87
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-88",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "update",
-    "text": "Sprinklr: Bulk Testing for AI Use Case Pipelines",
-    "target": {
-      "page": "updates",
-      "id": 88
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Muse Wonder and Muse Wonder Full models-2026-11-01T04:41:40.975Z",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "trending",
-    "text": "Muse Wonder and Muse Wonder Full models",
-    "target": {
-      "page": "trending",
-      "name": "Muse Wonder and Muse Wonder Full models"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Frontier expands to more Microsoft 365 public previews-2026-11-01T04:41:40.975Z",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "trending",
-    "text": "Frontier expands to more Microsoft 365 public previews",
-    "target": {
-      "page": "trending",
-      "name": "Frontier expands to more Microsoft 365 public previews"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Claude Opus 5.5-2026-11-01T04:41:40.975Z",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "trending",
-    "text": "Claude Opus 5.5",
-    "target": {
-      "page": "trending",
-      "name": "Claude Opus 5.5"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Style Sketch-2026-11-01T04:41:40.975Z",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "trending",
-    "text": "Style Sketch",
-    "target": {
-      "page": "trending",
-      "name": "Style Sketch"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Mistral trillion‑parameter model weights-2026-11-01T04:41:40.975Z",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "trending",
-    "text": "Mistral trillion‑parameter model weights",
-    "target": {
-      "page": "trending",
-      "name": "Mistral trillion‑parameter model weights"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Zest restaurant‑reservation AI agent-2026-11-01T04:41:40.975Z",
-    "date": "2026-11-01T04:41:40.975Z",
-    "type": "trending",
-    "text": "Zest restaurant‑reservation AI agent",
-    "target": {
-      "page": "trending",
-      "name": "Zest restaurant‑reservation AI agent"
     },
     "source": "scan",
     "runType": "Automatic (weekly)"
