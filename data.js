@@ -2043,11 +2043,304 @@ const UPDATES = [
     "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
     "sourceType": "Official source",
     "reliability": "Reliable"
+  },
+  {
+    "id": 113,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-04-07",
+    "title": "BYOC – Telegram added as a new origin platform",
+    "summary": "The Bring Your Own Content (BYOC) feature now supports importing data from Telegram, allowing users to monitor and analyze Telegram messages alongside other sources.",
+    "impact": "Enables marketers to track brand conversations on Telegram, a previously unsupported messaging channel.",
+    "overlap": [
+      "BYOC",
+      "Telegram",
+      "Social Listening"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://developer.meltwater.com/help/changelog",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 114,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-03-03",
+    "title": "Usage statistics per API token",
+    "summary": "Meltwater introduced per‑token usage metrics, letting developers see how many calls each API token has made and monitor quota consumption.",
+    "impact": "Helps API administrators manage limits and allocate resources efficiently across teams.",
+    "overlap": [
+      "API",
+      "Usage Stats",
+      "Token Management"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://developer.meltwater.com/help/changelog",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 115,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-01-12",
+    "title": "BYOC – Duplicate detection and monitoring for imported data",
+    "summary": "The BYOC service now includes automatic duplicate detection and continuous monitoring of imported content, preventing redundant records and ensuring data freshness.",
+    "impact": "Improves data quality and reduces storage overhead for analysts aggregating external content.",
+    "overlap": [
+      "BYOC",
+      "Duplicate Detection",
+      "Data Quality"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://developer.meltwater.com/help/changelog",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 116,
+    "tool": "Semrush",
+    "category": "SEO / Search",
+    "date": "2026-06-11",
+    "title": "Backlinks API v4 launched",
+    "summary": "The Backlinks API version 4 is now available; previous Backlinks API methods are deprecated but remain operational temporarily.",
+    "impact": "Gives marketers access to updated backlink data endpoints, enabling more efficient SEO analysis and integration with existing workflows.",
+    "overlap": [
+      "Backlinks",
+      "API v4",
+      "SEO data"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://developer.semrush.com/api/v4/introduction/release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 117,
+    "tool": "Semrush",
+    "category": "SEO / Search",
+    "date": "2026-06-09",
+    "title": "Keyword API v4 released",
+    "summary": "The Keyword API version 4 is now available; previous Keyword Reports API methods are deprecated but remain operational temporarily.",
+    "impact": "Allows marketers to retrieve keyword data through the new API version, improving integration and expanding feature sets for SEO and PPC research.",
+    "overlap": [
+      "Keyword",
+      "API v4",
+      "SEO"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://developer.semrush.com/api/v4/introduction/release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 118,
+    "tool": "Semrush",
+    "category": "SEO / Search",
+    "date": "2026-06-08",
+    "title": "Site Audit API v3 methods deprecated",
+    "summary": "Previous Site Audit API v3 methods are deprecated but remain operational temporarily.",
+    "impact": "Signals the need for teams to migrate to newer Site Audit endpoints to maintain uninterrupted audit capabilities.",
+    "overlap": [
+      "Site Audit",
+      "API deprecation",
+      "SEO"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://developer.semrush.com/api/v4/introduction/release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 119,
+    "tool": "Semrush",
+    "category": "SEO / Search",
+    "date": "2026-11-11",
+    "title": "Keyword reports API adds List Related and List Broad Match endpoints",
+    "summary": "The Keyword reports API now includes List Related and List Broad Match endpoints, letting users find related and broad‑match keyword ideas for a seed keyword along with SEO and PPC metrics for each keyword.",
+    "impact": "Expands keyword‑research capabilities via API, helping teams generate broader, data‑rich keyword lists for organic and paid campaigns.",
+    "overlap": [
+      "Keyword research",
+      "API endpoints",
+      "SEO/PPC"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://developer.semrush.com/api/v4/introduction/release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 120,
+    "tool": "Semrush",
+    "category": "SEO / Search",
+    "date": "2026-11-09",
+    "title": "Position Tracking API v4 now available",
+    "summary": "The Position Tracking API version 4 is now available, enabling management of campaigns and retrieval of keyword rankings, competitor and landing‑page data, and tag and cannibalization reports; previous methods are deprecated but remain operational temporarily.",
+    "impact": "Provides marketers with richer position‑tracking data and new reporting options, facilitating deeper competitive analysis and SERP monitoring.",
+    "overlap": [
+      "Position Tracking",
+      "API v4",
+      "SEO analytics"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://developer.semrush.com/api/v4/introduction/release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 121,
+    "tool": "Mintel",
+    "category": "Market Intelligence",
+    "date": "2026-02-19",
+    "title": "Single Order Packing feature added to Mobile App (Production)",
+    "summary": "The Production version of the Mintsoft Mobile App (2026.02.19) introduces a new Single Order Packing feature, allowing users to pack orders one at a time directly from the app.",
+    "impact": "Enables faster, more accurate order fulfillment, which can improve shipping efficiency and customer satisfaction for retailers.",
+    "overlap": [
+      "order fulfillment",
+      "mobile app",
+      "packing"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.mintsoft.com/resources/release-notes/february-2026",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 122,
+    "tool": "Mintel",
+    "category": "Market Intelligence",
+    "date": "2026-02-19",
+    "title": "Photo capture capability added to Mobile App (Beta) for ASN receiving",
+    "summary": "The Beta version of the Mintsoft Mobile App (2026.02.19) adds the ability to take photos when receiving an Advanced Shipping Notice (ASN), enhancing visual verification of shipments.",
+    "impact": "Provides better documentation and auditability of inbound shipments, helping logistics teams reduce errors and improve inventory accuracy.",
+    "overlap": [
+      "inventory",
+      "mobile app",
+      "photo capture"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.mintsoft.com/resources/release-notes/february-2026",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 123,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-11-16",
+    "title": "Clinical search and plugins for ChatGPT for Clinicians",
+    "summary": "OpenAI added improved clinical search capabilities to ChatGPT for Clinicians, enhancing how the model finds, evaluates, and cites medical evidence, and introduced healthcare plugins that let users connect supported tools to ChatGPT.",
+    "impact": "Provides more accurate, source‑cited medical information retrieval, helping media and marketing analytics teams monitor health‑related content and ensure compliance.",
+    "overlap": [
+      "clinical search",
+      "healthcare plugins",
+      "medical evidence"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 124,
+    "tool": "VwD",
+    "category": "Media Intelligence",
+    "date": "2026-10-01",
+    "title": "Creator Discovery expands searchable pool to over 2.5 million creators",
+    "summary": "The launch announcement states that users can now search across a database of more than 2.5 M creators directly within VwD.",
+    "impact": "Access to a larger creator pool increases the chances of finding the right influencer for a campaign, improving sourcing efficiency for media teams.",
+    "overlap": [
+      "creator database",
+      "search scope"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.vwd.ai/pulse/discovery-launch",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 125,
+    "tool": "VwD",
+    "category": "Media Intelligence",
+    "date": "2026-10-01",
+    "title": "New filter dimensions added: platform, industry, topic, region, country, gender, and follower reach",
+    "summary": "Discovery lets users refine search results by selecting filters for platform, industry, topic, region, country, gender, and follower reach.",
+    "impact": "More granular filtering helps marketing analysts quickly narrow down creators that match specific audience and brand criteria, reducing manual triage time.",
+    "overlap": [
+      "filtering",
+      "search criteria"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.vwd.ai/pulse/discovery-launch",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 126,
+    "tool": "VwD",
+    "category": "Media Intelligence",
+    "date": "2026-10-01",
+    "title": "Free introductory tier: first five Discovery searches included at no cost",
+    "summary": "The announcement notes that the first five Discovery searches are provided for free, after which unlimited searches require a token purchase.",
+    "impact": "A free trial lowers the barrier for teams to evaluate the new workflow, encouraging adoption and early testing of VwD’s creator sourcing capabilities.",
+    "overlap": [
+      "pricing",
+      "free tier"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.vwd.ai/pulse/discovery-launch",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
   }
 ];
 
-const TRENDING_REFRESHED_AT = "2026-11-15";
+const TRENDING_REFRESHED_AT = "2026-11-17"; // updated by scripts/scan.mjs
 const TRENDING = [
+  {
+    "name": "ChatGPT for Healthcare",
+    "category": "AI",
+    "date": "2026-11-16",
+    "summary": "OpenAI announced the launch of ChatGPT for Healthcare, a specialized version of ChatGPT designed to support healthcare professionals and teams.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 1
+  },
+  {
+    "name": "OpenAI image classifier and CSAM warnings",
+    "category": "AI",
+    "date": "2026-11-16",
+    "summary": "OpenAI launched a new image classification model to detect child sexual abuse material and added safety warnings in ChatGPT to alert users when potentially illegal content is generated.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 2
+  },
+  {
+    "name": "Google Maps real-time trip itineraries",
+    "category": "AI",
+    "date": "2026-11-16",
+    "summary": "Google Maps introduced a feature that automatically builds detailed trip itineraries, providing real‑time details such as opening hours, traffic, and other information for each stop.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 3
+  },
   {
     "name": "ChatGPT Wallet",
     "category": "AI",
@@ -2056,7 +2349,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 1
+    "rank": 4
   },
   {
     "name": "Copilot Studio agent user accounts",
@@ -2066,7 +2359,7 @@ const TRENDING = [
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
-    "rank": 2
+    "rank": 5
   },
   {
     "name": "ChatGPT Enterprise in AWS Marketplace",
@@ -2076,7 +2369,7 @@ const TRENDING = [
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
-    "rank": 3
+    "rank": 6
   },
   {
     "name": "Claude Fable 5.2 and Claude Mythos 5.2",
@@ -2086,7 +2379,7 @@ const TRENDING = [
     "source": "https://www.anthropic.com/news",
     "sourceType": "Anthropic News",
     "reliability": "Reliable",
-    "rank": 4
+    "rank": 7
   },
   {
     "name": "Meta Spaces",
@@ -2096,7 +2389,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 5
+    "rank": 8
   },
   {
     "name": "Airbnb AI Travel Agent",
@@ -2106,7 +2399,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 6
+    "rank": 9
   },
   {
     "name": "Muse AI Avatar Video Chat",
@@ -2116,7 +2409,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 7
+    "rank": 10
   },
   {
     "name": "Muse app Spaces",
@@ -2126,7 +2419,7 @@ const TRENDING = [
     "source": "https://about.fb.com/news/",
     "sourceType": "Meta Newsroom",
     "reliability": "Reliable",
-    "rank": 8
+    "rank": 11
   },
   {
     "name": "GPT‑6 Cyber",
@@ -2136,7 +2429,7 @@ const TRENDING = [
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
-    "rank": 9
+    "rank": 12
   },
   {
     "name": "Muse app Voice & expressive avatars",
@@ -2146,7 +2439,7 @@ const TRENDING = [
     "source": "https://about.fb.com/news/",
     "sourceType": "Meta Newsroom",
     "reliability": "Reliable",
-    "rank": 10
+    "rank": 13
   },
   {
     "name": "WhatsApp Events updates",
@@ -2156,7 +2449,7 @@ const TRENDING = [
     "source": "https://about.fb.com/news/",
     "sourceType": "Meta Newsroom",
     "reliability": "Reliable",
-    "rank": 11
+    "rank": 14
   },
   {
     "name": "Daybreak Red (AWS GovCloud availability)",
@@ -2166,54 +2459,228 @@ const TRENDING = [
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
-    "rank": 12
-  },
-  {
-    "name": "Claude Opus 5.5",
-    "category": "AI",
-    "date": "2026-11-01",
-    "summary": "Anthropic announced the Claude Opus 5.5 model, optimized for agentic coding and knowledge work, offering about 40% lower operating costs compared to Opus 5 on typical workloads.",
-    "source": "https://www.anthropic.com/news",
-    "sourceType": "Anthropic News",
-    "reliability": "Reliable",
-    "rank": 13
-  },
-  {
-    "name": "Zest restaurant‑reservation AI agent",
-    "category": "AI",
-    "date": "2026-10-31",
-    "summary": "Zest introduced a new AI agent that can find restaurants and book reservations via text messaging.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 14
-  },
-  {
-    "name": "Style Sketch",
-    "category": "AI",
-    "date": "2026-10-30",
-    "summary": "Meta quietly launched an AI‑powered fashion app called Style Sketch, allowing users to generate clothing designs with artificial intelligence.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
     "rank": 15
   }
 ];
 
-const ISSUES_REFRESHED_AT = "2026-11-15";
+const ISSUES_REFRESHED_AT = "2026-11-17"; // manually curated — see README
 const ISSUES = [];
 
 const SCAN_META = {
-  "lastRun": "2026-11-15T05:08:00.915Z",
-  "runType": "Automatic (weekly)"
-}; // written by scripts/scan.mjs — untouched here
+  "lastRun": "2026-11-17T16:33:44.098Z",
+  "runType": "Manual"
+};
 
 const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
   "lastRun": "2026-11-17T07:43:12.054Z"
-};
+}; // written by scripts/inbox.mjs
 
 const NOTIFICATIONS = [
+  {
+    "id": "upd-113",
+    "date": "2026-11-17T16:30:06.571Z",
+    "type": "update",
+    "text": "Meltwater: BYOC – Telegram added as a new origin platform",
+    "target": {
+      "page": "updates",
+      "id": 113
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-114",
+    "date": "2026-11-17T16:30:06.571Z",
+    "type": "update",
+    "text": "Meltwater: Usage statistics per API token",
+    "target": {
+      "page": "updates",
+      "id": 114
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-115",
+    "date": "2026-11-17T16:30:06.571Z",
+    "type": "update",
+    "text": "Meltwater: BYOC – Duplicate detection and monitoring for imported data",
+    "target": {
+      "page": "updates",
+      "id": 115
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-116",
+    "date": "2026-11-17T16:30:06.571Z",
+    "type": "update",
+    "text": "Semrush: Backlinks API v4 launched",
+    "target": {
+      "page": "updates",
+      "id": 116
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-117",
+    "date": "2026-11-17T16:30:06.571Z",
+    "type": "update",
+    "text": "Semrush: Keyword API v4 released",
+    "target": {
+      "page": "updates",
+      "id": 117
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-118",
+    "date": "2026-11-17T16:30:06.571Z",
+    "type": "update",
+    "text": "Semrush: Site Audit API v3 methods deprecated",
+    "target": {
+      "page": "updates",
+      "id": 118
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-119",
+    "date": "2026-11-17T16:30:06.571Z",
+    "type": "update",
+    "text": "Semrush: Keyword reports API adds List Related and List Broad Match endpoints",
+    "target": {
+      "page": "updates",
+      "id": 119
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-120",
+    "date": "2026-11-17T16:30:06.571Z",
+    "type": "update",
+    "text": "Semrush: Position Tracking API v4 now available",
+    "target": {
+      "page": "updates",
+      "id": 120
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-121",
+    "date": "2026-11-17T16:30:06.571Z",
+    "type": "update",
+    "text": "Mintel: Single Order Packing feature added to Mobile App (Production)",
+    "target": {
+      "page": "updates",
+      "id": 121
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-122",
+    "date": "2026-11-17T16:30:06.571Z",
+    "type": "update",
+    "text": "Mintel: Photo capture capability added to Mobile App (Beta) for ASN receiving",
+    "target": {
+      "page": "updates",
+      "id": 122
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-123",
+    "date": "2026-11-17T16:30:06.571Z",
+    "type": "update",
+    "text": "ChatGPT: Clinical search and plugins for ChatGPT for Clinicians",
+    "target": {
+      "page": "updates",
+      "id": 123
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-124",
+    "date": "2026-11-17T16:30:06.571Z",
+    "type": "update",
+    "text": "VwD: Creator Discovery expands searchable pool to over 2.5 million creators",
+    "target": {
+      "page": "updates",
+      "id": 124
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-125",
+    "date": "2026-11-17T16:30:06.571Z",
+    "type": "update",
+    "text": "VwD: New filter dimensions added: platform, industry, topic, region, country, gender, and follower reach",
+    "target": {
+      "page": "updates",
+      "id": 125
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "upd-126",
+    "date": "2026-11-17T16:30:06.571Z",
+    "type": "update",
+    "text": "VwD: Free introductory tier: first five Discovery searches included at no cost",
+    "target": {
+      "page": "updates",
+      "id": 126
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-ChatGPT for Healthcare-2026-11-17T16:30:06.571Z",
+    "date": "2026-11-17T16:30:06.571Z",
+    "type": "trending",
+    "text": "ChatGPT for Healthcare",
+    "target": {
+      "page": "trending",
+      "name": "ChatGPT for Healthcare"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-OpenAI image classifier and CSAM warnings-2026-11-17T16:30:06.571Z",
+    "date": "2026-11-17T16:30:06.571Z",
+    "type": "trending",
+    "text": "OpenAI image classifier and CSAM warnings",
+    "target": {
+      "page": "trending",
+      "name": "OpenAI image classifier and CSAM warnings"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
+  {
+    "id": "trend-Google Maps real-time trip itineraries-2026-11-17T16:30:06.571Z",
+    "date": "2026-11-17T16:30:06.571Z",
+    "type": "trending",
+    "text": "Google Maps real-time trip itineraries",
+    "target": {
+      "page": "trending",
+      "name": "Google Maps real-time trip itineraries"
+    },
+    "source": "scan",
+    "runType": "Manual"
+  },
   {
     "id": "upd-96",
     "date": "2026-11-15T05:03:56.567Z",
@@ -2606,42 +3073,6 @@ const NOTIFICATIONS = [
     "target": {
       "page": "trending",
       "name": "WhatsApp Events updates"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Meta Spaces-2026-11-08T04:43:42.252Z",
-    "date": "2026-11-08T04:43:42.252Z",
-    "type": "trending",
-    "text": "Meta Spaces",
-    "target": {
-      "page": "trending",
-      "name": "Meta Spaces"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Airbnb AI Travel Agent-2026-11-08T04:43:42.252Z",
-    "date": "2026-11-08T04:43:42.252Z",
-    "type": "trending",
-    "text": "Airbnb AI Travel Agent",
-    "target": {
-      "page": "trending",
-      "name": "Airbnb AI Travel Agent"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Muse AI Avatar Video Chat-2026-11-08T04:43:42.252Z",
-    "date": "2026-11-08T04:43:42.252Z",
-    "type": "trending",
-    "text": "Muse AI Avatar Video Chat",
-    "target": {
-      "page": "trending",
-      "name": "Muse AI Avatar Video Chat"
     },
     "source": "scan",
     "runType": "Automatic (weekly)"
