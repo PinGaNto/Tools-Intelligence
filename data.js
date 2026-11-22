@@ -2306,11 +2306,261 @@ const UPDATES = [
     "source": "https://www.vwd.ai/pulse/discovery-launch",
     "sourceType": "Official source",
     "reliability": "Reliable"
+  },
+  {
+    "id": 127,
+    "tool": "Meltwater",
+    "category": "Social Listening",
+    "date": "2026-11-01",
+    "title": "Klear adds Instagram Reposts, Shares, Replies, and Swipe Forward metrics",
+    "summary": "The Klear social analytics platform now tracks Instagram Reposts, Shares, Replies, and Swipe Forward actions for eligible public creators’ image posts, expanding measurable audience interactions beyond likes.",
+    "impact": "Provides media and marketing teams richer engagement data on Instagram, enabling more accurate assessment of content performance and audience behavior.",
+    "overlap": [
+      "Instagram metrics",
+      "Audience engagement",
+      "Social listening"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.meltwater.com/en/product-updates",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 128,
+    "tool": "ListenFirst",
+    "category": "Social Intelligence",
+    "date": "2025-04-21",
+    "title": "ListenFirst updates platform for Instagram's new unified views metric",
+    "summary": "ListenFirst will modify its analytics platform to replace Instagram's separate impressions, plays, and video views metrics with a single \"views\" metric, aligning reporting with Instagram's change that takes effect on April 21, 2025.",
+    "impact": "Ensures media and marketing analytics teams can continue to track Instagram performance accurately without data gaps after the metric overhaul.",
+    "overlap": [
+      "Instagram metrics",
+      "platform update",
+      "measurement"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://www.listenfirstmedia.com/category/news-events/press-releases",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 129,
+    "tool": "Semrush",
+    "category": "SEO / Search",
+    "date": "2026-06-09",
+    "title": "Keyword API v4 launched",
+    "summary": "Semrush released version 4 of its Keyword API, offering updated endpoints for keyword data while deprecating the older Keyword Reports API methods, which remain operational temporarily.",
+    "impact": "Marketing and SEO teams can retrieve more current keyword metrics through the new API version, enabling more accurate analysis and automation of keyword research workflows.",
+    "overlap": [
+      "Keyword Data",
+      "API v4",
+      "SEO"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://developer.semrush.com/api/v4/introduction/release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 130,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-11-20",
+    "title": "ChatGPT Space rolls out to Plus users",
+    "summary": "ChatGPT Space, an interactive pages and presentations feature, is now available globally to Plus users 18+; it lets users create collaborative pages that can automatically update from connected apps and be shared with invited collaborators.",
+    "impact": "Enables marketing and analytics teams to build live, shareable dashboards and project plans directly in ChatGPT, improving real‑time collaboration and data visibility.",
+    "overlap": [
+      "Collaboration",
+      "Interactive pages",
+      "Automation"
+    ],
+    "confidence": "High",
+    "priority": "High",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 131,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-11-19",
+    "title": "New mobile app experience with dot tab and pinned favorites",
+    "summary": "A redesigned mobile UI adds a dedicated dot tab and lets users pin shortcuts such as Codex, Projects, and Images to the bottom navigation bar, rolling out to Pro users (and some Plus users) outside the EEA, UK, Switzerland, and Korea.",
+    "impact": "Streamlines on‑the‑go access to key AI tools, allowing analysts to launch coding, image generation, or project workflows quickly from their phones.",
+    "overlap": [
+      "Mobile UI",
+      "Productivity",
+      "Shortcut access"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 132,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-11-19",
+    "title": "Health integration expands to Android, desktop, dots and sites",
+    "summary": "Health features are now available via Android Health Connect, the desktop app, and web dots, providing proactive suggestions based on connected medical records and fitness data, plus a site builder for tracking training plans.",
+    "impact": "Adds richer health‑related data that can be used for audience segmentation or wellness‑focused campaign analytics.",
+    "overlap": [
+      "Health data",
+      "Android",
+      "Desktop"
+    ],
+    "confidence": "Medium",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 133,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-11-18",
+    "title": "Live Dictation removes 10‑minute limit and streams transcription",
+    "summary": "Live Dictation now streams speech to text in real time across iOS, Android, web, and desktop, eliminating the previous 10‑minute recording cap and allowing users to hide or show text via the waveform.",
+    "impact": "Lets analysts capture interview or meeting notes instantly, speeding up content creation and reducing transcription latency.",
+    "overlap": [
+      "Voice input",
+      "Live transcription"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 134,
+    "tool": "ChatGPT",
+    "category": "AI",
+    "date": "2026-11-18",
+    "title": "Accounting plugin adds transaction reconciliation and invoice drafting",
+    "summary": "The Accounting plugin enables users to reconcile transactions, draft invoice entries, and generate month‑end reports directly within ChatGPT on macOS or Windows desktop apps.",
+    "impact": "Automates financial reporting tasks, helping marketing finance teams streamline budget tracking and reporting within the chat interface.",
+    "overlap": [
+      "Accounting",
+      "Automation",
+      "Finance"
+    ],
+    "confidence": "Medium",
+    "priority": "Medium",
+    "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
+  },
+  {
+    "id": 135,
+    "tool": "VwD",
+    "category": "Media Intelligence",
+    "date": "2026-10-01",
+    "title": "Search across 2.5M+ creators in VwD",
+    "summary": "Creator Discovery lets users run searches against a database of over 2.5 million creators directly within VwD, expanding the pool of potential partners.",
+    "impact": "Gives media and marketing teams a much larger talent pool to source from, improving campaign relevance and reach.",
+    "overlap": [
+      "Creator Search",
+      "Database Size",
+      "Discovery"
+    ],
+    "confidence": "High",
+    "priority": "Medium",
+    "source": "https://www.vwd.ai/pulse/discovery-launch",
+    "sourceType": "Official source",
+    "reliability": "Reliable"
   }
 ];
 
-const TRENDING_REFRESHED_AT = "2026-11-17";
+const TRENDING_REFRESHED_AT = "2026-11-22"; // updated by scripts/scan.mjs
 const TRENDING = [
+  {
+    "name": "Signal screenshot restriction",
+    "category": "Social",
+    "date": "2026-11-22",
+    "summary": "Signal rolled out an update that blocks mobile screenshots to protect users from AI‑driven surveillance threats.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 1
+  },
+  {
+    "name": "MedChemBench",
+    "category": "AI",
+    "date": "2026-11-20",
+    "summary": "OpenAI released MedChemBench, a benchmark suite for evaluating AI models on medicinal chemistry tasks.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 2
+  },
+  {
+    "name": "GPT-6.2 Sol and GPT-6.2 Astra in Microsoft Copilot",
+    "category": "AI",
+    "date": "2026-11-20",
+    "summary": "OpenAI's GPT-6.2 Sol and GPT-6.2 Astra models are being rolled out today within Microsoft Copilot, extending its generative AI capabilities.",
+    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
+    "sourceType": "Microsoft Copilot Blog",
+    "reliability": "Reliable",
+    "rank": 3
+  },
+  {
+    "name": "Meta Muse Charm device",
+    "category": "AI",
+    "date": "2026-11-20",
+    "summary": "Meta announced its new Muse Charm wearable AI device, priced at around $300, expanding its Muse hardware lineup.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 4
+  },
+  {
+    "name": "Google Gemini Mac control feature",
+    "category": "AI",
+    "date": "2026-11-20",
+    "summary": "Google added a capability to its Gemini model that lets the AI interact with and control a user's Mac computer.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 5
+  },
+  {
+    "name": "Superhuman Go assistant expansion",
+    "category": "Productivity",
+    "date": "2026-11-19",
+    "summary": "Superhuman extended its Go AI assistant across more of its email platform, enabling users to access the assistant in additional contexts.",
+    "source": "https://techcrunch.com/category/artificial-intelligence/",
+    "sourceType": "TechCrunch AI",
+    "reliability": "Reliable",
+    "rank": 6
+  },
+  {
+    "name": "Le Figaro journalism integration in ChatGPT",
+    "category": "AI",
+    "date": "2026-11-18",
+    "summary": "OpenAI partnered with Le Groupe Figaro to integrate Figaro’s journalism content directly into ChatGPT, allowing users to access up-to-date news articles.",
+    "source": "https://openai.com/news/",
+    "sourceType": "OpenAI News",
+    "reliability": "Reliable",
+    "rank": 7
+  },
+  {
+    "name": "Work IQ memory and context updates",
+    "category": "Productivity",
+    "date": "2026-11-18",
+    "summary": "Microsoft adds enhanced memory and context features to Work IQ, enabling Copilot to better personalize responses based on user work history and preferences.",
+    "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
+    "sourceType": "Microsoft Copilot Blog",
+    "reliability": "Reliable",
+    "rank": 8
+  },
   {
     "name": "ChatGPT for Healthcare",
     "category": "AI",
@@ -2319,7 +2569,7 @@ const TRENDING = [
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
-    "rank": 1
+    "rank": 9
   },
   {
     "name": "OpenAI image classifier and CSAM warnings",
@@ -2329,7 +2579,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 2
+    "rank": 10
   },
   {
     "name": "Google Maps real-time trip itineraries",
@@ -2339,7 +2589,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 3
+    "rank": 11
   },
   {
     "name": "ChatGPT Wallet",
@@ -2349,7 +2599,7 @@ const TRENDING = [
     "source": "https://techcrunch.com/category/artificial-intelligence/",
     "sourceType": "TechCrunch AI",
     "reliability": "Reliable",
-    "rank": 4
+    "rank": 12
   },
   {
     "name": "Copilot Studio agent user accounts",
@@ -2359,7 +2609,17 @@ const TRENDING = [
     "source": "https://techcommunity.microsoft.com/category/microsoft-copilot",
     "sourceType": "Microsoft Copilot Blog",
     "reliability": "Reliable",
-    "rank": 5
+    "rank": 13
+  },
+  {
+    "name": "Global Expansion of AI Age-Estimation for Teen Account Protections",
+    "category": "Social",
+    "date": "2026-11-09",
+    "summary": "Meta is rolling out its AI age‑estimation technology globally to place millions more teens under Instagram's Teen Account protection program.",
+    "source": "https://about.fb.com/news/",
+    "sourceType": "Meta Newsroom",
+    "reliability": "Reliable",
+    "rank": 14
   },
   {
     "name": "ChatGPT Enterprise in AWS Marketplace",
@@ -2369,114 +2629,240 @@ const TRENDING = [
     "source": "https://openai.com/news/",
     "sourceType": "OpenAI News",
     "reliability": "Reliable",
-    "rank": 6
-  },
-  {
-    "name": "Claude Fable 5.2 and Claude Mythos 5.2",
-    "category": "AI",
-    "date": "2026-11-09",
-    "summary": "Anthropic introduced two new large language models, Claude Fable 5.2 and Claude Mythos 5.2, designed to excel at demanding technical tasks in coding, finance, and scientific research.",
-    "source": "https://www.anthropic.com/news",
-    "sourceType": "Anthropic News",
-    "reliability": "Reliable",
-    "rank": 7
-  },
-  {
-    "name": "Meta Spaces",
-    "category": "Productivity",
-    "date": "2026-11-07",
-    "summary": "Meta introduced \"Spaces,\" a new collaboration environment that lets users work together with their Muse AI agent.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 8
-  },
-  {
-    "name": "Airbnb AI Travel Agent",
-    "category": "Productivity",
-    "date": "2026-11-07",
-    "summary": "Airbnb announced it will launch an AI‑powered travel agent service, slated for release in the first half of 2027.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 9
-  },
-  {
-    "name": "Muse AI Avatar Video Chat",
-    "category": "Social",
-    "date": "2026-11-07",
-    "summary": "Meta enabled U.S. users to video‑chat with their Muse AI avatar, adding real‑time visual interaction to the Muse platform.",
-    "source": "https://techcrunch.com/category/artificial-intelligence/",
-    "sourceType": "TechCrunch AI",
-    "reliability": "Reliable",
-    "rank": 10
-  },
-  {
-    "name": "Muse app Spaces",
-    "category": "AI",
-    "date": "2026-11-06",
-    "summary": "Meta introduced \"Spaces\" in the Muse app, an interactive way for users to build more customized experiences within the AI companion.",
-    "source": "https://about.fb.com/news/",
-    "sourceType": "Meta Newsroom",
-    "reliability": "Reliable",
-    "rank": 11
-  },
-  {
-    "name": "GPT‑6 Cyber",
-    "category": "AI",
-    "date": "2026-11-05",
-    "summary": "OpenAI announced GPT‑6 Cyber, a new cybersecurity‑focused variant of the upcoming GPT‑6 model designed to provide aligned, safety‑first assistance for security agents.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
-    "reliability": "Reliable",
-    "rank": 12
-  },
-  {
-    "name": "Muse app Voice & expressive avatars",
-    "category": "AI",
-    "date": "2026-11-05",
-    "summary": "Meta began rolling out voice capabilities and expressive avatars in the Muse app, allowing users to interact with their Muse using spoken language and visual expressions.",
-    "source": "https://about.fb.com/news/",
-    "sourceType": "Meta Newsroom",
-    "reliability": "Reliable",
-    "rank": 13
-  },
-  {
-    "name": "WhatsApp Events updates",
-    "category": "Social",
-    "date": "2026-11-05",
-    "summary": "WhatsApp announced new updates to its Events feature, simplifying the process of organizing gatherings and improving coordination beyond traditional group chats.",
-    "source": "https://about.fb.com/news/",
-    "sourceType": "Meta Newsroom",
-    "reliability": "Reliable",
-    "rank": 14
-  },
-  {
-    "name": "Daybreak Red (AWS GovCloud availability)",
-    "category": "AI",
-    "date": "2026-11-04",
-    "summary": "OpenAI made its Daybreak Red model generally available in the AWS GovCloud (US‑East) region, extending the model’s deployment options for government‑grade workloads.",
-    "source": "https://openai.com/news/",
-    "sourceType": "OpenAI News",
-    "reliability": "Reliable",
     "rank": 15
   }
 ];
 
-const ISSUES_REFRESHED_AT = "2026-11-17";
+const ISSUES_REFRESHED_AT = "2026-11-22"; // manually curated — see README
 const ISSUES = [];
 
 const SCAN_META = {
-  "lastRun": "2026-11-17T16:33:44.098Z",
-  "runType": "Manual"
-}; // written by scripts/scan.mjs — untouched here
+  "lastRun": "2026-11-22T05:26:16.707Z",
+  "runType": "Automatic (weekly)"
+};
 
 const INBOX_PROCESSED = ["9/23/2026 18:01:25","9/23/2026 18:11:44","9/23/2026 18:28:50","9/24/2026 7:39:03"]; // written by scripts/inbox.mjs — do not edit by hand
 const INBOX_META = {
   "lastRun": "2026-11-21T19:03:39.681Z"
-};
+}; // written by scripts/inbox.mjs
 
 const NOTIFICATIONS = [
+  {
+    "id": "upd-127",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "update",
+    "text": "Meltwater: Klear adds Instagram Reposts, Shares, Replies, and Swipe Forward metrics",
+    "target": {
+      "page": "updates",
+      "id": 127
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-128",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "update",
+    "text": "ListenFirst: ListenFirst updates platform for Instagram's new unified views metric",
+    "target": {
+      "page": "updates",
+      "id": 128
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-129",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "update",
+    "text": "Semrush: Keyword API v4 launched",
+    "target": {
+      "page": "updates",
+      "id": 129
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-130",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "update",
+    "text": "ChatGPT: ChatGPT Space rolls out to Plus users",
+    "target": {
+      "page": "updates",
+      "id": 130
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-131",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "update",
+    "text": "ChatGPT: New mobile app experience with dot tab and pinned favorites",
+    "target": {
+      "page": "updates",
+      "id": 131
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-132",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "update",
+    "text": "ChatGPT: Health integration expands to Android, desktop, dots and sites",
+    "target": {
+      "page": "updates",
+      "id": 132
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-133",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "update",
+    "text": "ChatGPT: Live Dictation removes 10‑minute limit and streams transcription",
+    "target": {
+      "page": "updates",
+      "id": 133
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-134",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "update",
+    "text": "ChatGPT: Accounting plugin adds transaction reconciliation and invoice drafting",
+    "target": {
+      "page": "updates",
+      "id": 134
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "upd-135",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "update",
+    "text": "VwD: Search across 2.5M+ creators in VwD",
+    "target": {
+      "page": "updates",
+      "id": 135
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-MedChemBench-2026-11-22T05:21:54.141Z",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "trending",
+    "text": "MedChemBench",
+    "target": {
+      "page": "trending",
+      "name": "MedChemBench"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Le Figaro journalism integration in ChatGPT-2026-11-22T05:21:54.141Z",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "trending",
+    "text": "Le Figaro journalism integration in ChatGPT",
+    "target": {
+      "page": "trending",
+      "name": "Le Figaro journalism integration in ChatGPT"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Global Expansion of AI Age-Estimation for Teen Account Protections-2026-11-22T05:21:54.141Z",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "trending",
+    "text": "Global Expansion of AI Age-Estimation for Teen Account Protections",
+    "target": {
+      "page": "trending",
+      "name": "Global Expansion of AI Age-Estimation for Teen Account Protections"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-GPT-6.2 Sol and GPT-6.2 Astra in Microsoft Copilot-2026-11-22T05:21:54.141Z",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "trending",
+    "text": "GPT-6.2 Sol and GPT-6.2 Astra in Microsoft Copilot",
+    "target": {
+      "page": "trending",
+      "name": "GPT-6.2 Sol and GPT-6.2 Astra in Microsoft Copilot"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Work IQ memory and context updates-2026-11-22T05:21:54.141Z",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "trending",
+    "text": "Work IQ memory and context updates",
+    "target": {
+      "page": "trending",
+      "name": "Work IQ memory and context updates"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Signal screenshot restriction-2026-11-22T05:21:54.141Z",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "trending",
+    "text": "Signal screenshot restriction",
+    "target": {
+      "page": "trending",
+      "name": "Signal screenshot restriction"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Meta Muse Charm device-2026-11-22T05:21:54.141Z",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "trending",
+    "text": "Meta Muse Charm device",
+    "target": {
+      "page": "trending",
+      "name": "Meta Muse Charm device"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Google Gemini Mac control feature-2026-11-22T05:21:54.141Z",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "trending",
+    "text": "Google Gemini Mac control feature",
+    "target": {
+      "page": "trending",
+      "name": "Google Gemini Mac control feature"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
+  {
+    "id": "trend-Superhuman Go assistant expansion-2026-11-22T05:21:54.141Z",
+    "date": "2026-11-22T05:21:54.141Z",
+    "type": "trending",
+    "text": "Superhuman Go assistant expansion",
+    "target": {
+      "page": "trending",
+      "name": "Superhuman Go assistant expansion"
+    },
+    "source": "scan",
+    "runType": "Automatic (weekly)"
+  },
   {
     "id": "upd-113",
     "date": "2026-11-17T16:30:06.571Z",
@@ -2857,222 +3243,6 @@ const NOTIFICATIONS = [
     "target": {
       "page": "updates",
       "id": 110
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-111",
-    "date": "2026-11-15T05:03:56.567Z",
-    "type": "update",
-    "text": "ChatGPT: ChatGPT Wallet launches",
-    "target": {
-      "page": "updates",
-      "id": 111
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-112",
-    "date": "2026-11-15T05:03:56.567Z",
-    "type": "update",
-    "text": "ChatGPT: Retiring Advanced and Standard Voice models",
-    "target": {
-      "page": "updates",
-      "id": 112
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-ChatGPT Enterprise in AWS Marketplace-2026-11-15T05:03:56.567Z",
-    "date": "2026-11-15T05:03:56.567Z",
-    "type": "trending",
-    "text": "ChatGPT Enterprise in AWS Marketplace",
-    "target": {
-      "page": "trending",
-      "name": "ChatGPT Enterprise in AWS Marketplace"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Copilot Studio agent user accounts-2026-11-15T05:03:56.567Z",
-    "date": "2026-11-15T05:03:56.567Z",
-    "type": "trending",
-    "text": "Copilot Studio agent user accounts",
-    "target": {
-      "page": "trending",
-      "name": "Copilot Studio agent user accounts"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Claude Fable 5.2 and Claude Mythos 5.2-2026-11-15T05:03:56.567Z",
-    "date": "2026-11-15T05:03:56.567Z",
-    "type": "trending",
-    "text": "Claude Fable 5.2 and Claude Mythos 5.2",
-    "target": {
-      "page": "trending",
-      "name": "Claude Fable 5.2 and Claude Mythos 5.2"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-ChatGPT Wallet-2026-11-15T05:03:56.567Z",
-    "date": "2026-11-15T05:03:56.567Z",
-    "type": "trending",
-    "text": "ChatGPT Wallet",
-    "target": {
-      "page": "trending",
-      "name": "ChatGPT Wallet"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-89",
-    "date": "2026-11-08T04:43:42.252Z",
-    "type": "update",
-    "text": "ListenFirst: ListenFirst launches “Social Indexes for Video Games” data set",
-    "target": {
-      "page": "updates",
-      "id": 89
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-90",
-    "date": "2026-11-08T04:43:42.252Z",
-    "type": "update",
-    "text": "ListenFirst: Improved Paid Analytics now includes TikTok data",
-    "target": {
-      "page": "updates",
-      "id": 90
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-91",
-    "date": "2026-11-08T04:43:42.252Z",
-    "type": "update",
-    "text": "ChatGPT: ChatGPT Images 2.6 model",
-    "target": {
-      "page": "updates",
-      "id": 91
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-92",
-    "date": "2026-11-08T04:43:42.252Z",
-    "type": "update",
-    "text": "ChatGPT: GIF creation in ChatGPT",
-    "target": {
-      "page": "updates",
-      "id": 92
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-93",
-    "date": "2026-11-08T04:43:42.252Z",
-    "type": "update",
-    "text": "ChatGPT: Saved reference images",
-    "target": {
-      "page": "updates",
-      "id": 93
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-94",
-    "date": "2026-11-08T04:43:42.252Z",
-    "type": "update",
-    "text": "VwD: Advanced filter refinement and dynamic criteria addition in Creator Discovery",
-    "target": {
-      "page": "updates",
-      "id": 94
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "upd-95",
-    "date": "2026-11-08T04:43:42.252Z",
-    "type": "update",
-    "text": "VwD: Access to over 2.5 M creators in Creator Discovery",
-    "target": {
-      "page": "updates",
-      "id": 95
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-GPT‑6 Cyber-2026-11-08T04:43:42.252Z",
-    "date": "2026-11-08T04:43:42.252Z",
-    "type": "trending",
-    "text": "GPT‑6 Cyber",
-    "target": {
-      "page": "trending",
-      "name": "GPT‑6 Cyber"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Daybreak Red (AWS GovCloud availability)-2026-11-08T04:43:42.252Z",
-    "date": "2026-11-08T04:43:42.252Z",
-    "type": "trending",
-    "text": "Daybreak Red (AWS GovCloud availability)",
-    "target": {
-      "page": "trending",
-      "name": "Daybreak Red (AWS GovCloud availability)"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Muse app Spaces-2026-11-08T04:43:42.252Z",
-    "date": "2026-11-08T04:43:42.252Z",
-    "type": "trending",
-    "text": "Muse app Spaces",
-    "target": {
-      "page": "trending",
-      "name": "Muse app Spaces"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-Muse app Voice & expressive avatars-2026-11-08T04:43:42.252Z",
-    "date": "2026-11-08T04:43:42.252Z",
-    "type": "trending",
-    "text": "Muse app Voice & expressive avatars",
-    "target": {
-      "page": "trending",
-      "name": "Muse app Voice & expressive avatars"
-    },
-    "source": "scan",
-    "runType": "Automatic (weekly)"
-  },
-  {
-    "id": "trend-WhatsApp Events updates-2026-11-08T04:43:42.252Z",
-    "date": "2026-11-08T04:43:42.252Z",
-    "type": "trending",
-    "text": "WhatsApp Events updates",
-    "target": {
-      "page": "trending",
-      "name": "WhatsApp Events updates"
     },
     "source": "scan",
     "runType": "Automatic (weekly)"
